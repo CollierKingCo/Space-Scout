@@ -7,14 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A49A252119B343D9004144D1 /* Sword1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A49A251D19B343D9004144D1 /* Sword1.jpeg */; };
-		A49A252219B343D9004144D1 /* Sword2.png in Resources */ = {isa = PBXBuildFile; fileRef = A49A251E19B343D9004144D1 /* Sword2.png */; };
-		A49A252319B343D9004144D1 /* Sword4.png in Resources */ = {isa = PBXBuildFile; fileRef = A49A251F19B343D9004144D1 /* Sword4.png */; };
-		A49A252419B343D9004144D1 /* Sword3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A49A252019B343D9004144D1 /* Sword3.jpg */; };
-		A49A252919B34DDE004144D1 /* Vanity4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A49A252519B34DDE004144D1 /* Vanity4.jpg */; };
-		A49A252A19B34DDE004144D1 /* Vanity2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A49A252619B34DDE004144D1 /* Vanity2.jpg */; };
-		A49A252B19B34DDE004144D1 /* Vanity3.png in Resources */ = {isa = PBXBuildFile; fileRef = A49A252719B34DDE004144D1 /* Vanity3.png */; };
-		A49A252C19B34DDE004144D1 /* Vanity1.png in Resources */ = {isa = PBXBuildFile; fileRef = A49A252819B34DDE004144D1 /* Vanity1.png */; };
+		A49A254319B355CE004144D1 /* 9ipe7bbkT.gif in Resources */ = {isa = PBXBuildFile; fileRef = A49A252E19B355CE004144D1 /* 9ipe7bbkT.gif */; };
+		A49A254419B355CE004144D1 /* 500px-Aiga_leftarrow_inv.svg.png in Resources */ = {isa = PBXBuildFile; fileRef = A49A252F19B355CE004144D1 /* 500px-Aiga_leftarrow_inv.svg.png */; };
+		A49A254519B355CE004144D1 /* aiga_up_arrow_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = A49A253019B355CE004144D1 /* aiga_up_arrow_bg.png */; };
+		A49A254619B355CE004144D1 /* down-arrow-inv.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A49A253119B355CE004144D1 /* down-arrow-inv.jpg */; };
+		A49A254719B355CE004144D1 /* downArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = A49A253219B355CE004144D1 /* downArrow.png */; };
+		A49A254819B355CE004144D1 /* Planet_3.png in Resources */ = {isa = PBXBuildFile; fileRef = A49A253319B355CE004144D1 /* Planet_3.png */; };
+		A49A254919B355CE004144D1 /* Planet_4.png in Resources */ = {isa = PBXBuildFile; fileRef = A49A253419B355CE004144D1 /* Planet_4.png */; };
+		A49A254A19B355CE004144D1 /* shuttle_0.png in Resources */ = {isa = PBXBuildFile; fileRef = A49A253519B355CE004144D1 /* shuttle_0.png */; };
+		A49A254B19B355CE004144D1 /* Spaceship_2.png in Resources */ = {isa = PBXBuildFile; fileRef = A49A253619B355CE004144D1 /* Spaceship_2.png */; };
+		A49A254C19B355CE004144D1 /* Spaceship-1.png in Resources */ = {isa = PBXBuildFile; fileRef = A49A253719B355CE004144D1 /* Spaceship-1.png */; };
+		A49A254D19B355CE004144D1 /* Sword1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A49A253819B355CE004144D1 /* Sword1.jpeg */; };
+		A49A254E19B355CE004144D1 /* Sword2.png in Resources */ = {isa = PBXBuildFile; fileRef = A49A253919B355CE004144D1 /* Sword2.png */; };
+		A49A254F19B355CE004144D1 /* Sword3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A49A253A19B355CE004144D1 /* Sword3.jpg */; };
+		A49A255019B355CE004144D1 /* Sword4.png in Resources */ = {isa = PBXBuildFile; fileRef = A49A253B19B355CE004144D1 /* Sword4.png */; };
+		A49A255119B355CE004144D1 /* up_arrow_sign.png in Resources */ = {isa = PBXBuildFile; fileRef = A49A253C19B355CE004144D1 /* up_arrow_sign.png */; };
+		A49A255219B355CE004144D1 /* upArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = A49A253D19B355CE004144D1 /* upArrow.png */; };
+		A49A255319B355CE004144D1 /* Vanity1.png in Resources */ = {isa = PBXBuildFile; fileRef = A49A253E19B355CE004144D1 /* Vanity1.png */; };
+		A49A255419B355CE004144D1 /* Vanity2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A49A253F19B355CE004144D1 /* Vanity2.jpg */; };
+		A49A255519B355CE004144D1 /* Vanity3.png in Resources */ = {isa = PBXBuildFile; fileRef = A49A254019B355CE004144D1 /* Vanity3.png */; };
+		A49A255619B355CE004144D1 /* Vanity4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A49A254119B355CE004144D1 /* Vanity4.jpg */; };
+		A49A255719B355CE004144D1 /* Wizard.png in Resources */ = {isa = PBXBuildFile; fileRef = A49A254219B355CE004144D1 /* Wizard.png */; };
+		A49A255D19B35858004144D1 /* SpaceScoutHighScore.m in Sources */ = {isa = PBXBuildFile; fileRef = A49A255C19B35858004144D1 /* SpaceScoutHighScore.m */; };
+		A49A256119B35CBF004144D1 /* SpaceScoutCreditsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A49A256019B35CBF004144D1 /* SpaceScoutCreditsViewController.m */; };
 		B74FB1C119987BD9000F722B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B74FB1C019987BD9000F722B /* Foundation.framework */; };
 		B74FB1C319987BD9000F722B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B74FB1C219987BD9000F722B /* CoreGraphics.framework */; };
 		B74FB1C519987BD9000F722B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B74FB1C419987BD9000F722B /* UIKit.framework */; };
@@ -50,14 +65,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A49A251D19B343D9004144D1 /* Sword1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Sword1.jpeg; sourceTree = "<group>"; };
-		A49A251E19B343D9004144D1 /* Sword2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sword2.png; sourceTree = "<group>"; };
-		A49A251F19B343D9004144D1 /* Sword4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sword4.png; sourceTree = "<group>"; };
-		A49A252019B343D9004144D1 /* Sword3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Sword3.jpg; sourceTree = "<group>"; };
-		A49A252519B34DDE004144D1 /* Vanity4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Vanity4.jpg; sourceTree = "<group>"; };
-		A49A252619B34DDE004144D1 /* Vanity2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Vanity2.jpg; sourceTree = "<group>"; };
-		A49A252719B34DDE004144D1 /* Vanity3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Vanity3.png; sourceTree = "<group>"; };
-		A49A252819B34DDE004144D1 /* Vanity1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Vanity1.png; sourceTree = "<group>"; };
+		A49A252E19B355CE004144D1 /* 9ipe7bbkT.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 9ipe7bbkT.gif; sourceTree = "<group>"; };
+		A49A252F19B355CE004144D1 /* 500px-Aiga_leftarrow_inv.svg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "500px-Aiga_leftarrow_inv.svg.png"; sourceTree = "<group>"; };
+		A49A253019B355CE004144D1 /* aiga_up_arrow_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aiga_up_arrow_bg.png; sourceTree = "<group>"; };
+		A49A253119B355CE004144D1 /* down-arrow-inv.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "down-arrow-inv.jpg"; sourceTree = "<group>"; };
+		A49A253219B355CE004144D1 /* downArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = downArrow.png; sourceTree = "<group>"; };
+		A49A253319B355CE004144D1 /* Planet_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Planet_3.png; sourceTree = "<group>"; };
+		A49A253419B355CE004144D1 /* Planet_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Planet_4.png; sourceTree = "<group>"; };
+		A49A253519B355CE004144D1 /* shuttle_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shuttle_0.png; sourceTree = "<group>"; };
+		A49A253619B355CE004144D1 /* Spaceship_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship_2.png; sourceTree = "<group>"; };
+		A49A253719B355CE004144D1 /* Spaceship-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Spaceship-1.png"; sourceTree = "<group>"; };
+		A49A253819B355CE004144D1 /* Sword1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Sword1.jpeg; sourceTree = "<group>"; };
+		A49A253919B355CE004144D1 /* Sword2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sword2.png; sourceTree = "<group>"; };
+		A49A253A19B355CE004144D1 /* Sword3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Sword3.jpg; sourceTree = "<group>"; };
+		A49A253B19B355CE004144D1 /* Sword4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sword4.png; sourceTree = "<group>"; };
+		A49A253C19B355CE004144D1 /* up_arrow_sign.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = up_arrow_sign.png; sourceTree = "<group>"; };
+		A49A253D19B355CE004144D1 /* upArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = upArrow.png; sourceTree = "<group>"; };
+		A49A253E19B355CE004144D1 /* Vanity1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Vanity1.png; sourceTree = "<group>"; };
+		A49A253F19B355CE004144D1 /* Vanity2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Vanity2.jpg; sourceTree = "<group>"; };
+		A49A254019B355CE004144D1 /* Vanity3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Vanity3.png; sourceTree = "<group>"; };
+		A49A254119B355CE004144D1 /* Vanity4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Vanity4.jpg; sourceTree = "<group>"; };
+		A49A254219B355CE004144D1 /* Wizard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Wizard.png; sourceTree = "<group>"; };
+		A49A255B19B35858004144D1 /* SpaceScoutHighScore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpaceScoutHighScore.h; sourceTree = "<group>"; };
+		A49A255C19B35858004144D1 /* SpaceScoutHighScore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpaceScoutHighScore.m; sourceTree = "<group>"; };
+		A49A255F19B35CBF004144D1 /* SpaceScoutCreditsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpaceScoutCreditsViewController.h; sourceTree = "<group>"; };
+		A49A256019B35CBF004144D1 /* SpaceScoutCreditsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpaceScoutCreditsViewController.m; sourceTree = "<group>"; };
 		B74FB1BD19987BD9000F722B /* Space Scout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Space Scout.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B74FB1C019987BD9000F722B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B74FB1C219987BD9000F722B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -119,6 +151,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A49A252D19B353FA004144D1 /* HighScore */ = {
+			isa = PBXGroup;
+			children = (
+				CBE8CAB1199B210000C95739 /* SpaceScoutHighscoresViewController.h */,
+				CBE8CAB2199B210000C95739 /* SpaceScoutHighscoresViewController.m */,
+				A49A255B19B35858004144D1 /* SpaceScoutHighScore.h */,
+				A49A255C19B35858004144D1 /* SpaceScoutHighScore.m */,
+			);
+			name = HighScore;
+			sourceTree = "<group>";
+		};
+		A49A255E19B35CA8004144D1 /* Credits */ = {
+			isa = PBXGroup;
+			children = (
+				A49A255F19B35CBF004144D1 /* SpaceScoutCreditsViewController.h */,
+				A49A256019B35CBF004144D1 /* SpaceScoutCreditsViewController.m */,
+			);
+			name = Credits;
+			sourceTree = "<group>";
+		};
 		B74FB1B419987BD9000F722B = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +205,8 @@
 			isa = PBXGroup;
 			children = (
 				B74FB1D419987BD9000F722B /* Main.storyboard */,
+				A49A255E19B35CA8004144D1 /* Credits */,
+				A49A252D19B353FA004144D1 /* HighScore */,
 				CB1966AB19A458E500BF33C7 /* Images */,
 				CB9C141A19A2E07C0030922A /* Shop */,
 				CBE8CAAA199B1F6500C95739 /* ViewControllers */,
@@ -203,14 +257,27 @@
 		CB1966AB19A458E500BF33C7 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				A49A252519B34DDE004144D1 /* Vanity4.jpg */,
-				A49A252619B34DDE004144D1 /* Vanity2.jpg */,
-				A49A252719B34DDE004144D1 /* Vanity3.png */,
-				A49A252819B34DDE004144D1 /* Vanity1.png */,
-				A49A251D19B343D9004144D1 /* Sword1.jpeg */,
-				A49A251E19B343D9004144D1 /* Sword2.png */,
-				A49A251F19B343D9004144D1 /* Sword4.png */,
-				A49A252019B343D9004144D1 /* Sword3.jpg */,
+				A49A252E19B355CE004144D1 /* 9ipe7bbkT.gif */,
+				A49A252F19B355CE004144D1 /* 500px-Aiga_leftarrow_inv.svg.png */,
+				A49A253019B355CE004144D1 /* aiga_up_arrow_bg.png */,
+				A49A253119B355CE004144D1 /* down-arrow-inv.jpg */,
+				A49A253219B355CE004144D1 /* downArrow.png */,
+				A49A253319B355CE004144D1 /* Planet_3.png */,
+				A49A253419B355CE004144D1 /* Planet_4.png */,
+				A49A253519B355CE004144D1 /* shuttle_0.png */,
+				A49A253619B355CE004144D1 /* Spaceship_2.png */,
+				A49A253719B355CE004144D1 /* Spaceship-1.png */,
+				A49A253819B355CE004144D1 /* Sword1.jpeg */,
+				A49A253919B355CE004144D1 /* Sword2.png */,
+				A49A253A19B355CE004144D1 /* Sword3.jpg */,
+				A49A253B19B355CE004144D1 /* Sword4.png */,
+				A49A253C19B355CE004144D1 /* up_arrow_sign.png */,
+				A49A253D19B355CE004144D1 /* upArrow.png */,
+				A49A253E19B355CE004144D1 /* Vanity1.png */,
+				A49A253F19B355CE004144D1 /* Vanity2.jpg */,
+				A49A254019B355CE004144D1 /* Vanity3.png */,
+				A49A254119B355CE004144D1 /* Vanity4.jpg */,
+				A49A254219B355CE004144D1 /* Wizard.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -235,8 +302,6 @@
 				B74FB1D819987BD9000F722B /* SpaceScoutViewController.m */,
 				B7E12C8A19999FD500C74BDF /* SpaceScoutPlayViewController.h */,
 				B7E12C8B19999FD500C74BDF /* SpaceScoutPlayViewController.m */,
-				CBE8CAB1199B210000C95739 /* SpaceScoutHighscoresViewController.h */,
-				CBE8CAB2199B210000C95739 /* SpaceScoutHighscoresViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -318,17 +383,30 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A49A252B19B34DDE004144D1 /* Vanity3.png in Resources */,
-				A49A252119B343D9004144D1 /* Sword1.jpeg in Resources */,
-				A49A252919B34DDE004144D1 /* Vanity4.jpg in Resources */,
-				A49A252C19B34DDE004144D1 /* Vanity1.png in Resources */,
-				A49A252319B343D9004144D1 /* Sword4.png in Resources */,
-				A49A252219B343D9004144D1 /* Sword2.png in Resources */,
-				A49A252A19B34DDE004144D1 /* Vanity2.jpg in Resources */,
+				A49A254419B355CE004144D1 /* 500px-Aiga_leftarrow_inv.svg.png in Resources */,
+				A49A255419B355CE004144D1 /* Vanity2.jpg in Resources */,
+				A49A254A19B355CE004144D1 /* shuttle_0.png in Resources */,
+				A49A255319B355CE004144D1 /* Vanity1.png in Resources */,
+				A49A254C19B355CE004144D1 /* Spaceship-1.png in Resources */,
+				A49A254519B355CE004144D1 /* aiga_up_arrow_bg.png in Resources */,
+				A49A254B19B355CE004144D1 /* Spaceship_2.png in Resources */,
 				B74FB1CD19987BD9000F722B /* InfoPlist.strings in Resources */,
-				A49A252419B343D9004144D1 /* Sword3.jpg in Resources */,
+				A49A255019B355CE004144D1 /* Sword4.png in Resources */,
+				A49A254719B355CE004144D1 /* downArrow.png in Resources */,
+				A49A255619B355CE004144D1 /* Vanity4.jpg in Resources */,
+				A49A255519B355CE004144D1 /* Vanity3.png in Resources */,
+				A49A254819B355CE004144D1 /* Planet_3.png in Resources */,
 				B74FB1E019987BDA000F722B /* Images.xcassets in Resources */,
+				A49A254D19B355CE004144D1 /* Sword1.jpeg in Resources */,
+				A49A254319B355CE004144D1 /* 9ipe7bbkT.gif in Resources */,
+				A49A254F19B355CE004144D1 /* Sword3.jpg in Resources */,
+				A49A255119B355CE004144D1 /* up_arrow_sign.png in Resources */,
 				B74FB1D619987BD9000F722B /* Main.storyboard in Resources */,
+				A49A255219B355CE004144D1 /* upArrow.png in Resources */,
+				A49A254919B355CE004144D1 /* Planet_4.png in Resources */,
+				A49A254E19B355CE004144D1 /* Sword2.png in Resources */,
+				A49A255719B355CE004144D1 /* Wizard.png in Resources */,
+				A49A254619B355CE004144D1 /* down-arrow-inv.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,7 +426,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7E12C8F1999A6CE00C74BDF /* SpaceScoutPlayer.m in Sources */,
+				A49A256119B35CBF004144D1 /* SpaceScoutCreditsViewController.m in Sources */,
 				CBE8CAB0199B20B200C95739 /* SpaceScoutVanityStoreViewController.m in Sources */,
+				A49A255D19B35858004144D1 /* SpaceScoutHighScore.m in Sources */,
 				B74FB1DC19987BD9000F722B /* SpaceScoutMyScene.m in Sources */,
 				CBE8CAAD199B209C00C95739 /* SpaceScoutWeaponsStoreViewController.m in Sources */,
 				CBE8CAB3199B210000C95739 /* SpaceScoutHighscoresViewController.m in Sources */,

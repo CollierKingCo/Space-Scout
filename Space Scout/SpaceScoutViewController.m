@@ -9,12 +9,18 @@
 #import "SpaceScoutViewController.h"
 #import "SpaceScoutMyScene.h"
 
+@interface SpaceScoutViewController ()
+
+@property SKSpriteNode* sprite;
+
+@end
+
 @implementation SpaceScoutViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+    
     // Configure the view.
     SKView * skView = (SKView *)self.view;
     skView.showsFPS = YES;

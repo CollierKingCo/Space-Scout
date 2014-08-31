@@ -20,6 +20,6 @@
 @property NSInteger lvlCap;
 @property NSInteger money;
 @property NSInteger tokens;
-@property CGSize size;
+@property (nonatomic) CGSize size;
 
 @end
