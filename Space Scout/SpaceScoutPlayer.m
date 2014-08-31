@@ -19,8 +19,8 @@
     self.exp = 1;
     self.maxExp = self.lvl * 100;
     self.size = CGSizeMake(32, 32);
-    self.money = 50;
-    
+    self.money = 10;
+    self.tokens = 5;
     
     if (self.exp == self.maxExp) {
         self.lvl += 1;

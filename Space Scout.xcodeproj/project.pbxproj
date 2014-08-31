@@ -11,6 +11,10 @@
 		A49A252219B343D9004144D1 /* Sword2.png in Resources */ = {isa = PBXBuildFile; fileRef = A49A251E19B343D9004144D1 /* Sword2.png */; };
 		A49A252319B343D9004144D1 /* Sword4.png in Resources */ = {isa = PBXBuildFile; fileRef = A49A251F19B343D9004144D1 /* Sword4.png */; };
 		A49A252419B343D9004144D1 /* Sword3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A49A252019B343D9004144D1 /* Sword3.jpg */; };
+		A49A252919B34DDE004144D1 /* Vanity4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A49A252519B34DDE004144D1 /* Vanity4.jpg */; };
+		A49A252A19B34DDE004144D1 /* Vanity2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A49A252619B34DDE004144D1 /* Vanity2.jpg */; };
+		A49A252B19B34DDE004144D1 /* Vanity3.png in Resources */ = {isa = PBXBuildFile; fileRef = A49A252719B34DDE004144D1 /* Vanity3.png */; };
+		A49A252C19B34DDE004144D1 /* Vanity1.png in Resources */ = {isa = PBXBuildFile; fileRef = A49A252819B34DDE004144D1 /* Vanity1.png */; };
 		B74FB1C119987BD9000F722B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B74FB1C019987BD9000F722B /* Foundation.framework */; };
 		B74FB1C319987BD9000F722B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B74FB1C219987BD9000F722B /* CoreGraphics.framework */; };
 		B74FB1C519987BD9000F722B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B74FB1C419987BD9000F722B /* UIKit.framework */; };
@@ -50,6 +54,10 @@
 		A49A251E19B343D9004144D1 /* Sword2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sword2.png; sourceTree = "<group>"; };
 		A49A251F19B343D9004144D1 /* Sword4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sword4.png; sourceTree = "<group>"; };
 		A49A252019B343D9004144D1 /* Sword3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Sword3.jpg; sourceTree = "<group>"; };
+		A49A252519B34DDE004144D1 /* Vanity4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Vanity4.jpg; sourceTree = "<group>"; };
+		A49A252619B34DDE004144D1 /* Vanity2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Vanity2.jpg; sourceTree = "<group>"; };
+		A49A252719B34DDE004144D1 /* Vanity3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Vanity3.png; sourceTree = "<group>"; };
+		A49A252819B34DDE004144D1 /* Vanity1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Vanity1.png; sourceTree = "<group>"; };
 		B74FB1BD19987BD9000F722B /* Space Scout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Space Scout.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B74FB1C019987BD9000F722B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B74FB1C219987BD9000F722B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -195,6 +203,10 @@
 		CB1966AB19A458E500BF33C7 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				A49A252519B34DDE004144D1 /* Vanity4.jpg */,
+				A49A252619B34DDE004144D1 /* Vanity2.jpg */,
+				A49A252719B34DDE004144D1 /* Vanity3.png */,
+				A49A252819B34DDE004144D1 /* Vanity1.png */,
 				A49A251D19B343D9004144D1 /* Sword1.jpeg */,
 				A49A251E19B343D9004144D1 /* Sword2.png */,
 				A49A251F19B343D9004144D1 /* Sword4.png */,
@@ -219,8 +231,8 @@
 		CBE8CAAA199B1F6500C95739 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				B74FB1D819987BD9000F722B /* SpaceScoutViewController.m */,
 				B74FB1D719987BD9000F722B /* SpaceScoutViewController.h */,
+				B74FB1D819987BD9000F722B /* SpaceScoutViewController.m */,
 				B7E12C8A19999FD500C74BDF /* SpaceScoutPlayViewController.h */,
 				B7E12C8B19999FD500C74BDF /* SpaceScoutPlayViewController.m */,
 				CBE8CAB1199B210000C95739 /* SpaceScoutHighscoresViewController.h */,
@@ -306,9 +318,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A49A252B19B34DDE004144D1 /* Vanity3.png in Resources */,
 				A49A252119B343D9004144D1 /* Sword1.jpeg in Resources */,
+				A49A252919B34DDE004144D1 /* Vanity4.jpg in Resources */,
+				A49A252C19B34DDE004144D1 /* Vanity1.png in Resources */,
 				A49A252319B343D9004144D1 /* Sword4.png in Resources */,
 				A49A252219B343D9004144D1 /* Sword2.png in Resources */,
+				A49A252A19B34DDE004144D1 /* Vanity2.jpg in Resources */,
 				B74FB1CD19987BD9000F722B /* InfoPlist.strings in Resources */,
 				A49A252419B343D9004144D1 /* Sword3.jpg in Resources */,
 				B74FB1E019987BDA000F722B /* Images.xcassets in Resources */,

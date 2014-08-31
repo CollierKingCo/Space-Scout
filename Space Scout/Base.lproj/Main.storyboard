@@ -107,6 +107,7 @@
                         <outlet property="PriceWeaponLabel" destination="jVk-sl-Yp1" id="w36-Wf-cNS"/>
                         <outlet property="WeaponNameLabel" destination="cqa-fx-EFA" id="dCt-89-fvR"/>
                         <outlet property="boughtWeaponLabel" destination="1E0-kA-eNU" id="58O-fS-QKl"/>
+                        <outlet property="buyButton" destination="Ko5-lf-uv4" id="7eQ-7K-bxF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U04-it-wg1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -184,7 +185,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Price" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z7U-Td-vBz">
-                                <rect key="frame" x="264" y="216" width="40" height="21"/>
+                                <rect key="frame" x="264" y="222" width="40" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
@@ -201,6 +202,32 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vvY-gf-SMf">
+                                <rect key="frame" x="164" y="86" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.75" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r1q-CV-qQg">
+                                <rect key="frame" x="85" y="128" width="81" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.75" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="geu-c0-2m8">
+                                <rect key="frame" x="403" y="128" width="81" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TfY-Zq-pyx">
+                                <rect key="frame" x="169" y="109" width="235" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="60"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xBo-6g-7sv">
+                                <rect key="frame" x="169" y="109" width="235" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="60"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -209,11 +236,16 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
                         <outlet property="NextVanityButton" destination="EGc-CY-ZyR" id="7aB-Hm-QsY"/>
-                        <outlet property="PlayerMoney" destination="XMt-9H-80D" id="iaH-3E-1XT"/>
-                        <outlet property="PlayerTokens" destination="XaX-EP-50N" id="Jhv-Wt-q0h"/>
+                        <outlet property="PlayerMoneyLabel" destination="XMt-9H-80D" id="i4M-td-YhA"/>
+                        <outlet property="PlayerTokensLabel" destination="XaX-EP-50N" id="ueu-If-Y8d"/>
                         <outlet property="PreviousVanityButton" destination="Pct-BF-ieu" id="O5c-b0-5LK"/>
                         <outlet property="PriceVanityLabel" destination="Z7U-Td-vBz" id="Zot-Vs-7ow"/>
                         <outlet property="VanityNameLabel" destination="fsv-8M-xaZ" id="2rI-hQ-jKF"/>
+                        <outlet property="boughtVanityLabel" destination="xBo-6g-7sv" id="loY-4H-6qe"/>
+                        <outlet property="buyButton" destination="TGR-sq-xtE" id="FBD-6a-EEo"/>
+                        <outlet property="currentVanityImage" destination="vvY-gf-SMf" id="18v-c3-4ty"/>
+                        <outlet property="nextVanityImage" destination="geu-c0-2m8" id="z7K-ub-ob5"/>
+                        <outlet property="previousVanityImage" destination="r1q-CV-qQg" id="ewm-DP-NDu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Up-jl-act" userLabel="First Responder" sceneMemberID="firstResponder"/>
