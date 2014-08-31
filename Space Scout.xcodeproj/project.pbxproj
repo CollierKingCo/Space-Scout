@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A49A252119B343D9004144D1 /* Sword1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A49A251D19B343D9004144D1 /* Sword1.jpeg */; };
+		A49A252219B343D9004144D1 /* Sword2.png in Resources */ = {isa = PBXBuildFile; fileRef = A49A251E19B343D9004144D1 /* Sword2.png */; };
+		A49A252319B343D9004144D1 /* Sword4.png in Resources */ = {isa = PBXBuildFile; fileRef = A49A251F19B343D9004144D1 /* Sword4.png */; };
+		A49A252419B343D9004144D1 /* Sword3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A49A252019B343D9004144D1 /* Sword3.jpg */; };
 		B74FB1C119987BD9000F722B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B74FB1C019987BD9000F722B /* Foundation.framework */; };
 		B74FB1C319987BD9000F722B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B74FB1C219987BD9000F722B /* CoreGraphics.framework */; };
 		B74FB1C519987BD9000F722B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B74FB1C419987BD9000F722B /* UIKit.framework */; };
@@ -17,13 +21,18 @@
 		B74FB1D619987BD9000F722B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B74FB1D419987BD9000F722B /* Main.storyboard */; };
 		B74FB1D919987BD9000F722B /* SpaceScoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B74FB1D819987BD9000F722B /* SpaceScoutViewController.m */; };
 		B74FB1DC19987BD9000F722B /* SpaceScoutMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = B74FB1DB19987BD9000F722B /* SpaceScoutMyScene.m */; };
-		B74FB1DE19987BDA000F722B /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = B74FB1DD19987BDA000F722B /* Spaceship.png */; };
 		B74FB1E019987BDA000F722B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B74FB1DF19987BDA000F722B /* Images.xcassets */; };
 		B74FB1E719987BDA000F722B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B74FB1E619987BDA000F722B /* XCTest.framework */; };
 		B74FB1E819987BDA000F722B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B74FB1C019987BD9000F722B /* Foundation.framework */; };
 		B74FB1E919987BDA000F722B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B74FB1C419987BD9000F722B /* UIKit.framework */; };
 		B74FB1F119987BDA000F722B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B74FB1EF19987BDA000F722B /* InfoPlist.strings */; };
 		B74FB1F319987BDA000F722B /* Space_ScoutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B74FB1F219987BDA000F722B /* Space_ScoutTests.m */; };
+		B7E12C8C19999FD500C74BDF /* SpaceScoutPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7E12C8B19999FD500C74BDF /* SpaceScoutPlayViewController.m */; };
+		B7E12C8F1999A6CE00C74BDF /* SpaceScoutPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B7E12C8E1999A6CE00C74BDF /* SpaceScoutPlayer.m */; };
+		CB1966AA19A4568600BF33C7 /* SpaceScoutShop.m in Sources */ = {isa = PBXBuildFile; fileRef = CB1966A919A4568600BF33C7 /* SpaceScoutShop.m */; };
+		CBE8CAAD199B209C00C95739 /* SpaceScoutWeaponsStoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE8CAAC199B209C00C95739 /* SpaceScoutWeaponsStoreViewController.m */; };
+		CBE8CAB0199B20B200C95739 /* SpaceScoutVanityStoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE8CAAF199B20B200C95739 /* SpaceScoutVanityStoreViewController.m */; };
+		CBE8CAB3199B210000C95739 /* SpaceScoutHighscoresViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE8CAB2199B210000C95739 /* SpaceScoutHighscoresViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +46,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A49A251D19B343D9004144D1 /* Sword1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Sword1.jpeg; sourceTree = "<group>"; };
+		A49A251E19B343D9004144D1 /* Sword2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sword2.png; sourceTree = "<group>"; };
+		A49A251F19B343D9004144D1 /* Sword4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sword4.png; sourceTree = "<group>"; };
+		A49A252019B343D9004144D1 /* Sword3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Sword3.jpg; sourceTree = "<group>"; };
 		B74FB1BD19987BD9000F722B /* Space Scout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Space Scout.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B74FB1C019987BD9000F722B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B74FB1C219987BD9000F722B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,13 +66,24 @@
 		B74FB1D819987BD9000F722B /* SpaceScoutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpaceScoutViewController.m; sourceTree = "<group>"; };
 		B74FB1DA19987BD9000F722B /* SpaceScoutMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpaceScoutMyScene.h; sourceTree = "<group>"; };
 		B74FB1DB19987BD9000F722B /* SpaceScoutMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpaceScoutMyScene.m; sourceTree = "<group>"; };
-		B74FB1DD19987BDA000F722B /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
 		B74FB1DF19987BDA000F722B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B74FB1E519987BDA000F722B /* Space ScoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Space ScoutTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B74FB1E619987BDA000F722B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		B74FB1EE19987BDA000F722B /* Space ScoutTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Space ScoutTests-Info.plist"; sourceTree = "<group>"; };
 		B74FB1F019987BDA000F722B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B74FB1F219987BDA000F722B /* Space_ScoutTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Space_ScoutTests.m; sourceTree = "<group>"; };
+		B7E12C8A19999FD500C74BDF /* SpaceScoutPlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpaceScoutPlayViewController.h; sourceTree = "<group>"; };
+		B7E12C8B19999FD500C74BDF /* SpaceScoutPlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpaceScoutPlayViewController.m; sourceTree = "<group>"; };
+		B7E12C8D1999A6CE00C74BDF /* SpaceScoutPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpaceScoutPlayer.h; sourceTree = "<group>"; };
+		B7E12C8E1999A6CE00C74BDF /* SpaceScoutPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpaceScoutPlayer.m; sourceTree = "<group>"; };
+		CB1966A819A4568600BF33C7 /* SpaceScoutShop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpaceScoutShop.h; sourceTree = "<group>"; };
+		CB1966A919A4568600BF33C7 /* SpaceScoutShop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpaceScoutShop.m; sourceTree = "<group>"; };
+		CBE8CAAB199B209C00C95739 /* SpaceScoutWeaponsStoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpaceScoutWeaponsStoreViewController.h; sourceTree = "<group>"; };
+		CBE8CAAC199B209C00C95739 /* SpaceScoutWeaponsStoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpaceScoutWeaponsStoreViewController.m; sourceTree = "<group>"; };
+		CBE8CAAE199B20B200C95739 /* SpaceScoutVanityStoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpaceScoutVanityStoreViewController.h; sourceTree = "<group>"; };
+		CBE8CAAF199B20B200C95739 /* SpaceScoutVanityStoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpaceScoutVanityStoreViewController.m; sourceTree = "<group>"; };
+		CBE8CAB1199B210000C95739 /* SpaceScoutHighscoresViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpaceScoutHighscoresViewController.h; sourceTree = "<group>"; };
+		CBE8CAB2199B210000C95739 /* SpaceScoutHighscoresViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpaceScoutHighscoresViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,9 +115,6 @@
 			isa = PBXGroup;
 			children = (
 				B74FB1C819987BD9000F722B /* Space Scout */,
-				B74FB1EC19987BDA000F722B /* Space ScoutTests */,
-				B74FB1BF19987BD9000F722B /* Frameworks */,
-				B74FB1BE19987BD9000F722B /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,6 +125,7 @@
 				B74FB1E519987BDA000F722B /* Space ScoutTests.xctest */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		B74FB1BF19987BD9000F722B /* Frameworks */ = {
@@ -116,20 +138,22 @@
 				B74FB1E619987BDA000F722B /* XCTest.framework */,
 			);
 			name = Frameworks;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		B74FB1C819987BD9000F722B /* Space Scout */ = {
 			isa = PBXGroup;
 			children = (
+				B74FB1D419987BD9000F722B /* Main.storyboard */,
+				CB1966AB19A458E500BF33C7 /* Images */,
+				CB9C141A19A2E07C0030922A /* Shop */,
+				CBE8CAAA199B1F6500C95739 /* ViewControllers */,
 				B74FB1D119987BD9000F722B /* SpaceScoutAppDelegate.h */,
 				B74FB1D219987BD9000F722B /* SpaceScoutAppDelegate.m */,
-				B74FB1D419987BD9000F722B /* Main.storyboard */,
-				B74FB1D719987BD9000F722B /* SpaceScoutViewController.h */,
-				B74FB1D819987BD9000F722B /* SpaceScoutViewController.m */,
+				B7E12C8D1999A6CE00C74BDF /* SpaceScoutPlayer.h */,
+				B7E12C8E1999A6CE00C74BDF /* SpaceScoutPlayer.m */,
 				B74FB1DA19987BD9000F722B /* SpaceScoutMyScene.h */,
 				B74FB1DB19987BD9000F722B /* SpaceScoutMyScene.m */,
-				B74FB1DD19987BDA000F722B /* Spaceship.png */,
-				B74FB1DF19987BDA000F722B /* Images.xcassets */,
 				B74FB1C919987BD9000F722B /* Supporting Files */,
 			);
 			path = "Space Scout";
@@ -138,6 +162,10 @@
 		B74FB1C919987BD9000F722B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B74FB1DF19987BDA000F722B /* Images.xcassets */,
+				B74FB1EC19987BDA000F722B /* Space ScoutTests */,
+				B74FB1BF19987BD9000F722B /* Frameworks */,
+				B74FB1BE19987BD9000F722B /* Products */,
 				B74FB1CA19987BD9000F722B /* Space Scout-Info.plist */,
 				B74FB1CB19987BD9000F722B /* InfoPlist.strings */,
 				B74FB1CE19987BD9000F722B /* main.m */,
@@ -153,7 +181,7 @@
 				B74FB1ED19987BDA000F722B /* Supporting Files */,
 			);
 			path = "Space ScoutTests";
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		B74FB1ED19987BDA000F722B /* Supporting Files */ = {
 			isa = PBXGroup;
@@ -162,6 +190,43 @@
 				B74FB1EF19987BDA000F722B /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CB1966AB19A458E500BF33C7 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				A49A251D19B343D9004144D1 /* Sword1.jpeg */,
+				A49A251E19B343D9004144D1 /* Sword2.png */,
+				A49A251F19B343D9004144D1 /* Sword4.png */,
+				A49A252019B343D9004144D1 /* Sword3.jpg */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		CB9C141A19A2E07C0030922A /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+				CBE8CAAB199B209C00C95739 /* SpaceScoutWeaponsStoreViewController.h */,
+				CBE8CAAC199B209C00C95739 /* SpaceScoutWeaponsStoreViewController.m */,
+				CBE8CAAE199B20B200C95739 /* SpaceScoutVanityStoreViewController.h */,
+				CBE8CAAF199B20B200C95739 /* SpaceScoutVanityStoreViewController.m */,
+				CB1966A819A4568600BF33C7 /* SpaceScoutShop.h */,
+				CB1966A919A4568600BF33C7 /* SpaceScoutShop.m */,
+			);
+			name = Shop;
+			sourceTree = "<group>";
+		};
+		CBE8CAAA199B1F6500C95739 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B74FB1D819987BD9000F722B /* SpaceScoutViewController.m */,
+				B74FB1D719987BD9000F722B /* SpaceScoutViewController.h */,
+				B7E12C8A19999FD500C74BDF /* SpaceScoutPlayViewController.h */,
+				B7E12C8B19999FD500C74BDF /* SpaceScoutPlayViewController.m */,
+				CBE8CAB1199B210000C95739 /* SpaceScoutHighscoresViewController.h */,
+				CBE8CAB2199B210000C95739 /* SpaceScoutHighscoresViewController.m */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,7 +274,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = SpaceScout;
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Collier King Co.";
 				TargetAttributes = {
 					B74FB1E419987BDA000F722B = {
@@ -241,9 +306,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A49A252119B343D9004144D1 /* Sword1.jpeg in Resources */,
+				A49A252319B343D9004144D1 /* Sword4.png in Resources */,
+				A49A252219B343D9004144D1 /* Sword2.png in Resources */,
 				B74FB1CD19987BD9000F722B /* InfoPlist.strings in Resources */,
+				A49A252419B343D9004144D1 /* Sword3.jpg in Resources */,
 				B74FB1E019987BDA000F722B /* Images.xcassets in Resources */,
-				B74FB1DE19987BDA000F722B /* Spaceship.png in Resources */,
 				B74FB1D619987BD9000F722B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,7 +331,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7E12C8F1999A6CE00C74BDF /* SpaceScoutPlayer.m in Sources */,
+				CBE8CAB0199B20B200C95739 /* SpaceScoutVanityStoreViewController.m in Sources */,
 				B74FB1DC19987BD9000F722B /* SpaceScoutMyScene.m in Sources */,
+				CBE8CAAD199B209C00C95739 /* SpaceScoutWeaponsStoreViewController.m in Sources */,
+				CBE8CAB3199B210000C95739 /* SpaceScoutHighscoresViewController.m in Sources */,
+				CB1966AA19A4568600BF33C7 /* SpaceScoutShop.m in Sources */,
+				B7E12C8C19999FD500C74BDF /* SpaceScoutPlayViewController.m in Sources */,
 				B74FB1D319987BD9000F722B /* SpaceScoutAppDelegate.m in Sources */,
 				B74FB1D919987BD9000F722B /* SpaceScoutViewController.m in Sources */,
 				B74FB1CF19987BD9000F722B /* main.m in Sources */,
@@ -320,7 +394,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -359,7 +432,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -419,7 +491,6 @@
 		B74FB1FA19987BDA000F722B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Space Scout.app/Space Scout";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -442,7 +513,6 @@
 		B74FB1FB19987BDA000F722B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Space Scout.app/Space Scout";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -477,6 +547,7 @@
 				B74FB1F819987BDA000F722B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B74FB1F919987BDA000F722B /* Build configuration list for PBXNativeTarget "Space ScoutTests" */ = {
 			isa = XCConfigurationList;
@@ -485,6 +556,7 @@
 				B74FB1FB19987BDA000F722B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
