@@ -2,48 +2,52 @@
 //  SpaceScoutCreditsViewController.m
 //  Space Scout
 //
-//  Created by felix king on 31/08/2014.
+//  Created by Felix King on 9/1/14.
 //  Copyright (c) 2014 Collier King Co. All rights reserved.
 //
 
 #import "SpaceScoutCreditsViewController.h"
+#import "SpaceScoutCredits.h"
+#import "SpaceScoutCreditsAmount.h"
 
 @interface SpaceScoutCreditsViewController ()
+
+@property (nonatomic) SpaceScoutCreditsAmount *products;
 
 @end
 
 @implementation SpaceScoutCreditsViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
+
+-(SpaceScoutCreditsAmount *)products {
+    if (!_products) _products = [[SpaceScoutCreditsAmount alloc] init];
+    return _products;
 }
 
-- (void)viewDidLoad
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    return 1;
 }
 
-- (void)didReceiveMemoryWarning
+- (NSInteger)tableView:(UITableView *)tableView
+ numberOfRowsInSection:(NSInteger)section
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    return [self.products.allCredits count];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+- (UITableViewCell *)tableView:(UITableView *)tableView
+         cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    UITableViewCell *cell = [tableView
+                             dequeueReusableCellWithIdentifier:@"ProductCell"
+                             forIndexPath:indexPath];
+    
+    SpaceScoutCredits *s = [self.products.allCredits objectAtIndex:indexPath.row];
+    
+    cell.textLabel.text = [NSString stringWithFormat:@"%@", s.credit];
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@", s.whoGotCredit];
+    
+    return cell;
 }
-*/
-
 @end

@@ -29,7 +29,6 @@
 		A49A255619B355CE004144D1 /* Vanity4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A49A254119B355CE004144D1 /* Vanity4.jpg */; };
 		A49A255719B355CE004144D1 /* Wizard.png in Resources */ = {isa = PBXBuildFile; fileRef = A49A254219B355CE004144D1 /* Wizard.png */; };
 		A49A255D19B35858004144D1 /* SpaceScoutHighScore.m in Sources */ = {isa = PBXBuildFile; fileRef = A49A255C19B35858004144D1 /* SpaceScoutHighScore.m */; };
-		A49A256119B35CBF004144D1 /* SpaceScoutCreditsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A49A256019B35CBF004144D1 /* SpaceScoutCreditsViewController.m */; };
 		B74FB1C119987BD9000F722B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B74FB1C019987BD9000F722B /* Foundation.framework */; };
 		B74FB1C319987BD9000F722B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B74FB1C219987BD9000F722B /* CoreGraphics.framework */; };
 		B74FB1C519987BD9000F722B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B74FB1C419987BD9000F722B /* UIKit.framework */; };
@@ -49,6 +48,9 @@
 		B7E12C8C19999FD500C74BDF /* SpaceScoutPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7E12C8B19999FD500C74BDF /* SpaceScoutPlayViewController.m */; };
 		B7E12C8F1999A6CE00C74BDF /* SpaceScoutPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B7E12C8E1999A6CE00C74BDF /* SpaceScoutPlayer.m */; };
 		CB1966AA19A4568600BF33C7 /* SpaceScoutShop.m in Sources */ = {isa = PBXBuildFile; fileRef = CB1966A919A4568600BF33C7 /* SpaceScoutShop.m */; };
+		CB4E817719B42F0C006F0BA0 /* SpaceScoutCreditsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4E817619B42F0C006F0BA0 /* SpaceScoutCreditsViewController.m */; };
+		CB96441119B55021000F4590 /* SpaceScoutCredits.m in Sources */ = {isa = PBXBuildFile; fileRef = CB96441019B55021000F4590 /* SpaceScoutCredits.m */; };
+		CB96441419B5522A000F4590 /* SpaceScoutCreditsAmount.m in Sources */ = {isa = PBXBuildFile; fileRef = CB96441319B5522A000F4590 /* SpaceScoutCreditsAmount.m */; };
 		CBE8CAAD199B209C00C95739 /* SpaceScoutWeaponsStoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE8CAAC199B209C00C95739 /* SpaceScoutWeaponsStoreViewController.m */; };
 		CBE8CAB0199B20B200C95739 /* SpaceScoutVanityStoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE8CAAF199B20B200C95739 /* SpaceScoutVanityStoreViewController.m */; };
 		CBE8CAB3199B210000C95739 /* SpaceScoutHighscoresViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE8CAB2199B210000C95739 /* SpaceScoutHighscoresViewController.m */; };
@@ -88,8 +90,6 @@
 		A49A254219B355CE004144D1 /* Wizard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Wizard.png; sourceTree = "<group>"; };
 		A49A255B19B35858004144D1 /* SpaceScoutHighScore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpaceScoutHighScore.h; sourceTree = "<group>"; };
 		A49A255C19B35858004144D1 /* SpaceScoutHighScore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpaceScoutHighScore.m; sourceTree = "<group>"; };
-		A49A255F19B35CBF004144D1 /* SpaceScoutCreditsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpaceScoutCreditsViewController.h; sourceTree = "<group>"; };
-		A49A256019B35CBF004144D1 /* SpaceScoutCreditsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpaceScoutCreditsViewController.m; sourceTree = "<group>"; };
 		B74FB1BD19987BD9000F722B /* Space Scout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Space Scout.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B74FB1C019987BD9000F722B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B74FB1C219987BD9000F722B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -118,6 +118,12 @@
 		B7E12C8E1999A6CE00C74BDF /* SpaceScoutPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpaceScoutPlayer.m; sourceTree = "<group>"; };
 		CB1966A819A4568600BF33C7 /* SpaceScoutShop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpaceScoutShop.h; sourceTree = "<group>"; };
 		CB1966A919A4568600BF33C7 /* SpaceScoutShop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpaceScoutShop.m; sourceTree = "<group>"; };
+		CB4E817519B42F0C006F0BA0 /* SpaceScoutCreditsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpaceScoutCreditsViewController.h; sourceTree = "<group>"; };
+		CB4E817619B42F0C006F0BA0 /* SpaceScoutCreditsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpaceScoutCreditsViewController.m; sourceTree = "<group>"; };
+		CB96440F19B55021000F4590 /* SpaceScoutCredits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpaceScoutCredits.h; sourceTree = "<group>"; };
+		CB96441019B55021000F4590 /* SpaceScoutCredits.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpaceScoutCredits.m; sourceTree = "<group>"; };
+		CB96441219B5522A000F4590 /* SpaceScoutCreditsAmount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpaceScoutCreditsAmount.h; sourceTree = "<group>"; };
+		CB96441319B5522A000F4590 /* SpaceScoutCreditsAmount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpaceScoutCreditsAmount.m; sourceTree = "<group>"; };
 		CBE8CAAB199B209C00C95739 /* SpaceScoutWeaponsStoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpaceScoutWeaponsStoreViewController.h; sourceTree = "<group>"; };
 		CBE8CAAC199B209C00C95739 /* SpaceScoutWeaponsStoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpaceScoutWeaponsStoreViewController.m; sourceTree = "<group>"; };
 		CBE8CAAE199B20B200C95739 /* SpaceScoutVanityStoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpaceScoutVanityStoreViewController.h; sourceTree = "<group>"; };
@@ -165,8 +171,12 @@
 		A49A255E19B35CA8004144D1 /* Credits */ = {
 			isa = PBXGroup;
 			children = (
-				A49A255F19B35CBF004144D1 /* SpaceScoutCreditsViewController.h */,
-				A49A256019B35CBF004144D1 /* SpaceScoutCreditsViewController.m */,
+				CB4E817519B42F0C006F0BA0 /* SpaceScoutCreditsViewController.h */,
+				CB4E817619B42F0C006F0BA0 /* SpaceScoutCreditsViewController.m */,
+				CB96440F19B55021000F4590 /* SpaceScoutCredits.h */,
+				CB96441019B55021000F4590 /* SpaceScoutCredits.m */,
+				CB96441219B5522A000F4590 /* SpaceScoutCreditsAmount.h */,
+				CB96441319B5522A000F4590 /* SpaceScoutCreditsAmount.m */,
 			);
 			name = Credits;
 			sourceTree = "<group>";
@@ -426,13 +436,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7E12C8F1999A6CE00C74BDF /* SpaceScoutPlayer.m in Sources */,
-				A49A256119B35CBF004144D1 /* SpaceScoutCreditsViewController.m in Sources */,
+				CB4E817719B42F0C006F0BA0 /* SpaceScoutCreditsViewController.m in Sources */,
 				CBE8CAB0199B20B200C95739 /* SpaceScoutVanityStoreViewController.m in Sources */,
 				A49A255D19B35858004144D1 /* SpaceScoutHighScore.m in Sources */,
 				B74FB1DC19987BD9000F722B /* SpaceScoutMyScene.m in Sources */,
 				CBE8CAAD199B209C00C95739 /* SpaceScoutWeaponsStoreViewController.m in Sources */,
+				CB96441419B5522A000F4590 /* SpaceScoutCreditsAmount.m in Sources */,
 				CBE8CAB3199B210000C95739 /* SpaceScoutHighscoresViewController.m in Sources */,
 				CB1966AA19A4568600BF33C7 /* SpaceScoutShop.m in Sources */,
+				CB96441119B55021000F4590 /* SpaceScoutCredits.m in Sources */,
 				B7E12C8C19999FD500C74BDF /* SpaceScoutPlayViewController.m in Sources */,
 				B74FB1D319987BD9000F722B /* SpaceScoutAppDelegate.m in Sources */,
 				B74FB1D919987BD9000F722B /* SpaceScoutViewController.m in Sources */,
