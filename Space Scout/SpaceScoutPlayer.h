@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SpaceScoutShop.h"
 
 @interface SpaceScoutPlayer : NSObject
 

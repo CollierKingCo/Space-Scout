@@ -8,10 +8,12 @@
 
 #import "SpaceScoutHomePageViewController.h"
 
+@import AVFoundation;
 @interface SpaceScoutHomePageViewController ()
 @property (nonatomic) SpaceScoutPlayer *player;
 @property (nonatomic) NSMutableArray *quotes;
 @property (nonatomic) NSMutableArray *whoDidQuotes;
+@property (nonatomic) AVAudioPlayer * backgroundMusicPlayer;
 @end
 
 @implementation SpaceScoutHomePageViewController
@@ -37,6 +39,15 @@
     [super viewDidLoad];
     self.counter = arc4random_uniform([self.quotes count]);
     [self updateAllOutlets];
+    
+#warning turn off exception breakpoints to play!!!
+    
+    NSError *error;
+    NSURL * backgroundMusicURL = [[NSBundle mainBundle] URLForResource:@"Aaron Smith - Dancin (KRONO Remix)" withExtension:@"mp3"];
+    self.backgroundMusicPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:backgroundMusicURL error:&error];
+    self.backgroundMusicPlayer.numberOfLoops = -1;
+    [self.backgroundMusicPlayer prepareToPlay];
+    [self.backgroundMusicPlayer play];
 }
 
 - (NSMutableArray *)quotes {
@@ -77,8 +88,8 @@
     return _whoDidQuotes;
 }
 - (void) updateAllOutlets {
-    self.playerMoney.text = [NSString stringWithFormat:@"%d", self.player.money ];
-    self.playerTokens.text = [NSString stringWithFormat:@"%d",self.player.tokens];
+    self.playerMoney.text = [NSString stringWithFormat:@"Money: %d", self.player.money ];
+    self.playerTokens.text = [NSString stringWithFormat:@"Tokens: %d",self.player.tokens];
     
     self.counter += 1;
     if (self.counter >= [self.quotes count]) {
@@ -90,6 +101,19 @@
 }
 
 - (IBAction)newQuoteButtonPressed:(UIButton *)sender {
+    [self updateAllOutlets];
+}
+
+- (IBAction)playSpecialSongButtonPressed:(UIButton *)sender {
+    self.player.money += 100;
+    [self.backgroundMusicPlayer stop];
+    NSError *error;
+    NSURL * backgroundMusicURL = [[NSBundle mainBundle] URLForResource:@"Taylor Swift - Shake It Off" withExtension:@"mp3"];
+    self.backgroundMusicPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:backgroundMusicURL error:&error];
+    self.backgroundMusicPlayer.numberOfLoops = 1;
+    [self.backgroundMusicPlayer prepareToPlay];
+    [self.backgroundMusicPlayer play];
+    
     [self updateAllOutlets];
 }
 @end

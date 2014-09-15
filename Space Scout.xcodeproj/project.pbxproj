@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A4689DAD19C712DC00BA3207 /* Aaron Smith - Dancin (KRONO Remix).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A4689DAC19C712DC00BA3207 /* Aaron Smith - Dancin (KRONO Remix).mp3 */; };
+		A4689DAF19C714E700BA3207 /* Taylor Swift - Shake It Off.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A4689DAE19C714E700BA3207 /* Taylor Swift - Shake It Off.mp3 */; };
 		A49A254319B355CE004144D1 /* 9ipe7bbkT.gif in Resources */ = {isa = PBXBuildFile; fileRef = A49A252E19B355CE004144D1 /* 9ipe7bbkT.gif */; };
 		A49A254419B355CE004144D1 /* 500px-Aiga_leftarrow_inv.svg.png in Resources */ = {isa = PBXBuildFile; fileRef = A49A252F19B355CE004144D1 /* 500px-Aiga_leftarrow_inv.svg.png */; };
 		A49A254519B355CE004144D1 /* aiga_up_arrow_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = A49A253019B355CE004144D1 /* aiga_up_arrow_bg.png */; };
@@ -69,6 +71,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A4689DAC19C712DC00BA3207 /* Aaron Smith - Dancin (KRONO Remix).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Aaron Smith - Dancin (KRONO Remix).mp3"; sourceTree = "<group>"; };
+		A4689DAE19C714E700BA3207 /* Taylor Swift - Shake It Off.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Taylor Swift - Shake It Off.mp3"; sourceTree = "<group>"; };
 		A49A252E19B355CE004144D1 /* 9ipe7bbkT.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 9ipe7bbkT.gif; sourceTree = "<group>"; };
 		A49A252F19B355CE004144D1 /* 500px-Aiga_leftarrow_inv.svg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "500px-Aiga_leftarrow_inv.svg.png"; sourceTree = "<group>"; };
 		A49A253019B355CE004144D1 /* aiga_up_arrow_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aiga_up_arrow_bg.png; sourceTree = "<group>"; };
@@ -227,7 +231,7 @@
 				B74FB1D419987BD9000F722B /* Main.storyboard */,
 				A49A255E19B35CA8004144D1 /* Credits */,
 				A49A252D19B353FA004144D1 /* HighScore */,
-				CB1966AB19A458E500BF33C7 /* Images */,
+				CB1966AB19A458E500BF33C7 /* Images/music */,
 				CB9C141A19A2E07C0030922A /* Shop */,
 				CBE8CAAA199B1F6500C95739 /* ViewControllers */,
 				B74FB1D119987BD9000F722B /* SpaceScoutAppDelegate.h */,
@@ -274,9 +278,11 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		CB1966AB19A458E500BF33C7 /* Images */ = {
+		CB1966AB19A458E500BF33C7 /* Images/music */ = {
 			isa = PBXGroup;
 			children = (
+				A4689DAE19C714E700BA3207 /* Taylor Swift - Shake It Off.mp3 */,
+				A4689DAC19C712DC00BA3207 /* Aaron Smith - Dancin (KRONO Remix).mp3 */,
 				A49A252E19B355CE004144D1 /* 9ipe7bbkT.gif */,
 				A49A252F19B355CE004144D1 /* 500px-Aiga_leftarrow_inv.svg.png */,
 				A49A253019B355CE004144D1 /* aiga_up_arrow_bg.png */,
@@ -299,7 +305,7 @@
 				A49A254119B355CE004144D1 /* Vanity4.jpg */,
 				A49A254219B355CE004144D1 /* Wizard.png */,
 			);
-			name = Images;
+			name = Images/music;
 			sourceTree = "<group>";
 		};
 		CB9C141A19A2E07C0030922A /* Shop */ = {
@@ -405,6 +411,7 @@
 			files = (
 				A49A254419B355CE004144D1 /* 500px-Aiga_leftarrow_inv.svg.png in Resources */,
 				A49A255419B355CE004144D1 /* Vanity2.jpg in Resources */,
+				A4689DAF19C714E700BA3207 /* Taylor Swift - Shake It Off.mp3 in Resources */,
 				A49A254A19B355CE004144D1 /* shuttle_0.png in Resources */,
 				A49A255319B355CE004144D1 /* Vanity1.png in Resources */,
 				A49A254C19B355CE004144D1 /* Spaceship-1.png in Resources */,
@@ -421,6 +428,7 @@
 				A49A254319B355CE004144D1 /* 9ipe7bbkT.gif in Resources */,
 				A49A254F19B355CE004144D1 /* Sword3.jpg in Resources */,
 				A49A255119B355CE004144D1 /* up_arrow_sign.png in Resources */,
+				A4689DAD19C712DC00BA3207 /* Aaron Smith - Dancin (KRONO Remix).mp3 in Resources */,
 				B74FB1D619987BD9000F722B /* Main.storyboard in Resources */,
 				A49A255219B355CE004144D1 /* upArrow.png in Resources */,
 				A49A254919B355CE004144D1 /* Planet_4.png in Resources */,
@@ -542,7 +550,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -574,7 +582,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};

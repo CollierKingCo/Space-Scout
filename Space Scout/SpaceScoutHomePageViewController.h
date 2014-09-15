@@ -16,6 +16,7 @@
 @property (weak, nonatomic) IBOutlet UITextView *quoteOfTheDayTextBox;
 @property (weak, nonatomic) IBOutlet UILabel *whoDidQuote;
 - (IBAction)newQuoteButtonPressed:(UIButton *)sender;
+- (IBAction)playSpecialSongButtonPressed:(UIButton *)sender;
 
 @property NSInteger counter;
 @end
