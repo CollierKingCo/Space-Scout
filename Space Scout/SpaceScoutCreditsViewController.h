@@ -10,9 +10,6 @@
 
 @interface SpaceScoutCreditsViewController : UITableViewController
 
-@property NSString* achievment;
-@property NSString* name;
-
 @property (weak, nonatomic) IBOutlet UILabel *creditsAchievmentLabel;
 @property (weak, nonatomic) IBOutlet UILabel *creditsNameLabel;
 

@@ -52,9 +52,8 @@
 		CB4E817719B42F0C006F0BA0 /* SpaceScoutCreditsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4E817619B42F0C006F0BA0 /* SpaceScoutCreditsViewController.m */; };
 		CB82178C19B6D25000851783 /* SpaceScoutHomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB82178B19B6D25000851783 /* SpaceScoutHomePageViewController.m */; };
 		CB96441119B55021000F4590 /* SpaceScoutCredits.m in Sources */ = {isa = PBXBuildFile; fileRef = CB96441019B55021000F4590 /* SpaceScoutCredits.m */; };
-		CB96441419B5522A000F4590 /* SpaceScoutCreditsAmount.m in Sources */ = {isa = PBXBuildFile; fileRef = CB96441319B5522A000F4590 /* SpaceScoutCreditsAmount.m */; };
 		CB96441719B55726000F4590 /* SpaceScoutHighscoresViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB96441619B55726000F4590 /* SpaceScoutHighscoresViewController.m */; };
-		CB96441A19B55741000F4590 /* SpaceScoutHighscoresAmount.m in Sources */ = {isa = PBXBuildFile; fileRef = CB96441919B55741000F4590 /* SpaceScoutHighscoresAmount.m */; };
+		CB96441A19B55741000F4590 /* SpaceScoutHighscores.m in Sources */ = {isa = PBXBuildFile; fileRef = CB96441919B55741000F4590 /* SpaceScoutHighscores.m */; };
 		CB9AEAD719BD6A8B00E65AC9 /* SpaceScoutCredit.m in Sources */ = {isa = PBXBuildFile; fileRef = CB9AEAD619BD6A8B00E65AC9 /* SpaceScoutCredit.m */; };
 		CBE8CAAD199B209C00C95739 /* SpaceScoutWeaponsStoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE8CAAC199B209C00C95739 /* SpaceScoutWeaponsStoreViewController.m */; };
 		CBE8CAB0199B20B200C95739 /* SpaceScoutVanityStoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE8CAAF199B20B200C95739 /* SpaceScoutVanityStoreViewController.m */; };
@@ -128,12 +127,10 @@
 		CB82178B19B6D25000851783 /* SpaceScoutHomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpaceScoutHomePageViewController.m; sourceTree = "<group>"; };
 		CB96440F19B55021000F4590 /* SpaceScoutCredits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpaceScoutCredits.h; sourceTree = "<group>"; };
 		CB96441019B55021000F4590 /* SpaceScoutCredits.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpaceScoutCredits.m; sourceTree = "<group>"; };
-		CB96441219B5522A000F4590 /* SpaceScoutCreditsAmount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpaceScoutCreditsAmount.h; sourceTree = "<group>"; };
-		CB96441319B5522A000F4590 /* SpaceScoutCreditsAmount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpaceScoutCreditsAmount.m; sourceTree = "<group>"; };
 		CB96441519B55726000F4590 /* SpaceScoutHighscoresViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpaceScoutHighscoresViewController.h; sourceTree = "<group>"; };
 		CB96441619B55726000F4590 /* SpaceScoutHighscoresViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpaceScoutHighscoresViewController.m; sourceTree = "<group>"; };
-		CB96441819B55741000F4590 /* SpaceScoutHighscoresAmount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpaceScoutHighscoresAmount.h; sourceTree = "<group>"; };
-		CB96441919B55741000F4590 /* SpaceScoutHighscoresAmount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpaceScoutHighscoresAmount.m; sourceTree = "<group>"; };
+		CB96441819B55741000F4590 /* SpaceScoutHighscores.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpaceScoutHighscores.h; sourceTree = "<group>"; };
+		CB96441919B55741000F4590 /* SpaceScoutHighscores.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpaceScoutHighscores.m; sourceTree = "<group>"; };
 		CB9AEAD519BD6A8B00E65AC9 /* SpaceScoutCredit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpaceScoutCredit.h; sourceTree = "<group>"; };
 		CB9AEAD619BD6A8B00E65AC9 /* SpaceScoutCredit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpaceScoutCredit.m; sourceTree = "<group>"; };
 		CBE8CAAB199B209C00C95739 /* SpaceScoutWeaponsStoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpaceScoutWeaponsStoreViewController.h; sourceTree = "<group>"; };
@@ -174,8 +171,8 @@
 				CB96441619B55726000F4590 /* SpaceScoutHighscoresViewController.m */,
 				A49A255B19B35858004144D1 /* SpaceScoutHighScore.h */,
 				A49A255C19B35858004144D1 /* SpaceScoutHighScore.m */,
-				CB96441819B55741000F4590 /* SpaceScoutHighscoresAmount.h */,
-				CB96441919B55741000F4590 /* SpaceScoutHighscoresAmount.m */,
+				CB96441819B55741000F4590 /* SpaceScoutHighscores.h */,
+				CB96441919B55741000F4590 /* SpaceScoutHighscores.m */,
 			);
 			name = HighScore;
 			sourceTree = "<group>";
@@ -187,8 +184,6 @@
 				CB4E817619B42F0C006F0BA0 /* SpaceScoutCreditsViewController.m */,
 				CB96440F19B55021000F4590 /* SpaceScoutCredits.h */,
 				CB96441019B55021000F4590 /* SpaceScoutCredits.m */,
-				CB96441219B5522A000F4590 /* SpaceScoutCreditsAmount.h */,
-				CB96441319B5522A000F4590 /* SpaceScoutCreditsAmount.m */,
 				CB9AEAD519BD6A8B00E65AC9 /* SpaceScoutCredit.h */,
 				CB9AEAD619BD6A8B00E65AC9 /* SpaceScoutCredit.m */,
 			);
@@ -461,10 +456,9 @@
 				B74FB1DC19987BD9000F722B /* SpaceScoutMyScene.m in Sources */,
 				CB96441719B55726000F4590 /* SpaceScoutHighscoresViewController.m in Sources */,
 				CBE8CAAD199B209C00C95739 /* SpaceScoutWeaponsStoreViewController.m in Sources */,
-				CB96441419B5522A000F4590 /* SpaceScoutCreditsAmount.m in Sources */,
 				CB1966AA19A4568600BF33C7 /* SpaceScoutShop.m in Sources */,
 				CB96441119B55021000F4590 /* SpaceScoutCredits.m in Sources */,
-				CB96441A19B55741000F4590 /* SpaceScoutHighscoresAmount.m in Sources */,
+				CB96441A19B55741000F4590 /* SpaceScoutHighscores.m in Sources */,
 				CB82178C19B6D25000851783 /* SpaceScoutHomePageViewController.m in Sources */,
 				B74FB1D319987BD9000F722B /* SpaceScoutAppDelegate.m in Sources */,
 				B74FB1D919987BD9000F722B /* SpaceScoutViewController.m in Sources */,

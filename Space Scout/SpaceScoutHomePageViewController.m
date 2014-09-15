@@ -116,4 +116,8 @@
     
     [self updateAllOutlets];
 }
+
+- (IBAction)stopMusicButtonPressed:(UIButton *)sender {
+    [self.backgroundMusicPlayer stop];
+}
 @end

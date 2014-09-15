@@ -8,11 +8,19 @@
 
 #import <Foundation/Foundation.h>
 
+typedef NS_ENUM(NSInteger, HighscoreType) {
+    HighscoreTypeAwesomness1,
+    HighscoreTypeAwesomness2,
+    HighscoreTypeAwesomness3,
+    HighscoreTypeAwesomness4,
+    HighscoreTypeAwesomness5,
+};
+
 @interface SpaceScoutHighScore : NSObject
 
++ (instancetype) makeHighscoreOfType:(HighscoreType)type;
 @property NSString *highscore;
 @property NSString *whoGotHighscore;
 
-+ (SpaceScoutHighScore *)randomHighscore;
 
 @end

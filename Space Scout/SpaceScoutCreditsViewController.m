@@ -9,19 +9,18 @@
 #import "SpaceScoutCreditsViewController.h"
 #import "SpaceScoutCredits.h"
 #import "SpaceScoutCreditsAmount.h"
+#import "SpaceScoutCredit.h"
 
 @interface SpaceScoutCreditsViewController ()
-
-@property (nonatomic) SpaceScoutCredits *products;
-
+@property (nonatomic) SpaceScoutCredits *credits;
 @end
 
 @implementation SpaceScoutCreditsViewController
 
 
--(SpaceScoutCredits *)products {
-    if (!_products) _products = [[SpaceScoutCredits alloc] init];
-    return _products;
+-(SpaceScoutCredits *)credits {
+    if (!_credits) _credits = [[SpaceScoutCredits alloc] init];
+    return _credits;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -32,20 +31,22 @@
 - (NSInteger)tableView:(UITableView *)tableView
  numberOfRowsInSection:(NSInteger)section
 {
-    return 20;//[self.products.allCredits count];
+    NSArray * tempArray = self.credits.allCredits;
+    return [tempArray count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView
-         cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+         cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSArray * tempArray = self.credits.allCredits;
+    SpaceScoutCredit *credit = [tempArray objectAtIndex:indexPath.row];
     
     UITableViewCell *cell = [tableView
                              dequeueReusableCellWithIdentifier:@"ProductCell"
                              forIndexPath:indexPath];
     
     //SpaceScoutCredits *s = [self.products.allCredits objectAtIndex:indexPath.row];
-        cell.textLabel.text = [NSString stringWithFormat:@"Coolness%d", indexPath.row + 1];
-        cell.detailTextLabel.text = [NSString stringWithFormat:@"Felix King"];
+        cell.textLabel.text = [NSString stringWithFormat:@"%@", credit.credit];
+        cell.detailTextLabel.text = [NSString stringWithFormat:@"%@", credit.whoGotCredit];
     
     return cell;
 }

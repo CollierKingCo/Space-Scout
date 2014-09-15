@@ -17,6 +17,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *whoDidQuote;
 - (IBAction)newQuoteButtonPressed:(UIButton *)sender;
 - (IBAction)playSpecialSongButtonPressed:(UIButton *)sender;
+- (IBAction)stopMusicButtonPressed:(UIButton *)sender;
 
 @property NSInteger counter;
 @end
