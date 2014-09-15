@@ -10,4 +10,9 @@
 
 @interface SpaceScoutHighScore : NSObject
 
+@property NSString *highscore;
+@property NSString *whoGotHighscore;
+
++ (SpaceScoutHighScore *)randomHighscore;
+
 @end
