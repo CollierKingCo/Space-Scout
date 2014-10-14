@@ -7,30 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A4689DAD19C712DC00BA3207 /* Aaron Smith - Dancin (KRONO Remix).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A4689DAC19C712DC00BA3207 /* Aaron Smith - Dancin (KRONO Remix).mp3 */; };
-		A4689DAF19C714E700BA3207 /* Taylor Swift - Shake It Off.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A4689DAE19C714E700BA3207 /* Taylor Swift - Shake It Off.mp3 */; };
-		A49A254319B355CE004144D1 /* 9ipe7bbkT.gif in Resources */ = {isa = PBXBuildFile; fileRef = A49A252E19B355CE004144D1 /* 9ipe7bbkT.gif */; };
-		A49A254419B355CE004144D1 /* 500px-Aiga_leftarrow_inv.svg.png in Resources */ = {isa = PBXBuildFile; fileRef = A49A252F19B355CE004144D1 /* 500px-Aiga_leftarrow_inv.svg.png */; };
-		A49A254519B355CE004144D1 /* aiga_up_arrow_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = A49A253019B355CE004144D1 /* aiga_up_arrow_bg.png */; };
-		A49A254619B355CE004144D1 /* down-arrow-inv.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A49A253119B355CE004144D1 /* down-arrow-inv.jpg */; };
-		A49A254719B355CE004144D1 /* downArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = A49A253219B355CE004144D1 /* downArrow.png */; };
-		A49A254819B355CE004144D1 /* Planet_3.png in Resources */ = {isa = PBXBuildFile; fileRef = A49A253319B355CE004144D1 /* Planet_3.png */; };
-		A49A254919B355CE004144D1 /* Planet_4.png in Resources */ = {isa = PBXBuildFile; fileRef = A49A253419B355CE004144D1 /* Planet_4.png */; };
-		A49A254A19B355CE004144D1 /* shuttle_0.png in Resources */ = {isa = PBXBuildFile; fileRef = A49A253519B355CE004144D1 /* shuttle_0.png */; };
-		A49A254B19B355CE004144D1 /* Spaceship_2.png in Resources */ = {isa = PBXBuildFile; fileRef = A49A253619B355CE004144D1 /* Spaceship_2.png */; };
-		A49A254C19B355CE004144D1 /* Spaceship-1.png in Resources */ = {isa = PBXBuildFile; fileRef = A49A253719B355CE004144D1 /* Spaceship-1.png */; };
-		A49A254D19B355CE004144D1 /* Sword1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A49A253819B355CE004144D1 /* Sword1.jpeg */; };
-		A49A254E19B355CE004144D1 /* Sword2.png in Resources */ = {isa = PBXBuildFile; fileRef = A49A253919B355CE004144D1 /* Sword2.png */; };
-		A49A254F19B355CE004144D1 /* Sword3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A49A253A19B355CE004144D1 /* Sword3.jpg */; };
-		A49A255019B355CE004144D1 /* Sword4.png in Resources */ = {isa = PBXBuildFile; fileRef = A49A253B19B355CE004144D1 /* Sword4.png */; };
-		A49A255119B355CE004144D1 /* up_arrow_sign.png in Resources */ = {isa = PBXBuildFile; fileRef = A49A253C19B355CE004144D1 /* up_arrow_sign.png */; };
-		A49A255219B355CE004144D1 /* upArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = A49A253D19B355CE004144D1 /* upArrow.png */; };
-		A49A255319B355CE004144D1 /* Vanity1.png in Resources */ = {isa = PBXBuildFile; fileRef = A49A253E19B355CE004144D1 /* Vanity1.png */; };
-		A49A255419B355CE004144D1 /* Vanity2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A49A253F19B355CE004144D1 /* Vanity2.jpg */; };
-		A49A255519B355CE004144D1 /* Vanity3.png in Resources */ = {isa = PBXBuildFile; fileRef = A49A254019B355CE004144D1 /* Vanity3.png */; };
-		A49A255619B355CE004144D1 /* Vanity4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A49A254119B355CE004144D1 /* Vanity4.jpg */; };
-		A49A255719B355CE004144D1 /* Wizard.png in Resources */ = {isa = PBXBuildFile; fileRef = A49A254219B355CE004144D1 /* Wizard.png */; };
 		A49A255D19B35858004144D1 /* SpaceScoutHighScore.m in Sources */ = {isa = PBXBuildFile; fileRef = A49A255C19B35858004144D1 /* SpaceScoutHighScore.m */; };
+		A4AE567119ED57EC00091D73 /* Joystick.m in Sources */ = {isa = PBXBuildFile; fileRef = A4AE567019ED57EC00091D73 /* Joystick.m */; };
+		A4AE569419ED58DE00091D73 /* 9ipe7bbkT.gif in Resources */ = {isa = PBXBuildFile; fileRef = A4AE567219ED58DE00091D73 /* 9ipe7bbkT.gif */; };
+		A4AE569519ED58DE00091D73 /* 500px-Aiga_leftarrow_inv.svg.png in Resources */ = {isa = PBXBuildFile; fileRef = A4AE567319ED58DE00091D73 /* 500px-Aiga_leftarrow_inv.svg.png */; };
+		A4AE569619ED58DE00091D73 /* Aaron Smith - Dancin (KRONO Remix).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A4AE567419ED58DE00091D73 /* Aaron Smith - Dancin (KRONO Remix).mp3 */; };
+		A4AE569719ED58DE00091D73 /* aiga_up_arrow_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = A4AE567519ED58DE00091D73 /* aiga_up_arrow_bg.png */; };
+		A4AE569819ED58DE00091D73 /* Collect_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = A4AE567619ED58DE00091D73 /* Collect_Button.png */; };
+		A4AE569919ED58DE00091D73 /* darkScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = A4AE567719ED58DE00091D73 /* darkScreen.png */; };
+		A4AE569A19ED58DE00091D73 /* down-arrow-inv.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4AE567819ED58DE00091D73 /* down-arrow-inv.jpg */; };
+		A4AE569B19ED58DE00091D73 /* downArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = A4AE567919ED58DE00091D73 /* downArrow.png */; };
+		A4AE569C19ED58DE00091D73 /* dpad.png in Resources */ = {isa = PBXBuildFile; fileRef = A4AE567A19ED58DE00091D73 /* dpad.png */; };
+		A4AE569D19ED58DE00091D73 /* EXPLOSION.atlas in Resources */ = {isa = PBXBuildFile; fileRef = A4AE567B19ED58DE00091D73 /* EXPLOSION.atlas */; };
+		A4AE569E19ED58DE00091D73 /* FLAME TRAIL.png in Resources */ = {isa = PBXBuildFile; fileRef = A4AE567C19ED58DE00091D73 /* FLAME TRAIL.png */; };
+		A4AE569F19ED58DE00091D73 /* joystick.png in Resources */ = {isa = PBXBuildFile; fileRef = A4AE567D19ED58DE00091D73 /* joystick.png */; };
+		A4AE56A019ED58DE00091D73 /* Laser.png in Resources */ = {isa = PBXBuildFile; fileRef = A4AE567E19ED58DE00091D73 /* Laser.png */; };
+		A4AE56A119ED58DE00091D73 /* Orion-nebula-viewed-by-WISE.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4AE567F19ED58DE00091D73 /* Orion-nebula-viewed-by-WISE.jpg */; };
+		A4AE56A219ED58DE00091D73 /* pauseButton.png in Resources */ = {isa = PBXBuildFile; fileRef = A4AE568019ED58DE00091D73 /* pauseButton.png */; };
+		A4AE56A319ED58DE00091D73 /* Planet_3.png in Resources */ = {isa = PBXBuildFile; fileRef = A4AE568119ED58DE00091D73 /* Planet_3.png */; };
+		A4AE56A419ED58DE00091D73 /* Planet_4.png in Resources */ = {isa = PBXBuildFile; fileRef = A4AE568219ED58DE00091D73 /* Planet_4.png */; };
+		A4AE56A519ED58DE00091D73 /* resumeButton.png in Resources */ = {isa = PBXBuildFile; fileRef = A4AE568319ED58DE00091D73 /* resumeButton.png */; };
+		A4AE56A619ED58DE00091D73 /* shuttle_0.png in Resources */ = {isa = PBXBuildFile; fileRef = A4AE568419ED58DE00091D73 /* shuttle_0.png */; };
+		A4AE56A719ED58DE00091D73 /* Spaceship_2.png in Resources */ = {isa = PBXBuildFile; fileRef = A4AE568519ED58DE00091D73 /* Spaceship_2.png */; };
+		A4AE56A819ED58DE00091D73 /* Spaceship_3.png in Resources */ = {isa = PBXBuildFile; fileRef = A4AE568619ED58DE00091D73 /* Spaceship_3.png */; };
+		A4AE56A919ED58DE00091D73 /* Spaceship-1.png in Resources */ = {isa = PBXBuildFile; fileRef = A4AE568719ED58DE00091D73 /* Spaceship-1.png */; };
+		A4AE56AA19ED58DE00091D73 /* Sword1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A4AE568819ED58DE00091D73 /* Sword1.jpeg */; };
+		A4AE56AB19ED58DE00091D73 /* Sword2.png in Resources */ = {isa = PBXBuildFile; fileRef = A4AE568919ED58DE00091D73 /* Sword2.png */; };
+		A4AE56AC19ED58DE00091D73 /* Sword3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4AE568A19ED58DE00091D73 /* Sword3.jpg */; };
+		A4AE56AD19ED58DE00091D73 /* Sword4.png in Resources */ = {isa = PBXBuildFile; fileRef = A4AE568B19ED58DE00091D73 /* Sword4.png */; };
+		A4AE56AE19ED58DE00091D73 /* Taylor Swift - Shake It Off.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A4AE568C19ED58DE00091D73 /* Taylor Swift - Shake It Off.mp3 */; };
+		A4AE56AF19ED58DE00091D73 /* up_arrow_sign.png in Resources */ = {isa = PBXBuildFile; fileRef = A4AE568D19ED58DE00091D73 /* up_arrow_sign.png */; };
+		A4AE56B019ED58DE00091D73 /* upArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = A4AE568E19ED58DE00091D73 /* upArrow.png */; };
+		A4AE56B119ED58DE00091D73 /* Vanity1.png in Resources */ = {isa = PBXBuildFile; fileRef = A4AE568F19ED58DE00091D73 /* Vanity1.png */; };
+		A4AE56B219ED58DE00091D73 /* Vanity2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4AE569019ED58DE00091D73 /* Vanity2.jpg */; };
+		A4AE56B319ED58DE00091D73 /* Vanity3.png in Resources */ = {isa = PBXBuildFile; fileRef = A4AE569119ED58DE00091D73 /* Vanity3.png */; };
+		A4AE56B419ED58DE00091D73 /* Vanity4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4AE569219ED58DE00091D73 /* Vanity4.jpg */; };
+		A4AE56B519ED58DE00091D73 /* Wizard.png in Resources */ = {isa = PBXBuildFile; fileRef = A4AE569319ED58DE00091D73 /* Wizard.png */; };
 		B74FB1C119987BD9000F722B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B74FB1C019987BD9000F722B /* Foundation.framework */; };
 		B74FB1C319987BD9000F722B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B74FB1C219987BD9000F722B /* CoreGraphics.framework */; };
 		B74FB1C519987BD9000F722B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B74FB1C419987BD9000F722B /* UIKit.framework */; };
@@ -70,31 +82,44 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A4689DAC19C712DC00BA3207 /* Aaron Smith - Dancin (KRONO Remix).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Aaron Smith - Dancin (KRONO Remix).mp3"; sourceTree = "<group>"; };
-		A4689DAE19C714E700BA3207 /* Taylor Swift - Shake It Off.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Taylor Swift - Shake It Off.mp3"; sourceTree = "<group>"; };
-		A49A252E19B355CE004144D1 /* 9ipe7bbkT.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 9ipe7bbkT.gif; sourceTree = "<group>"; };
-		A49A252F19B355CE004144D1 /* 500px-Aiga_leftarrow_inv.svg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "500px-Aiga_leftarrow_inv.svg.png"; sourceTree = "<group>"; };
-		A49A253019B355CE004144D1 /* aiga_up_arrow_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aiga_up_arrow_bg.png; sourceTree = "<group>"; };
-		A49A253119B355CE004144D1 /* down-arrow-inv.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "down-arrow-inv.jpg"; sourceTree = "<group>"; };
-		A49A253219B355CE004144D1 /* downArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = downArrow.png; sourceTree = "<group>"; };
-		A49A253319B355CE004144D1 /* Planet_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Planet_3.png; sourceTree = "<group>"; };
-		A49A253419B355CE004144D1 /* Planet_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Planet_4.png; sourceTree = "<group>"; };
-		A49A253519B355CE004144D1 /* shuttle_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shuttle_0.png; sourceTree = "<group>"; };
-		A49A253619B355CE004144D1 /* Spaceship_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship_2.png; sourceTree = "<group>"; };
-		A49A253719B355CE004144D1 /* Spaceship-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Spaceship-1.png"; sourceTree = "<group>"; };
-		A49A253819B355CE004144D1 /* Sword1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Sword1.jpeg; sourceTree = "<group>"; };
-		A49A253919B355CE004144D1 /* Sword2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sword2.png; sourceTree = "<group>"; };
-		A49A253A19B355CE004144D1 /* Sword3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Sword3.jpg; sourceTree = "<group>"; };
-		A49A253B19B355CE004144D1 /* Sword4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sword4.png; sourceTree = "<group>"; };
-		A49A253C19B355CE004144D1 /* up_arrow_sign.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = up_arrow_sign.png; sourceTree = "<group>"; };
-		A49A253D19B355CE004144D1 /* upArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = upArrow.png; sourceTree = "<group>"; };
-		A49A253E19B355CE004144D1 /* Vanity1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Vanity1.png; sourceTree = "<group>"; };
-		A49A253F19B355CE004144D1 /* Vanity2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Vanity2.jpg; sourceTree = "<group>"; };
-		A49A254019B355CE004144D1 /* Vanity3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Vanity3.png; sourceTree = "<group>"; };
-		A49A254119B355CE004144D1 /* Vanity4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Vanity4.jpg; sourceTree = "<group>"; };
-		A49A254219B355CE004144D1 /* Wizard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Wizard.png; sourceTree = "<group>"; };
 		A49A255B19B35858004144D1 /* SpaceScoutHighScore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpaceScoutHighScore.h; sourceTree = "<group>"; };
 		A49A255C19B35858004144D1 /* SpaceScoutHighScore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpaceScoutHighScore.m; sourceTree = "<group>"; };
+		A4AE566F19ED57EC00091D73 /* Joystick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Joystick.h; sourceTree = "<group>"; };
+		A4AE567019ED57EC00091D73 /* Joystick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Joystick.m; sourceTree = "<group>"; };
+		A4AE567219ED58DE00091D73 /* 9ipe7bbkT.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 9ipe7bbkT.gif; sourceTree = "<group>"; };
+		A4AE567319ED58DE00091D73 /* 500px-Aiga_leftarrow_inv.svg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "500px-Aiga_leftarrow_inv.svg.png"; sourceTree = "<group>"; };
+		A4AE567419ED58DE00091D73 /* Aaron Smith - Dancin (KRONO Remix).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Aaron Smith - Dancin (KRONO Remix).mp3"; sourceTree = "<group>"; };
+		A4AE567519ED58DE00091D73 /* aiga_up_arrow_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aiga_up_arrow_bg.png; sourceTree = "<group>"; };
+		A4AE567619ED58DE00091D73 /* Collect_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Collect_Button.png; sourceTree = "<group>"; };
+		A4AE567719ED58DE00091D73 /* darkScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = darkScreen.png; sourceTree = "<group>"; };
+		A4AE567819ED58DE00091D73 /* down-arrow-inv.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "down-arrow-inv.jpg"; sourceTree = "<group>"; };
+		A4AE567919ED58DE00091D73 /* downArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = downArrow.png; sourceTree = "<group>"; };
+		A4AE567A19ED58DE00091D73 /* dpad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dpad.png; sourceTree = "<group>"; };
+		A4AE567B19ED58DE00091D73 /* EXPLOSION.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = EXPLOSION.atlas; sourceTree = "<group>"; };
+		A4AE567C19ED58DE00091D73 /* FLAME TRAIL.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FLAME TRAIL.png"; sourceTree = "<group>"; };
+		A4AE567D19ED58DE00091D73 /* joystick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = joystick.png; sourceTree = "<group>"; };
+		A4AE567E19ED58DE00091D73 /* Laser.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Laser.png; sourceTree = "<group>"; };
+		A4AE567F19ED58DE00091D73 /* Orion-nebula-viewed-by-WISE.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Orion-nebula-viewed-by-WISE.jpg"; sourceTree = "<group>"; };
+		A4AE568019ED58DE00091D73 /* pauseButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pauseButton.png; sourceTree = "<group>"; };
+		A4AE568119ED58DE00091D73 /* Planet_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Planet_3.png; sourceTree = "<group>"; };
+		A4AE568219ED58DE00091D73 /* Planet_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Planet_4.png; sourceTree = "<group>"; };
+		A4AE568319ED58DE00091D73 /* resumeButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = resumeButton.png; sourceTree = "<group>"; };
+		A4AE568419ED58DE00091D73 /* shuttle_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shuttle_0.png; sourceTree = "<group>"; };
+		A4AE568519ED58DE00091D73 /* Spaceship_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship_2.png; sourceTree = "<group>"; };
+		A4AE568619ED58DE00091D73 /* Spaceship_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship_3.png; sourceTree = "<group>"; };
+		A4AE568719ED58DE00091D73 /* Spaceship-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Spaceship-1.png"; sourceTree = "<group>"; };
+		A4AE568819ED58DE00091D73 /* Sword1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Sword1.jpeg; sourceTree = "<group>"; };
+		A4AE568919ED58DE00091D73 /* Sword2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sword2.png; sourceTree = "<group>"; };
+		A4AE568A19ED58DE00091D73 /* Sword3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Sword3.jpg; sourceTree = "<group>"; };
+		A4AE568B19ED58DE00091D73 /* Sword4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sword4.png; sourceTree = "<group>"; };
+		A4AE568C19ED58DE00091D73 /* Taylor Swift - Shake It Off.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Taylor Swift - Shake It Off.mp3"; sourceTree = "<group>"; };
+		A4AE568D19ED58DE00091D73 /* up_arrow_sign.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = up_arrow_sign.png; sourceTree = "<group>"; };
+		A4AE568E19ED58DE00091D73 /* upArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = upArrow.png; sourceTree = "<group>"; };
+		A4AE568F19ED58DE00091D73 /* Vanity1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Vanity1.png; sourceTree = "<group>"; };
+		A4AE569019ED58DE00091D73 /* Vanity2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Vanity2.jpg; sourceTree = "<group>"; };
+		A4AE569119ED58DE00091D73 /* Vanity3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Vanity3.png; sourceTree = "<group>"; };
+		A4AE569219ED58DE00091D73 /* Vanity4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Vanity4.jpg; sourceTree = "<group>"; };
+		A4AE569319ED58DE00091D73 /* Wizard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Wizard.png; sourceTree = "<group>"; };
 		B74FB1BD19987BD9000F722B /* Space Scout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Space Scout.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B74FB1C019987BD9000F722B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B74FB1C219987BD9000F722B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -235,6 +260,8 @@
 				B7E12C8E1999A6CE00C74BDF /* SpaceScoutPlayer.m */,
 				B74FB1DA19987BD9000F722B /* SpaceScoutMyScene.h */,
 				B74FB1DB19987BD9000F722B /* SpaceScoutMyScene.m */,
+				A4AE566F19ED57EC00091D73 /* Joystick.h */,
+				A4AE567019ED57EC00091D73 /* Joystick.m */,
 				B74FB1C919987BD9000F722B /* Supporting Files */,
 			);
 			path = "Space Scout";
@@ -276,29 +303,40 @@
 		CB1966AB19A458E500BF33C7 /* Images/music */ = {
 			isa = PBXGroup;
 			children = (
-				A4689DAE19C714E700BA3207 /* Taylor Swift - Shake It Off.mp3 */,
-				A4689DAC19C712DC00BA3207 /* Aaron Smith - Dancin (KRONO Remix).mp3 */,
-				A49A252E19B355CE004144D1 /* 9ipe7bbkT.gif */,
-				A49A252F19B355CE004144D1 /* 500px-Aiga_leftarrow_inv.svg.png */,
-				A49A253019B355CE004144D1 /* aiga_up_arrow_bg.png */,
-				A49A253119B355CE004144D1 /* down-arrow-inv.jpg */,
-				A49A253219B355CE004144D1 /* downArrow.png */,
-				A49A253319B355CE004144D1 /* Planet_3.png */,
-				A49A253419B355CE004144D1 /* Planet_4.png */,
-				A49A253519B355CE004144D1 /* shuttle_0.png */,
-				A49A253619B355CE004144D1 /* Spaceship_2.png */,
-				A49A253719B355CE004144D1 /* Spaceship-1.png */,
-				A49A253819B355CE004144D1 /* Sword1.jpeg */,
-				A49A253919B355CE004144D1 /* Sword2.png */,
-				A49A253A19B355CE004144D1 /* Sword3.jpg */,
-				A49A253B19B355CE004144D1 /* Sword4.png */,
-				A49A253C19B355CE004144D1 /* up_arrow_sign.png */,
-				A49A253D19B355CE004144D1 /* upArrow.png */,
-				A49A253E19B355CE004144D1 /* Vanity1.png */,
-				A49A253F19B355CE004144D1 /* Vanity2.jpg */,
-				A49A254019B355CE004144D1 /* Vanity3.png */,
-				A49A254119B355CE004144D1 /* Vanity4.jpg */,
-				A49A254219B355CE004144D1 /* Wizard.png */,
+				A4AE567219ED58DE00091D73 /* 9ipe7bbkT.gif */,
+				A4AE567319ED58DE00091D73 /* 500px-Aiga_leftarrow_inv.svg.png */,
+				A4AE567419ED58DE00091D73 /* Aaron Smith - Dancin (KRONO Remix).mp3 */,
+				A4AE567519ED58DE00091D73 /* aiga_up_arrow_bg.png */,
+				A4AE567619ED58DE00091D73 /* Collect_Button.png */,
+				A4AE567719ED58DE00091D73 /* darkScreen.png */,
+				A4AE567819ED58DE00091D73 /* down-arrow-inv.jpg */,
+				A4AE567919ED58DE00091D73 /* downArrow.png */,
+				A4AE567A19ED58DE00091D73 /* dpad.png */,
+				A4AE567B19ED58DE00091D73 /* EXPLOSION.atlas */,
+				A4AE567C19ED58DE00091D73 /* FLAME TRAIL.png */,
+				A4AE567D19ED58DE00091D73 /* joystick.png */,
+				A4AE567E19ED58DE00091D73 /* Laser.png */,
+				A4AE567F19ED58DE00091D73 /* Orion-nebula-viewed-by-WISE.jpg */,
+				A4AE568019ED58DE00091D73 /* pauseButton.png */,
+				A4AE568119ED58DE00091D73 /* Planet_3.png */,
+				A4AE568219ED58DE00091D73 /* Planet_4.png */,
+				A4AE568319ED58DE00091D73 /* resumeButton.png */,
+				A4AE568419ED58DE00091D73 /* shuttle_0.png */,
+				A4AE568519ED58DE00091D73 /* Spaceship_2.png */,
+				A4AE568619ED58DE00091D73 /* Spaceship_3.png */,
+				A4AE568719ED58DE00091D73 /* Spaceship-1.png */,
+				A4AE568819ED58DE00091D73 /* Sword1.jpeg */,
+				A4AE568919ED58DE00091D73 /* Sword2.png */,
+				A4AE568A19ED58DE00091D73 /* Sword3.jpg */,
+				A4AE568B19ED58DE00091D73 /* Sword4.png */,
+				A4AE568C19ED58DE00091D73 /* Taylor Swift - Shake It Off.mp3 */,
+				A4AE568D19ED58DE00091D73 /* up_arrow_sign.png */,
+				A4AE568E19ED58DE00091D73 /* upArrow.png */,
+				A4AE568F19ED58DE00091D73 /* Vanity1.png */,
+				A4AE569019ED58DE00091D73 /* Vanity2.jpg */,
+				A4AE569119ED58DE00091D73 /* Vanity3.png */,
+				A4AE569219ED58DE00091D73 /* Vanity4.jpg */,
+				A4AE569319ED58DE00091D73 /* Wizard.png */,
 			);
 			name = Images/music;
 			sourceTree = "<group>";
@@ -404,32 +442,43 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A49A254419B355CE004144D1 /* 500px-Aiga_leftarrow_inv.svg.png in Resources */,
-				A49A255419B355CE004144D1 /* Vanity2.jpg in Resources */,
-				A4689DAF19C714E700BA3207 /* Taylor Swift - Shake It Off.mp3 in Resources */,
-				A49A254A19B355CE004144D1 /* shuttle_0.png in Resources */,
-				A49A255319B355CE004144D1 /* Vanity1.png in Resources */,
-				A49A254C19B355CE004144D1 /* Spaceship-1.png in Resources */,
-				A49A254519B355CE004144D1 /* aiga_up_arrow_bg.png in Resources */,
-				A49A254B19B355CE004144D1 /* Spaceship_2.png in Resources */,
+				A4AE569F19ED58DE00091D73 /* joystick.png in Resources */,
+				A4AE569919ED58DE00091D73 /* darkScreen.png in Resources */,
+				A4AE569519ED58DE00091D73 /* 500px-Aiga_leftarrow_inv.svg.png in Resources */,
+				A4AE56B219ED58DE00091D73 /* Vanity2.jpg in Resources */,
+				A4AE56AC19ED58DE00091D73 /* Sword3.jpg in Resources */,
+				A4AE56A019ED58DE00091D73 /* Laser.png in Resources */,
+				A4AE56AF19ED58DE00091D73 /* up_arrow_sign.png in Resources */,
 				B74FB1CD19987BD9000F722B /* InfoPlist.strings in Resources */,
-				A49A255019B355CE004144D1 /* Sword4.png in Resources */,
-				A49A254719B355CE004144D1 /* downArrow.png in Resources */,
-				A49A255619B355CE004144D1 /* Vanity4.jpg in Resources */,
-				A49A255519B355CE004144D1 /* Vanity3.png in Resources */,
-				A49A254819B355CE004144D1 /* Planet_3.png in Resources */,
 				B74FB1E019987BDA000F722B /* Images.xcassets in Resources */,
-				A49A254D19B355CE004144D1 /* Sword1.jpeg in Resources */,
-				A49A254319B355CE004144D1 /* 9ipe7bbkT.gif in Resources */,
-				A49A254F19B355CE004144D1 /* Sword3.jpg in Resources */,
-				A49A255119B355CE004144D1 /* up_arrow_sign.png in Resources */,
-				A4689DAD19C712DC00BA3207 /* Aaron Smith - Dancin (KRONO Remix).mp3 in Resources */,
+				A4AE56A519ED58DE00091D73 /* resumeButton.png in Resources */,
+				A4AE569B19ED58DE00091D73 /* downArrow.png in Resources */,
+				A4AE569D19ED58DE00091D73 /* EXPLOSION.atlas in Resources */,
+				A4AE56A219ED58DE00091D73 /* pauseButton.png in Resources */,
+				A4AE56B519ED58DE00091D73 /* Wizard.png in Resources */,
+				A4AE56A919ED58DE00091D73 /* Spaceship-1.png in Resources */,
+				A4AE569619ED58DE00091D73 /* Aaron Smith - Dancin (KRONO Remix).mp3 in Resources */,
+				A4AE56B019ED58DE00091D73 /* upArrow.png in Resources */,
+				A4AE569419ED58DE00091D73 /* 9ipe7bbkT.gif in Resources */,
+				A4AE56AB19ED58DE00091D73 /* Sword2.png in Resources */,
+				A4AE56A819ED58DE00091D73 /* Spaceship_3.png in Resources */,
+				A4AE56A619ED58DE00091D73 /* shuttle_0.png in Resources */,
+				A4AE56A719ED58DE00091D73 /* Spaceship_2.png in Resources */,
+				A4AE56AD19ED58DE00091D73 /* Sword4.png in Resources */,
+				A4AE569719ED58DE00091D73 /* aiga_up_arrow_bg.png in Resources */,
+				A4AE569C19ED58DE00091D73 /* dpad.png in Resources */,
+				A4AE569819ED58DE00091D73 /* Collect_Button.png in Resources */,
+				A4AE56B419ED58DE00091D73 /* Vanity4.jpg in Resources */,
+				A4AE56B319ED58DE00091D73 /* Vanity3.png in Resources */,
+				A4AE56AA19ED58DE00091D73 /* Sword1.jpeg in Resources */,
+				A4AE56B119ED58DE00091D73 /* Vanity1.png in Resources */,
+				A4AE56A119ED58DE00091D73 /* Orion-nebula-viewed-by-WISE.jpg in Resources */,
+				A4AE56AE19ED58DE00091D73 /* Taylor Swift - Shake It Off.mp3 in Resources */,
 				B74FB1D619987BD9000F722B /* Main.storyboard in Resources */,
-				A49A255219B355CE004144D1 /* upArrow.png in Resources */,
-				A49A254919B355CE004144D1 /* Planet_4.png in Resources */,
-				A49A254E19B355CE004144D1 /* Sword2.png in Resources */,
-				A49A255719B355CE004144D1 /* Wizard.png in Resources */,
-				A49A254619B355CE004144D1 /* down-arrow-inv.jpg in Resources */,
+				A4AE56A319ED58DE00091D73 /* Planet_3.png in Resources */,
+				A4AE569A19ED58DE00091D73 /* down-arrow-inv.jpg in Resources */,
+				A4AE56A419ED58DE00091D73 /* Planet_4.png in Resources */,
+				A4AE569E19ED58DE00091D73 /* FLAME TRAIL.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,6 +502,7 @@
 				CB9AEAD719BD6A8B00E65AC9 /* SpaceScoutCredit.m in Sources */,
 				CBE8CAB0199B20B200C95739 /* SpaceScoutVanityStoreViewController.m in Sources */,
 				A49A255D19B35858004144D1 /* SpaceScoutHighScore.m in Sources */,
+				A4AE567119ED57EC00091D73 /* Joystick.m in Sources */,
 				B74FB1DC19987BD9000F722B /* SpaceScoutMyScene.m in Sources */,
 				CB96441719B55726000F4590 /* SpaceScoutHighscoresViewController.m in Sources */,
 				CBE8CAAD199B209C00C95739 /* SpaceScoutWeaponsStoreViewController.m in Sources */,
@@ -544,7 +594,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -576,7 +626,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};

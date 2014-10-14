@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="HMo-y5-CnM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="HMo-y5-CnM">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -284,7 +284,7 @@
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ProductCell" textLabel="GAK-xf-Qrg" detailTextLabel="36V-kc-rlQ" style="IBUITableViewCellStyleValue1" id="2V6-Vs-qdi">
-                                <rect key="frame" x="0.0" y="66" width="568" height="44"/>
+                                <rect key="frame" x="0.0" y="22" width="568" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2V6-Vs-qdi" id="akH-qz-qX9">
                                     <rect key="frame" x="0.0" y="0.0" width="568" height="43"/>
@@ -322,10 +322,14 @@
         <!--Navigation Controller-->
         <scene sceneID="BEN-HK-fn9">
             <objects>
-                <navigationController definesPresentationContext="YES" id="HMo-y5-CnM" sceneMemberID="viewController">
+                <navigationController definesPresentationContext="YES" navigationBarHidden="YES" id="HMo-y5-CnM" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="dAY-j6-Bea">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="CjB-ha-7ct">
+                        <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="g1M-5P-C9i" kind="relationship" relationship="rootViewController" id="cXd-OQ-dCU"/>
                     </connections>
@@ -474,7 +478,7 @@
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ProductCell" textLabel="aF8-d6-JCe" detailTextLabel="yJY-gq-T4H" style="IBUITableViewCellStyleValue1" id="Iwb-B6-s0a">
-                                <rect key="frame" x="0.0" y="66" width="568" height="44"/>
+                                <rect key="frame" x="0.0" y="22" width="568" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Iwb-B6-s0a" id="vXS-xV-PYf">
                                     <rect key="frame" x="0.0" y="0.0" width="568" height="43"/>

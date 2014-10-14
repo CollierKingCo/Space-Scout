@@ -18,7 +18,7 @@
     self.lvlCap = 10;
     self.exp = 1;
     self.maxExp = self.lvl * 100;
-    self.size = CGSizeMake(32, 32);
+    self.size = CGSizeMake(16, 16);
     self.money = 10;
     self.tokens = 5;
     

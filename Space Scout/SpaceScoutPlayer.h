@@ -6,7 +6,6 @@
 //  Copyright (c) 2014 Collier King Co. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import "SpaceScoutShop.h"
 
 @interface SpaceScoutPlayer : NSObject
