@@ -14,6 +14,13 @@ typedef NS_ENUM(NSInteger, HighscoreType) {
     HighscoreTypeAwesomness3,
     HighscoreTypeAwesomness4,
     HighscoreTypeAwesomness5,
+    HighscoreTypeAwesomness6,
+    HighscoreTypeAwesomness7,
+    HighscoreTypeAwesomness8,
+    HighscoreTypeAwesomness9,
+    HighscoreTypeAwesomness10,
+    HighscoreTypeAwesomness11,
+    HighscoreTypeAwesomness12,
 };
 
 @interface SpaceScoutHighScore : NSObject

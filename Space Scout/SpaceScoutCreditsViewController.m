@@ -10,6 +10,7 @@
 #import "SpaceScoutCredits.h"
 #import "SpaceScoutCreditsAmount.h"
 #import "SpaceScoutCredit.h"
+#import "SpaceScoutCreditCell.h"
 
 @interface SpaceScoutCreditsViewController ()
 @property (nonatomic) SpaceScoutCredits *credits;
@@ -35,18 +36,16 @@
     return [tempArray count];
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView
-         cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     NSArray * tempArray = self.credits.allCredits;
     SpaceScoutCredit *credit = [tempArray objectAtIndex:indexPath.row];
+    SpaceScoutCreditCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ProductCell" forIndexPath:indexPath];
     
-    UITableViewCell *cell = [tableView
-                             dequeueReusableCellWithIdentifier:@"ProductCell"
-                             forIndexPath:indexPath];
     
     //SpaceScoutCredits *s = [self.products.allCredits objectAtIndex:indexPath.row];
-        cell.textLabel.text = [NSString stringWithFormat:@"%@", credit.credit];
-        cell.detailTextLabel.text = [NSString stringWithFormat:@"%@", credit.whoGotCredit];
+        cell.creditAchievmentLabel.text = [NSString stringWithFormat:@"%@", credit.credit];
+        cell.creditAwardedTooLabel.text = [NSString stringWithFormat:@"%@", credit.whoGotCredit];
+    cell.creditBackgroundImage.image = [UIImage imageNamed:@"background-hd.png"];
     
     return cell;
 }
