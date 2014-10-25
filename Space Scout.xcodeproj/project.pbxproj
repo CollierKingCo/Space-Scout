@@ -11,13 +11,9 @@
 		A4672D1D19FB657900150AB1 /* cool-design-wallpapers-high-definition-wallpaper_space-wallpaper-backgrounds-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4672D1C19FB657900150AB1 /* cool-design-wallpapers-high-definition-wallpaper_space-wallpaper-backgrounds-1.jpg */; };
 		A49A255D19B35858004144D1 /* SpaceScoutHighScore.m in Sources */ = {isa = PBXBuildFile; fileRef = A49A255C19B35858004144D1 /* SpaceScoutHighScore.m */; };
 		A4AE567119ED57EC00091D73 /* Joystick.m in Sources */ = {isa = PBXBuildFile; fileRef = A4AE567019ED57EC00091D73 /* Joystick.m */; };
-		A4AE569519ED58DE00091D73 /* 500px-Aiga_leftarrow_inv.svg.png in Resources */ = {isa = PBXBuildFile; fileRef = A4AE567319ED58DE00091D73 /* 500px-Aiga_leftarrow_inv.svg.png */; };
 		A4AE569619ED58DE00091D73 /* Aaron Smith - Dancin (KRONO Remix).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A4AE567419ED58DE00091D73 /* Aaron Smith - Dancin (KRONO Remix).mp3 */; };
-		A4AE569719ED58DE00091D73 /* aiga_up_arrow_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = A4AE567519ED58DE00091D73 /* aiga_up_arrow_bg.png */; };
 		A4AE569819ED58DE00091D73 /* Collect_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = A4AE567619ED58DE00091D73 /* Collect_Button.png */; };
 		A4AE569919ED58DE00091D73 /* darkScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = A4AE567719ED58DE00091D73 /* darkScreen.png */; };
-		A4AE569A19ED58DE00091D73 /* down-arrow-inv.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4AE567819ED58DE00091D73 /* down-arrow-inv.jpg */; };
-		A4AE569B19ED58DE00091D73 /* downArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = A4AE567919ED58DE00091D73 /* downArrow.png */; };
 		A4AE569C19ED58DE00091D73 /* dpad.png in Resources */ = {isa = PBXBuildFile; fileRef = A4AE567A19ED58DE00091D73 /* dpad.png */; };
 		A4AE569D19ED58DE00091D73 /* EXPLOSION.atlas in Resources */ = {isa = PBXBuildFile; fileRef = A4AE567B19ED58DE00091D73 /* EXPLOSION.atlas */; };
 		A4AE569E19ED58DE00091D73 /* FLAME TRAIL.png in Resources */ = {isa = PBXBuildFile; fileRef = A4AE567C19ED58DE00091D73 /* FLAME TRAIL.png */; };
@@ -37,13 +33,10 @@
 		A4AE56AC19ED58DE00091D73 /* Sword3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4AE568A19ED58DE00091D73 /* Sword3.jpg */; };
 		A4AE56AD19ED58DE00091D73 /* Sword4.png in Resources */ = {isa = PBXBuildFile; fileRef = A4AE568B19ED58DE00091D73 /* Sword4.png */; };
 		A4AE56AE19ED58DE00091D73 /* Taylor Swift - Shake It Off.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A4AE568C19ED58DE00091D73 /* Taylor Swift - Shake It Off.mp3 */; };
-		A4AE56AF19ED58DE00091D73 /* up_arrow_sign.png in Resources */ = {isa = PBXBuildFile; fileRef = A4AE568D19ED58DE00091D73 /* up_arrow_sign.png */; };
-		A4AE56B019ED58DE00091D73 /* upArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = A4AE568E19ED58DE00091D73 /* upArrow.png */; };
 		A4AE56B119ED58DE00091D73 /* Vanity1.png in Resources */ = {isa = PBXBuildFile; fileRef = A4AE568F19ED58DE00091D73 /* Vanity1.png */; };
 		A4AE56B219ED58DE00091D73 /* Vanity2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4AE569019ED58DE00091D73 /* Vanity2.jpg */; };
 		A4AE56B319ED58DE00091D73 /* Vanity3.png in Resources */ = {isa = PBXBuildFile; fileRef = A4AE569119ED58DE00091D73 /* Vanity3.png */; };
 		A4AE56B419ED58DE00091D73 /* Vanity4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4AE569219ED58DE00091D73 /* Vanity4.jpg */; };
-		A4AE56B519ED58DE00091D73 /* Wizard.png in Resources */ = {isa = PBXBuildFile; fileRef = A4AE569319ED58DE00091D73 /* Wizard.png */; };
 		B74FB1C119987BD9000F722B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B74FB1C019987BD9000F722B /* Foundation.framework */; };
 		B74FB1C319987BD9000F722B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B74FB1C219987BD9000F722B /* CoreGraphics.framework */; };
 		B74FB1C519987BD9000F722B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B74FB1C419987BD9000F722B /* UIKit.framework */; };
@@ -94,13 +87,9 @@
 		A49A255C19B35858004144D1 /* SpaceScoutHighScore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpaceScoutHighScore.m; sourceTree = "<group>"; };
 		A4AE566F19ED57EC00091D73 /* Joystick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Joystick.h; sourceTree = "<group>"; };
 		A4AE567019ED57EC00091D73 /* Joystick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Joystick.m; sourceTree = "<group>"; };
-		A4AE567319ED58DE00091D73 /* 500px-Aiga_leftarrow_inv.svg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "500px-Aiga_leftarrow_inv.svg.png"; sourceTree = "<group>"; };
 		A4AE567419ED58DE00091D73 /* Aaron Smith - Dancin (KRONO Remix).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Aaron Smith - Dancin (KRONO Remix).mp3"; sourceTree = "<group>"; };
-		A4AE567519ED58DE00091D73 /* aiga_up_arrow_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aiga_up_arrow_bg.png; sourceTree = "<group>"; };
 		A4AE567619ED58DE00091D73 /* Collect_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Collect_Button.png; sourceTree = "<group>"; };
 		A4AE567719ED58DE00091D73 /* darkScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = darkScreen.png; sourceTree = "<group>"; };
-		A4AE567819ED58DE00091D73 /* down-arrow-inv.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "down-arrow-inv.jpg"; sourceTree = "<group>"; };
-		A4AE567919ED58DE00091D73 /* downArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = downArrow.png; sourceTree = "<group>"; };
 		A4AE567A19ED58DE00091D73 /* dpad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dpad.png; sourceTree = "<group>"; };
 		A4AE567B19ED58DE00091D73 /* EXPLOSION.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = EXPLOSION.atlas; sourceTree = "<group>"; };
 		A4AE567C19ED58DE00091D73 /* FLAME TRAIL.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FLAME TRAIL.png"; sourceTree = "<group>"; };
@@ -120,13 +109,10 @@
 		A4AE568A19ED58DE00091D73 /* Sword3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Sword3.jpg; sourceTree = "<group>"; };
 		A4AE568B19ED58DE00091D73 /* Sword4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sword4.png; sourceTree = "<group>"; };
 		A4AE568C19ED58DE00091D73 /* Taylor Swift - Shake It Off.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Taylor Swift - Shake It Off.mp3"; sourceTree = "<group>"; };
-		A4AE568D19ED58DE00091D73 /* up_arrow_sign.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = up_arrow_sign.png; sourceTree = "<group>"; };
-		A4AE568E19ED58DE00091D73 /* upArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = upArrow.png; sourceTree = "<group>"; };
 		A4AE568F19ED58DE00091D73 /* Vanity1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Vanity1.png; sourceTree = "<group>"; };
 		A4AE569019ED58DE00091D73 /* Vanity2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Vanity2.jpg; sourceTree = "<group>"; };
 		A4AE569119ED58DE00091D73 /* Vanity3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Vanity3.png; sourceTree = "<group>"; };
 		A4AE569219ED58DE00091D73 /* Vanity4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Vanity4.jpg; sourceTree = "<group>"; };
-		A4AE569319ED58DE00091D73 /* Wizard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Wizard.png; sourceTree = "<group>"; };
 		B74FB1BD19987BD9000F722B /* Space Scout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Space Scout.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B74FB1C019987BD9000F722B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B74FB1C219987BD9000F722B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -326,13 +312,9 @@
 				CB1AFFC119F76C5200C45B09 /* Abstract-Light.jpg */,
 				CB1AFFBF19F76A6900C45B09 /* WallpaperHigh.jpg */,
 				CB1AFFBA19F7661200C45B09 /* background-hd.png */,
-				A4AE567319ED58DE00091D73 /* 500px-Aiga_leftarrow_inv.svg.png */,
 				A4AE567419ED58DE00091D73 /* Aaron Smith - Dancin (KRONO Remix).mp3 */,
-				A4AE567519ED58DE00091D73 /* aiga_up_arrow_bg.png */,
 				A4AE567619ED58DE00091D73 /* Collect_Button.png */,
 				A4AE567719ED58DE00091D73 /* darkScreen.png */,
-				A4AE567819ED58DE00091D73 /* down-arrow-inv.jpg */,
-				A4AE567919ED58DE00091D73 /* downArrow.png */,
 				A4AE567A19ED58DE00091D73 /* dpad.png */,
 				A4AE567B19ED58DE00091D73 /* EXPLOSION.atlas */,
 				A4AE567C19ED58DE00091D73 /* FLAME TRAIL.png */,
@@ -352,13 +334,10 @@
 				A4AE568A19ED58DE00091D73 /* Sword3.jpg */,
 				A4AE568B19ED58DE00091D73 /* Sword4.png */,
 				A4AE568C19ED58DE00091D73 /* Taylor Swift - Shake It Off.mp3 */,
-				A4AE568D19ED58DE00091D73 /* up_arrow_sign.png */,
-				A4AE568E19ED58DE00091D73 /* upArrow.png */,
 				A4AE568F19ED58DE00091D73 /* Vanity1.png */,
 				A4AE569019ED58DE00091D73 /* Vanity2.jpg */,
 				A4AE569119ED58DE00091D73 /* Vanity3.png */,
 				A4AE569219ED58DE00091D73 /* Vanity4.jpg */,
-				A4AE569319ED58DE00091D73 /* Wizard.png */,
 			);
 			name = Images/music;
 			sourceTree = "<group>";
@@ -466,30 +445,24 @@
 			files = (
 				A4AE569F19ED58DE00091D73 /* joystick.png in Resources */,
 				A4AE569919ED58DE00091D73 /* darkScreen.png in Resources */,
-				A4AE569519ED58DE00091D73 /* 500px-Aiga_leftarrow_inv.svg.png in Resources */,
 				A4AE56B219ED58DE00091D73 /* Vanity2.jpg in Resources */,
 				A4AE56AC19ED58DE00091D73 /* Sword3.jpg in Resources */,
 				A4AE56A019ED58DE00091D73 /* Laser.png in Resources */,
-				A4AE56AF19ED58DE00091D73 /* up_arrow_sign.png in Resources */,
 				B74FB1CD19987BD9000F722B /* InfoPlist.strings in Resources */,
 				B74FB1E019987BDA000F722B /* Images.xcassets in Resources */,
 				A4AE56A519ED58DE00091D73 /* resumeButton.png in Resources */,
 				CB1AFFC219F76C5200C45B09 /* Abstract-Light.jpg in Resources */,
-				A4AE569B19ED58DE00091D73 /* downArrow.png in Resources */,
 				CB1AFFC019F76A6900C45B09 /* WallpaperHigh.jpg in Resources */,
 				A4AE569D19ED58DE00091D73 /* EXPLOSION.atlas in Resources */,
 				A4672D1B19FB397300150AB1 /* hd-wallpapers-space-real-images-6.jpg in Resources */,
 				A4AE56A219ED58DE00091D73 /* pauseButton.png in Resources */,
-				A4AE56B519ED58DE00091D73 /* Wizard.png in Resources */,
 				A4AE56A919ED58DE00091D73 /* Spaceship-1.png in Resources */,
 				A4AE569619ED58DE00091D73 /* Aaron Smith - Dancin (KRONO Remix).mp3 in Resources */,
-				A4AE56B019ED58DE00091D73 /* upArrow.png in Resources */,
 				A4AE56AB19ED58DE00091D73 /* Sword2.png in Resources */,
 				A4AE56A819ED58DE00091D73 /* Spaceship_3.png in Resources */,
 				A4AE56A619ED58DE00091D73 /* shuttle_0.png in Resources */,
 				A4AE56A719ED58DE00091D73 /* Spaceship_2.png in Resources */,
 				A4AE56AD19ED58DE00091D73 /* Sword4.png in Resources */,
-				A4AE569719ED58DE00091D73 /* aiga_up_arrow_bg.png in Resources */,
 				A4672D1D19FB657900150AB1 /* cool-design-wallpapers-high-definition-wallpaper_space-wallpaper-backgrounds-1.jpg in Resources */,
 				A4AE569C19ED58DE00091D73 /* dpad.png in Resources */,
 				A4AE569819ED58DE00091D73 /* Collect_Button.png in Resources */,
@@ -502,7 +475,6 @@
 				A4AE56AE19ED58DE00091D73 /* Taylor Swift - Shake It Off.mp3 in Resources */,
 				B74FB1D619987BD9000F722B /* Main.storyboard in Resources */,
 				A4AE56A319ED58DE00091D73 /* Planet_3.png in Resources */,
-				A4AE569A19ED58DE00091D73 /* down-arrow-inv.jpg in Resources */,
 				A4AE56A419ED58DE00091D73 /* Planet_4.png in Resources */,
 				A4AE569E19ED58DE00091D73 /* FLAME TRAIL.png in Resources */,
 			);

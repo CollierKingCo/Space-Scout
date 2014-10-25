@@ -88,8 +88,12 @@
     return _whoDidQuotes;
 }
 - (void) updateAllOutlets {
+    if (self.player.tokens <= 1) {
+        self.playerTokens.text = [NSString stringWithFormat:@"Token: %d", self.player.tokens];
+    } else {
+        self.playerTokens.text = [NSString stringWithFormat:@"Tokens: %d", self.player.tokens];
+    }
     self.playerMoney.text = [NSString stringWithFormat:@"Money: %d", self.player.money ];
-    self.playerTokens.text = [NSString stringWithFormat:@"Tokens: %d",self.player.tokens];
     
     self.counter += 1;
     if (self.counter >= [self.quotes count]) {
