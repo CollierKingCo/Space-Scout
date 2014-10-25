@@ -59,7 +59,7 @@
         [_quotes addObject:@"It is not becuase things are difficult that we do not dare; it is because we do not dare that things are difficult."];
         [_quotes addObject:@"First they ignore you. Then they laugh at you. Then they fight you. Then you win."];
         [_quotes addObject:@"When you can't change the direction of the wind - adjust your sails."];
-        [_quotes addObject:@"Our greates weakness lies in giving up. The most certain way to succeed is always to try just one more time."];
+        [_quotes addObject:@"Our greatest weakness lies in giving up. The most certain way to succeed is always to try just one more time."];
         [_quotes addObject:@"If."];
         [_quotes addObject:@"If you can dream it, you can do it."];
         [_quotes addObject:@"Don't watch the clock; do what it does. Kepp going."];

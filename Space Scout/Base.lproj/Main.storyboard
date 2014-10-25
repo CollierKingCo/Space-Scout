@@ -17,65 +17,90 @@
                         <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uDZ-YB-uCM">
-                                <rect key="frame" x="483" y="145" width="30" height="30"/>
-                                <state key="normal" title="}">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="NextWeaponButttonPressed:" destination="wn1-Nh-5eW" eventType="touchUpInside" id="xK9-Fn-nNs"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P9h-Cy-Bsl">
-                                <rect key="frame" x="47" y="145" width="30" height="30"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cool-design-wallpapers-high-definition-wallpaper_space-wallpaper-backgrounds-1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="GpS-Yx-obY">
+                                <rect key="frame" x="-37" y="20" width="605" height="320"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dbj-wf-UDZ">
+                                <rect key="frame" x="51" y="132" width="26" height="56"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="45"/>
+                                <size key="titleShadowOffset" width="-2" height="0.0"/>
                                 <state key="normal" title="{">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="PreviousWeaponButtonPressed:" destination="wn1-Nh-5eW" eventType="touchUpInside" id="Yr3-Hh-IXs"/>
+                                    <action selector="PreviousWeaponButtonPressed:" destination="wn1-Nh-5eW" eventType="touchUpInside" id="Lze-sE-1wi"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ko5-lf-uv4">
-                                <rect key="frame" x="269" y="231" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bFa-1b-dxb">
+                                <rect key="frame" x="261" y="237" width="47" height="30"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="21"/>
+                                <size key="titleShadowOffset" width="0.0" height="1"/>
                                 <state key="normal" title="Buy">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="BuyButtonPressed:" destination="wn1-Nh-5eW" eventType="touchUpInside" id="5Ub-UA-6uO"/>
+                                    <action selector="BuyButtonPressed:" destination="wn1-Nh-5eW" eventType="touchUpInside" id="QGa-Tb-j9y"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Item Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cqa-fx-EFA">
-                                <rect key="frame" x="51" y="58" width="466" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Item Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JUe-IK-KAY">
+                                <rect key="frame" x="51" y="52" width="466" height="21"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="23"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="0.0" height="-2"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jVk-sl-Yp1">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k8c-jD-qod">
                                 <rect key="frame" x="264" y="223" width="40" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="0.0" height="2"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Money" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DaV-2q-HXC">
-                                <rect key="frame" x="456" y="235" width="92" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="highlightedColor"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Money" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MFt-XS-s06">
+                                <rect key="frame" x="400" y="237" width="152" height="21"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="1" height="0.0"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your tokens" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d6c-QR-VEI">
-                                <rect key="frame" x="47" y="235" width="91" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="highlightedColor"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your tokens" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pew-Gs-iRv">
+                                <rect key="frame" x="16" y="237" width="147" height="21"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="-1" height="0.0"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OBU-TR-oLZ">
-                                <rect key="frame" x="164" y="87" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R03-q4-bwj"/>
+                            <imageView userInteractionEnabled="NO" alpha="0.75" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S8G-xq-I3O"/>
+                            <imageView userInteractionEnabled="NO" alpha="0.75" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lGf-wX-8QZ"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UTR-PC-7cw">
+                                <rect key="frame" x="487" y="136" width="30" height="48"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="45"/>
+                                <size key="titleShadowOffset" width="2" height="0.0"/>
+                                <state key="normal" title="}">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="NextWeaponButttonPressed:" destination="wn1-Nh-5eW" eventType="touchUpInside" id="bE3-c9-MFA"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" alpha="0.69999999999999973" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Planet_3.png" translatesAutoresizingMaskIntoConstraints="NO" id="r5s-7B-Tz1">
+                                <rect key="frame" x="354" y="123" width="127" height="73"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" alpha="0.74999999999999978" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PXC-fT-5Vq">
-                                <rect key="frame" x="85" y="129" width="81" height="43"/>
+                            <imageView userInteractionEnabled="NO" alpha="0.69999999999999973" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Planet_3.png" translatesAutoresizingMaskIntoConstraints="NO" id="2fa-s3-Niy">
+                                <rect key="frame" x="85" y="123" width="127" height="73"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" alpha="0.74999999999999978" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zbn-qc-slC">
-                                <rect key="frame" x="403" y="129" width="81" height="43"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Spaceship-1.png" translatesAutoresizingMaskIntoConstraints="NO" id="buj-nl-g1F">
+                                <rect key="frame" x="164" y="96" width="240" height="128"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1E0-kA-eNU">
-                                <rect key="frame" x="169" y="110" width="235" height="81"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ukO-tW-4Qn">
+                                <rect key="frame" x="167" y="115" width="235" height="81"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="60"/>
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -83,31 +108,31 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Weapons" id="q1T-l3-1Zy"/>
+                    <tabBarItem key="tabBarItem" title="Weapons" image="Spaceship-1.png" badgeValue="1" id="q1T-l3-1Zy"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
-                        <outlet property="CurrentWeaponImage" destination="OBU-TR-oLZ" id="j7G-rZ-H2L"/>
-                        <outlet property="NextWeaponButton" destination="uDZ-YB-uCM" id="Qtc-s2-Fo6"/>
-                        <outlet property="NextWeaponImage" destination="Zbn-qc-slC" id="wAm-5d-MdL"/>
-                        <outlet property="PlayerMoneyLabel" destination="DaV-2q-HXC" id="Fui-B5-Vwf"/>
-                        <outlet property="PlayerTokensLabel" destination="d6c-QR-VEI" id="uK7-4x-8Af"/>
-                        <outlet property="PreviousWeaponButton" destination="P9h-Cy-Bsl" id="uTY-CH-ecJ"/>
-                        <outlet property="PreviousWeaponImage" destination="PXC-fT-5Vq" id="zDQ-on-uB0"/>
-                        <outlet property="PriceWeaponLabel" destination="jVk-sl-Yp1" id="w36-Wf-cNS"/>
-                        <outlet property="WeaponNameLabel" destination="cqa-fx-EFA" id="dCt-89-fvR"/>
-                        <outlet property="boughtWeaponLabel" destination="1E0-kA-eNU" id="58O-fS-QKl"/>
-                        <outlet property="buyButton" destination="Ko5-lf-uv4" id="7eQ-7K-bxF"/>
+                        <outlet property="CurrentWeaponImage" destination="buj-nl-g1F" id="Ozn-n4-YLH"/>
+                        <outlet property="NextWeaponButton" destination="UTR-PC-7cw" id="x7s-bp-Wzx"/>
+                        <outlet property="NextWeaponImage" destination="r5s-7B-Tz1" id="JJp-2c-lMA"/>
+                        <outlet property="PlayerMoneyLabel" destination="MFt-XS-s06" id="DLU-X4-DL3"/>
+                        <outlet property="PlayerTokensLabel" destination="Pew-Gs-iRv" id="kn4-4C-z4L"/>
+                        <outlet property="PreviousWeaponButton" destination="Dbj-wf-UDZ" id="xiz-te-3cO"/>
+                        <outlet property="PreviousWeaponImage" destination="2fa-s3-Niy" id="mMw-lN-uCr"/>
+                        <outlet property="PriceWeaponLabel" destination="k8c-jD-qod" id="CnM-HG-HfS"/>
+                        <outlet property="WeaponNameLabel" destination="JUe-IK-KAY" id="3iE-EJ-H2I"/>
+                        <outlet property="boughtWeaponLabel" destination="ukO-tW-4Qn" id="ybJ-2w-BaE"/>
+                        <outlet property="buyButton" destination="bFa-1b-dxb" id="oRE-Cq-tSn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U04-it-wg1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1666" y="-444"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Shop-->
         <scene sceneID="TpM-Dx-63Q">
             <objects>
                 <tabBarController definesPresentationContext="YES" id="Fhy-XS-vHK" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="x26-hl-SnV"/>
+                    <navigationItem key="navigationItem" title="Shop" id="x26-hl-SnV"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="LrR-41-kN0">
@@ -143,15 +168,6 @@
                                 </state>
                                 <connections>
                                     <action selector="NextVanityButttonPressed:" destination="v1T-Bv-Ke5" eventType="touchUpInside" id="5yb-Cv-nF6"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pct-BF-ieu">
-                                <rect key="frame" x="47" y="145" width="30" height="30"/>
-                                <state key="normal" title="{">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="PreviousVanityButtonPressed:" destination="v1T-Bv-Ke5" eventType="touchUpInside" id="8NA-wd-6Kk"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TGR-sq-xtE">
@@ -205,6 +221,15 @@
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pct-BF-ieu">
+                                <rect key="frame" x="47" y="145" width="30" height="30"/>
+                                <state key="normal" title="{">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="PreviousVanityButtonPressed:" destination="v1T-Bv-Ke5" eventType="touchUpInside" id="8NA-wd-6Kk"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -307,12 +332,13 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="309-8k-htb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="875" y="1154"/>
+            <point key="canvasLocation" x="875" y="1164"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="BEN-HK-fn9">
             <objects>
                 <navigationController definesPresentationContext="YES" id="HMo-y5-CnM" sceneMemberID="viewController">
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="dAY-j6-Bea">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -326,7 +352,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="we2-50-Yv1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-492" y="186"/>
+            <point key="canvasLocation" x="94" y="-216"/>
         </scene>
         <!--Home Page-->
         <scene sceneID="BsH-Xp-uAL">
@@ -364,7 +390,7 @@
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="FPl-ME-PoL" kind="push" id="WcY-tM-Vyo"/>
+                                    <segue destination="p0C-YS-tU2" kind="push" id="qXq-Fq-HQ8"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9u2-q6-eeC">
@@ -375,7 +401,7 @@
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="p0C-YS-tU2" kind="push" id="Zab-Qr-OHG"/>
+                                    <segue destination="FPl-ME-PoL" kind="push" id="KYt-gC-dwn"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Money" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qQB-Bl-t2M">
@@ -444,8 +470,8 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="---" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LQB-GA-FVd">
                                 <rect key="frame" x="181" y="90" width="207" height="82"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="19"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -522,10 +548,13 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L9t-8o-Xz3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="875" y="699"/>
+            <point key="canvasLocation" x="875" y="749"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Planet_3.png" width="640" height="640"/>
+        <image name="Spaceship-1.png" width="32" height="32"/>
+        <image name="cool-design-wallpapers-high-definition-wallpaper_space-wallpaper-backgrounds-1.jpg" width="1600" height="1200"/>
         <image name="hd-wallpapers-space-real-images-6.jpg" width="1280" height="688"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

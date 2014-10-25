@@ -57,7 +57,7 @@
         highscore.highscore = @"Best coder";
         highscore.whoGotHighscore = @"Felix King";
     }
-    else if (type == HighscoreTypeAwesomness11) {
+    else if (type == HighscoreTypeAwesomness12) {
         highscore.highscore = @"Actual best coder";
         highscore.whoGotHighscore = @"Josh Collier";
     }

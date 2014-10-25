@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		A4672D1B19FB397300150AB1 /* hd-wallpapers-space-real-images-6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4672D1A19FB397300150AB1 /* hd-wallpapers-space-real-images-6.jpg */; };
+		A4672D1D19FB657900150AB1 /* cool-design-wallpapers-high-definition-wallpaper_space-wallpaper-backgrounds-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4672D1C19FB657900150AB1 /* cool-design-wallpapers-high-definition-wallpaper_space-wallpaper-backgrounds-1.jpg */; };
 		A49A255D19B35858004144D1 /* SpaceScoutHighScore.m in Sources */ = {isa = PBXBuildFile; fileRef = A49A255C19B35858004144D1 /* SpaceScoutHighScore.m */; };
 		A4AE567119ED57EC00091D73 /* Joystick.m in Sources */ = {isa = PBXBuildFile; fileRef = A4AE567019ED57EC00091D73 /* Joystick.m */; };
-		A4AE569419ED58DE00091D73 /* 9ipe7bbkT.gif in Resources */ = {isa = PBXBuildFile; fileRef = A4AE567219ED58DE00091D73 /* 9ipe7bbkT.gif */; };
 		A4AE569519ED58DE00091D73 /* 500px-Aiga_leftarrow_inv.svg.png in Resources */ = {isa = PBXBuildFile; fileRef = A4AE567319ED58DE00091D73 /* 500px-Aiga_leftarrow_inv.svg.png */; };
 		A4AE569619ED58DE00091D73 /* Aaron Smith - Dancin (KRONO Remix).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A4AE567419ED58DE00091D73 /* Aaron Smith - Dancin (KRONO Remix).mp3 */; };
 		A4AE569719ED58DE00091D73 /* aiga_up_arrow_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = A4AE567519ED58DE00091D73 /* aiga_up_arrow_bg.png */; };
@@ -89,11 +89,11 @@
 
 /* Begin PBXFileReference section */
 		A4672D1A19FB397300150AB1 /* hd-wallpapers-space-real-images-6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "hd-wallpapers-space-real-images-6.jpg"; sourceTree = "<group>"; };
+		A4672D1C19FB657900150AB1 /* cool-design-wallpapers-high-definition-wallpaper_space-wallpaper-backgrounds-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "cool-design-wallpapers-high-definition-wallpaper_space-wallpaper-backgrounds-1.jpg"; sourceTree = "<group>"; };
 		A49A255B19B35858004144D1 /* SpaceScoutHighScore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpaceScoutHighScore.h; sourceTree = "<group>"; };
 		A49A255C19B35858004144D1 /* SpaceScoutHighScore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpaceScoutHighScore.m; sourceTree = "<group>"; };
 		A4AE566F19ED57EC00091D73 /* Joystick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Joystick.h; sourceTree = "<group>"; };
 		A4AE567019ED57EC00091D73 /* Joystick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Joystick.m; sourceTree = "<group>"; };
-		A4AE567219ED58DE00091D73 /* 9ipe7bbkT.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 9ipe7bbkT.gif; sourceTree = "<group>"; };
 		A4AE567319ED58DE00091D73 /* 500px-Aiga_leftarrow_inv.svg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "500px-Aiga_leftarrow_inv.svg.png"; sourceTree = "<group>"; };
 		A4AE567419ED58DE00091D73 /* Aaron Smith - Dancin (KRONO Remix).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Aaron Smith - Dancin (KRONO Remix).mp3"; sourceTree = "<group>"; };
 		A4AE567519ED58DE00091D73 /* aiga_up_arrow_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aiga_up_arrow_bg.png; sourceTree = "<group>"; };
@@ -321,11 +321,11 @@
 		CB1966AB19A458E500BF33C7 /* Images/music */ = {
 			isa = PBXGroup;
 			children = (
+				A4672D1C19FB657900150AB1 /* cool-design-wallpapers-high-definition-wallpaper_space-wallpaper-backgrounds-1.jpg */,
 				A4672D1A19FB397300150AB1 /* hd-wallpapers-space-real-images-6.jpg */,
 				CB1AFFC119F76C5200C45B09 /* Abstract-Light.jpg */,
 				CB1AFFBF19F76A6900C45B09 /* WallpaperHigh.jpg */,
 				CB1AFFBA19F7661200C45B09 /* background-hd.png */,
-				A4AE567219ED58DE00091D73 /* 9ipe7bbkT.gif */,
 				A4AE567319ED58DE00091D73 /* 500px-Aiga_leftarrow_inv.svg.png */,
 				A4AE567419ED58DE00091D73 /* Aaron Smith - Dancin (KRONO Remix).mp3 */,
 				A4AE567519ED58DE00091D73 /* aiga_up_arrow_bg.png */,
@@ -484,13 +484,13 @@
 				A4AE56A919ED58DE00091D73 /* Spaceship-1.png in Resources */,
 				A4AE569619ED58DE00091D73 /* Aaron Smith - Dancin (KRONO Remix).mp3 in Resources */,
 				A4AE56B019ED58DE00091D73 /* upArrow.png in Resources */,
-				A4AE569419ED58DE00091D73 /* 9ipe7bbkT.gif in Resources */,
 				A4AE56AB19ED58DE00091D73 /* Sword2.png in Resources */,
 				A4AE56A819ED58DE00091D73 /* Spaceship_3.png in Resources */,
 				A4AE56A619ED58DE00091D73 /* shuttle_0.png in Resources */,
 				A4AE56A719ED58DE00091D73 /* Spaceship_2.png in Resources */,
 				A4AE56AD19ED58DE00091D73 /* Sword4.png in Resources */,
 				A4AE569719ED58DE00091D73 /* aiga_up_arrow_bg.png in Resources */,
+				A4672D1D19FB657900150AB1 /* cool-design-wallpapers-high-definition-wallpaper_space-wallpaper-backgrounds-1.jpg in Resources */,
 				A4AE569C19ED58DE00091D73 /* dpad.png in Resources */,
 				A4AE569819ED58DE00091D73 /* Collect_Button.png in Resources */,
 				A4AE56B419ED58DE00091D73 /* Vanity4.jpg in Resources */,
