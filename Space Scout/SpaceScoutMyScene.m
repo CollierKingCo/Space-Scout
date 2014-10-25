@@ -88,8 +88,8 @@ static inline CGPoint rwNormalize(CGPoint a) {
         /* Setup your scene here */
         self.scrap = 100;
         self.maxHealth = 10000;
-        self.health = 10000;
-        
+        self.health = 10;
+#error fix yo death boy
         self.middlePoint = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame));
         
         self.physicsWorld.gravity = CGVectorMake(0,0);

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		A4672D1B19FB397300150AB1 /* hd-wallpapers-space-real-images-6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4672D1A19FB397300150AB1 /* hd-wallpapers-space-real-images-6.jpg */; };
 		A4672D1D19FB657900150AB1 /* cool-design-wallpapers-high-definition-wallpaper_space-wallpaper-backgrounds-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4672D1C19FB657900150AB1 /* cool-design-wallpapers-high-definition-wallpaper_space-wallpaper-backgrounds-1.jpg */; };
+		A4672D1F19FB939700150AB1 /* high-resolution-space-wallpapers-widescreen-hd-pictures-4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4672D1E19FB939700150AB1 /* high-resolution-space-wallpapers-widescreen-hd-pictures-4.jpg */; };
+		A4672D2D19FBA99200150AB1 /* UIViewController+SpaceScoutPageContent.m in Sources */ = {isa = PBXBuildFile; fileRef = A4672D2C19FBA99200150AB1 /* UIViewController+SpaceScoutPageContent.m */; };
 		A49A255D19B35858004144D1 /* SpaceScoutHighScore.m in Sources */ = {isa = PBXBuildFile; fileRef = A49A255C19B35858004144D1 /* SpaceScoutHighScore.m */; };
 		A4AE567119ED57EC00091D73 /* Joystick.m in Sources */ = {isa = PBXBuildFile; fileRef = A4AE567019ED57EC00091D73 /* Joystick.m */; };
 		A4AE569619ED58DE00091D73 /* Aaron Smith - Dancin (KRONO Remix).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A4AE567419ED58DE00091D73 /* Aaron Smith - Dancin (KRONO Remix).mp3 */; };
@@ -83,6 +85,9 @@
 /* Begin PBXFileReference section */
 		A4672D1A19FB397300150AB1 /* hd-wallpapers-space-real-images-6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "hd-wallpapers-space-real-images-6.jpg"; sourceTree = "<group>"; };
 		A4672D1C19FB657900150AB1 /* cool-design-wallpapers-high-definition-wallpaper_space-wallpaper-backgrounds-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "cool-design-wallpapers-high-definition-wallpaper_space-wallpaper-backgrounds-1.jpg"; sourceTree = "<group>"; };
+		A4672D1E19FB939700150AB1 /* high-resolution-space-wallpapers-widescreen-hd-pictures-4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "high-resolution-space-wallpapers-widescreen-hd-pictures-4.jpg"; sourceTree = "<group>"; };
+		A4672D2B19FBA99200150AB1 /* UIViewController+SpaceScoutPageContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SpaceScoutPageContent.h"; sourceTree = "<group>"; };
+		A4672D2C19FBA99200150AB1 /* UIViewController+SpaceScoutPageContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SpaceScoutPageContent.m"; sourceTree = "<group>"; };
 		A49A255B19B35858004144D1 /* SpaceScoutHighScore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpaceScoutHighScore.h; sourceTree = "<group>"; };
 		A49A255C19B35858004144D1 /* SpaceScoutHighScore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpaceScoutHighScore.m; sourceTree = "<group>"; };
 		A4AE566F19ED57EC00091D73 /* Joystick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Joystick.h; sourceTree = "<group>"; };
@@ -189,6 +194,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A4672D2319FBA55C00150AB1 /* Scroll intro */ = {
+			isa = PBXGroup;
+			children = (
+				A4672D2B19FBA99200150AB1 /* UIViewController+SpaceScoutPageContent.h */,
+				A4672D2C19FBA99200150AB1 /* UIViewController+SpaceScoutPageContent.m */,
+			);
+			name = "Scroll intro";
+			sourceTree = "<group>";
+		};
 		A49A252D19B353FA004144D1 /* HighScore */ = {
 			isa = PBXGroup;
 			children = (
@@ -252,6 +266,7 @@
 		B74FB1C819987BD9000F722B /* Space Scout */ = {
 			isa = PBXGroup;
 			children = (
+				A4672D2319FBA55C00150AB1 /* Scroll intro */,
 				B74FB1D419987BD9000F722B /* Main.storyboard */,
 				A49A255E19B35CA8004144D1 /* Credits */,
 				A49A252D19B353FA004144D1 /* HighScore */,
@@ -307,6 +322,7 @@
 		CB1966AB19A458E500BF33C7 /* Images/music */ = {
 			isa = PBXGroup;
 			children = (
+				A4672D1E19FB939700150AB1 /* high-resolution-space-wallpapers-widescreen-hd-pictures-4.jpg */,
 				A4672D1C19FB657900150AB1 /* cool-design-wallpapers-high-definition-wallpaper_space-wallpaper-backgrounds-1.jpg */,
 				A4672D1A19FB397300150AB1 /* hd-wallpapers-space-real-images-6.jpg */,
 				CB1AFFC119F76C5200C45B09 /* Abstract-Light.jpg */,
@@ -471,6 +487,7 @@
 				A4AE56AA19ED58DE00091D73 /* Sword1.jpeg in Resources */,
 				CB1AFFBB19F7661200C45B09 /* background-hd.png in Resources */,
 				A4AE56B119ED58DE00091D73 /* Vanity1.png in Resources */,
+				A4672D1F19FB939700150AB1 /* high-resolution-space-wallpapers-widescreen-hd-pictures-4.jpg in Resources */,
 				A4AE56A119ED58DE00091D73 /* Orion-nebula-viewed-by-WISE.jpg in Resources */,
 				A4AE56AE19ED58DE00091D73 /* Taylor Swift - Shake It Off.mp3 in Resources */,
 				B74FB1D619987BD9000F722B /* Main.storyboard in Resources */,
@@ -497,6 +514,7 @@
 			files = (
 				B7E12C8F1999A6CE00C74BDF /* SpaceScoutPlayer.m in Sources */,
 				CB91FCBA19F5EE210044AB3F /* SpaceScoutCreditCell.m in Sources */,
+				A4672D2D19FBA99200150AB1 /* UIViewController+SpaceScoutPageContent.m in Sources */,
 				CB4E817719B42F0C006F0BA0 /* SpaceScoutCreditsViewController.m in Sources */,
 				CB9AEAD719BD6A8B00E65AC9 /* SpaceScoutCredit.m in Sources */,
 				CBE8CAB0199B20B200C95739 /* SpaceScoutVanityStoreViewController.m in Sources */,

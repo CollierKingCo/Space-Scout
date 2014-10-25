@@ -39,6 +39,7 @@
     [super viewDidLoad];
     self.counter = arc4random_uniform([self.quotes count]);
     [self updateAllOutlets];
+    [self updateAllQuotes];
     
 #warning turn off exception breakpoints to play!!!
     
@@ -94,18 +95,19 @@
         self.playerTokens.text = [NSString stringWithFormat:@"Tokens: %d", self.player.tokens];
     }
     self.playerMoney.text = [NSString stringWithFormat:@"Money: %d", self.player.money ];
-    
+}
+
+- (void) updateAllQuotes {
     self.counter += 1;
     if (self.counter >= [self.quotes count]) {
         self.counter = 0;
     }
-    
     self.quoteOfTheDayTextBox.text = [self.quotes objectAtIndex:self.counter];
     self.whoDidQuote.text = [self.whoDidQuotes objectAtIndex:self.counter];
 }
 
 - (IBAction)newQuoteButtonPressed:(UIButton *)sender {
-    [self updateAllOutlets];
+    [self updateAllQuotes];
 }
 
 - (IBAction)playSpecialSongButtonPressed:(UIButton *)sender {
