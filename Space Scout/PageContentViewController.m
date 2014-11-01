@@ -168,6 +168,9 @@
     if (buttonIndex == 1) {
         [self performSegueWithIdentifier:@"navigationController" sender:self];
     }
+    else if (buttonIndex == 2) {
+        [self performSegueWithIdentifier:<#(NSString *)#> sender:self];
+    }
     else {
         NSLog(@"Dafuq?");
     }
@@ -211,17 +214,27 @@
 - (IBAction)datePickerButtonPressed:(UIButton *)sender {
 
     NSDate *selected = [self.datePicker date];
-    NSLog(@"%@", selected);
-    NSString *strNum = @"199";
     NSString *date = [NSString stringWithFormat:@"%@", selected];
+    NSDate *theDay = [NSDate date];
+    NSString *strToday = [NSString stringWithFormat:@"%@", theDay];
     
-    if (strNum.integerValue <= date.integerValue) {
-        NSLog(@"Well this works");
+    if (date.integerValue +18 <= strToday.integerValue) {
+        NSLog(@"yay");
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Whoops!?"
+                                                        message:@"Are you sure you're over 18?"
+                                                       delegate:self
+                                              cancelButtonTitle:@"No"
+                                              otherButtonTitles:@"I don't know", @"Yes", nil];
+        [alert show];
     }
-    NSLog(@"num = %@, date = %@", strNum, date);
-    
-    NSString *message = [[NSString alloc] initWithFormat:@"You are %@ years old", selected];
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Your age!" message:message delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
-    [alert show];
+    else {
+        NSString *message = [[NSString alloc] initWithFormat:@"You are %@ years old", selected];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Your age!"
+                                                        message:message
+                                                       delegate:nil
+                                              cancelButtonTitle:@"Ok"
+                                              otherButtonTitles:nil];
+        [alert show];
+    }
 }
 @end

@@ -628,6 +628,16 @@
                                     <action selector="datePickerButtonPressed:" destination="8i2-tv-EMN" eventType="touchUpInside" id="eHs-Ug-0pd"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ebR-PS-gla">
+                                <rect key="frame" x="0.0" y="-6" width="30" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="1"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="gnS-Nm-1zQ" kind="modal" id="dwk-hy-TBA"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -651,7 +661,61 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nlK-Vt-JZa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-682" y="89"/>
+            <point key="canvasLocation" x="-682" y="86"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ucC-Ub-nKR">
+            <objects>
+                <viewController id="gnS-Nm-1zQ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1mm-WX-1JU"/>
+                        <viewControllerLayoutGuide type="bottom" id="feK-a9-NIT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zzB-mK-CHt">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Have an alert come here to say its 18+" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q1q-Zh-DHc">
+                                <rect key="frame" x="178" y="183" width="295" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OdN-Og-HvX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-682" y="606"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="SZs-wB-X52">
+            <objects>
+                <viewController id="mY6-zv-IfC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KYc-yt-ykc"/>
+                        <viewControllerLayoutGuide type="bottom" id="rU5-0r-bru"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SHM-to-niu">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="have a requirment to buy a in app purchase" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wyk-J5-mnp">
+                                <rect key="frame" x="93" y="132" width="333" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VMt-2n-8p6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-682" y="1074"/>
         </scene>
         <!--Page View Controller-->
         <scene sceneID="G91-tX-AP4">
