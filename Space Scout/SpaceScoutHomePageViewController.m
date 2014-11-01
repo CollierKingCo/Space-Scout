@@ -38,8 +38,16 @@
 {
     [super viewDidLoad];
     self.counter = arc4random_uniform([self.quotes count]);
+    self.backgroundImage.image = [UIImage imageNamed:@"homePageWallpaper.jpg"];
     [self updateAllOutlets];
     [self updateAllQuotes];
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Thank you!"
+                                                    message:@"Your purchase was greatly appretiated"
+                                                   delegate:self
+                                          cancelButtonTitle:@"Ok..."
+                                          otherButtonTitles:nil];
+    [alert show];
     
 #warning turn off exception breakpoints to play!!!
     
@@ -49,6 +57,7 @@
     self.backgroundMusicPlayer.numberOfLoops = -1;
     [self.backgroundMusicPlayer prepareToPlay];
     [self.backgroundMusicPlayer play];
+
 }
 
 - (NSMutableArray *)quotes {

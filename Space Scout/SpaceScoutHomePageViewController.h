@@ -18,6 +18,7 @@
 - (IBAction)newQuoteButtonPressed:(UIButton *)sender;
 - (IBAction)playSpecialSongButtonPressed:(UIButton *)sender;
 - (IBAction)stopMusicButtonPressed:(UIButton *)sender;
+@property (weak, nonatomic) IBOutlet UIImageView *backgroundImage;
 
 @property NSInteger counter;
 

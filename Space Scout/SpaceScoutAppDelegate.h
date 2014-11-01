@@ -8,8 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SpaceScoutAppDelegate : UIResponder <UIApplicationDelegate>
+@class PageContentViewController;
+
+@interface SpaceScoutAppDelegate : UIResponder <UIApplicationDelegate> {
+    UIWindow *window1;
+    PageContentViewController *viewController;
+}
+
+@property (nonatomic, retain) IBOutlet UIWindow *window1;
+@property (nonatomic, retain) IBOutlet PageContentViewController *viewController;
 
 @property (strong, nonatomic) UIWindow *window;
+
 
 @end

@@ -7,10 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A4672D1B19FB397300150AB1 /* hd-wallpapers-space-real-images-6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4672D1A19FB397300150AB1 /* hd-wallpapers-space-real-images-6.jpg */; };
-		A4672D1D19FB657900150AB1 /* cool-design-wallpapers-high-definition-wallpaper_space-wallpaper-backgrounds-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4672D1C19FB657900150AB1 /* cool-design-wallpapers-high-definition-wallpaper_space-wallpaper-backgrounds-1.jpg */; };
-		A4672D1F19FB939700150AB1 /* high-resolution-space-wallpapers-widescreen-hd-pictures-4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4672D1E19FB939700150AB1 /* high-resolution-space-wallpapers-widescreen-hd-pictures-4.jpg */; };
+		A42774B919FFC4DB00B59B3B /* PageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A42774B819FFC4DB00B59B3B /* PageContentViewController.m */; };
+		A42774BC19FFC4F500B59B3B /* PageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A42774BB19FFC4F500B59B3B /* PageViewController.m */; };
+		A42774C119FFCC1200B59B3B /* page1.png in Resources */ = {isa = PBXBuildFile; fileRef = A42774BD19FFCC1200B59B3B /* page1.png */; };
+		A42774C219FFCC1200B59B3B /* page2.png in Resources */ = {isa = PBXBuildFile; fileRef = A42774BE19FFCC1200B59B3B /* page2.png */; };
+		A42774C319FFCC1200B59B3B /* page3.png in Resources */ = {isa = PBXBuildFile; fileRef = A42774BF19FFCC1200B59B3B /* page3.png */; };
+		A42774C419FFCC1200B59B3B /* page4.png in Resources */ = {isa = PBXBuildFile; fileRef = A42774C019FFCC1200B59B3B /* page4.png */; };
+		A4672D1B19FB397300150AB1 /* homePageWallpaper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4672D1A19FB397300150AB1 /* homePageWallpaper.jpg */; };
+		A4672D1D19FB657900150AB1 /* WeaponsWallpaper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4672D1C19FB657900150AB1 /* WeaponsWallpaper.jpg */; };
+		A4672D1F19FB939700150AB1 /* VanityWallpaper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4672D1E19FB939700150AB1 /* VanityWallpaper.jpg */; };
 		A49A255D19B35858004144D1 /* SpaceScoutHighScore.m in Sources */ = {isa = PBXBuildFile; fileRef = A49A255C19B35858004144D1 /* SpaceScoutHighScore.m */; };
+		A4A821941A025E0B00F76022 /* buy buy buy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4A821931A025E0B00F76022 /* buy buy buy.jpg */; };
 		A4AE567119ED57EC00091D73 /* Joystick.m in Sources */ = {isa = PBXBuildFile; fileRef = A4AE567019ED57EC00091D73 /* Joystick.m */; };
 		A4AE569619ED58DE00091D73 /* Aaron Smith - Dancin (KRONO Remix).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A4AE567419ED58DE00091D73 /* Aaron Smith - Dancin (KRONO Remix).mp3 */; };
 		A4AE569819ED58DE00091D73 /* Collect_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = A4AE567619ED58DE00091D73 /* Collect_Button.png */; };
@@ -82,11 +89,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A4672D1A19FB397300150AB1 /* hd-wallpapers-space-real-images-6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "hd-wallpapers-space-real-images-6.jpg"; sourceTree = "<group>"; };
-		A4672D1C19FB657900150AB1 /* cool-design-wallpapers-high-definition-wallpaper_space-wallpaper-backgrounds-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "cool-design-wallpapers-high-definition-wallpaper_space-wallpaper-backgrounds-1.jpg"; sourceTree = "<group>"; };
-		A4672D1E19FB939700150AB1 /* high-resolution-space-wallpapers-widescreen-hd-pictures-4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "high-resolution-space-wallpapers-widescreen-hd-pictures-4.jpg"; sourceTree = "<group>"; };
+		A42774B719FFC4DB00B59B3B /* PageContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageContentViewController.h; sourceTree = "<group>"; };
+		A42774B819FFC4DB00B59B3B /* PageContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageContentViewController.m; sourceTree = "<group>"; };
+		A42774BA19FFC4F500B59B3B /* PageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageViewController.h; sourceTree = "<group>"; };
+		A42774BB19FFC4F500B59B3B /* PageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageViewController.m; sourceTree = "<group>"; };
+		A42774BD19FFCC1200B59B3B /* page1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page1.png; sourceTree = "<group>"; };
+		A42774BE19FFCC1200B59B3B /* page2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page2.png; sourceTree = "<group>"; };
+		A42774BF19FFCC1200B59B3B /* page3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page3.png; sourceTree = "<group>"; };
+		A42774C019FFCC1200B59B3B /* page4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page4.png; sourceTree = "<group>"; };
+		A4672D1A19FB397300150AB1 /* homePageWallpaper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = homePageWallpaper.jpg; sourceTree = "<group>"; };
+		A4672D1C19FB657900150AB1 /* WeaponsWallpaper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WeaponsWallpaper.jpg; sourceTree = "<group>"; };
+		A4672D1E19FB939700150AB1 /* VanityWallpaper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = VanityWallpaper.jpg; sourceTree = "<group>"; };
 		A49A255B19B35858004144D1 /* SpaceScoutHighScore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpaceScoutHighScore.h; sourceTree = "<group>"; };
 		A49A255C19B35858004144D1 /* SpaceScoutHighScore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpaceScoutHighScore.m; sourceTree = "<group>"; };
+		A4A821931A025E0B00F76022 /* buy buy buy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "buy buy buy.jpg"; sourceTree = "<group>"; };
 		A4AE566F19ED57EC00091D73 /* Joystick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Joystick.h; sourceTree = "<group>"; };
 		A4AE567019ED57EC00091D73 /* Joystick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Joystick.m; sourceTree = "<group>"; };
 		A4AE567419ED58DE00091D73 /* Aaron Smith - Dancin (KRONO Remix).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Aaron Smith - Dancin (KRONO Remix).mp3"; sourceTree = "<group>"; };
@@ -194,6 +210,10 @@
 		A4672D2319FBA55C00150AB1 /* Scroll intro */ = {
 			isa = PBXGroup;
 			children = (
+				A42774B719FFC4DB00B59B3B /* PageContentViewController.h */,
+				A42774B819FFC4DB00B59B3B /* PageContentViewController.m */,
+				A42774BA19FFC4F500B59B3B /* PageViewController.h */,
+				A42774BB19FFC4F500B59B3B /* PageViewController.m */,
 			);
 			name = "Scroll intro";
 			sourceTree = "<group>";
@@ -203,10 +223,10 @@
 			children = (
 				CB96441519B55726000F4590 /* SpaceScoutHighscoresViewController.h */,
 				CB96441619B55726000F4590 /* SpaceScoutHighscoresViewController.m */,
-				A49A255B19B35858004144D1 /* SpaceScoutHighScore.h */,
-				A49A255C19B35858004144D1 /* SpaceScoutHighScore.m */,
 				CB96441819B55741000F4590 /* SpaceScoutHighscores.h */,
 				CB96441919B55741000F4590 /* SpaceScoutHighscores.m */,
+				A49A255B19B35858004144D1 /* SpaceScoutHighScore.h */,
+				A49A255C19B35858004144D1 /* SpaceScoutHighScore.m */,
 				CB1AFFBC19F7668A00C45B09 /* SpaceScoutHighScoreCell.h */,
 				CB1AFFBD19F7668A00C45B09 /* SpaceScoutHighScoreCell.m */,
 			);
@@ -261,8 +281,8 @@
 		B74FB1C819987BD9000F722B /* Space Scout */ = {
 			isa = PBXGroup;
 			children = (
-				A4672D2319FBA55C00150AB1 /* Scroll intro */,
 				B74FB1D419987BD9000F722B /* Main.storyboard */,
+				A4672D2319FBA55C00150AB1 /* Scroll intro */,
 				A49A255E19B35CA8004144D1 /* Credits */,
 				A49A252D19B353FA004144D1 /* HighScore */,
 				CB1966AB19A458E500BF33C7 /* Images/music */,
@@ -317,9 +337,14 @@
 		CB1966AB19A458E500BF33C7 /* Images/music */ = {
 			isa = PBXGroup;
 			children = (
-				A4672D1E19FB939700150AB1 /* high-resolution-space-wallpapers-widescreen-hd-pictures-4.jpg */,
-				A4672D1C19FB657900150AB1 /* cool-design-wallpapers-high-definition-wallpaper_space-wallpaper-backgrounds-1.jpg */,
-				A4672D1A19FB397300150AB1 /* hd-wallpapers-space-real-images-6.jpg */,
+				A4A821931A025E0B00F76022 /* buy buy buy.jpg */,
+				A42774BD19FFCC1200B59B3B /* page1.png */,
+				A42774BE19FFCC1200B59B3B /* page2.png */,
+				A42774BF19FFCC1200B59B3B /* page3.png */,
+				A42774C019FFCC1200B59B3B /* page4.png */,
+				A4672D1E19FB939700150AB1 /* VanityWallpaper.jpg */,
+				A4672D1C19FB657900150AB1 /* WeaponsWallpaper.jpg */,
+				A4672D1A19FB397300150AB1 /* homePageWallpaper.jpg */,
 				CB1AFFC119F76C5200C45B09 /* Abstract-Light.jpg */,
 				CB1AFFBF19F76A6900C45B09 /* WallpaperHigh.jpg */,
 				CB1AFFBA19F7661200C45B09 /* background-hd.png */,
@@ -465,16 +490,19 @@
 				CB1AFFC219F76C5200C45B09 /* Abstract-Light.jpg in Resources */,
 				CB1AFFC019F76A6900C45B09 /* WallpaperHigh.jpg in Resources */,
 				A4AE569D19ED58DE00091D73 /* EXPLOSION.atlas in Resources */,
-				A4672D1B19FB397300150AB1 /* hd-wallpapers-space-real-images-6.jpg in Resources */,
+				A42774C419FFCC1200B59B3B /* page4.png in Resources */,
+				A4672D1B19FB397300150AB1 /* homePageWallpaper.jpg in Resources */,
 				A4AE56A219ED58DE00091D73 /* pauseButton.png in Resources */,
 				A4AE56A919ED58DE00091D73 /* Spaceship-1.png in Resources */,
+				A42774C119FFCC1200B59B3B /* page1.png in Resources */,
 				A4AE569619ED58DE00091D73 /* Aaron Smith - Dancin (KRONO Remix).mp3 in Resources */,
+				A42774C219FFCC1200B59B3B /* page2.png in Resources */,
 				A4AE56AB19ED58DE00091D73 /* Sword2.png in Resources */,
 				A4AE56A819ED58DE00091D73 /* Spaceship_3.png in Resources */,
 				A4AE56A619ED58DE00091D73 /* shuttle_0.png in Resources */,
 				A4AE56A719ED58DE00091D73 /* Spaceship_2.png in Resources */,
 				A4AE56AD19ED58DE00091D73 /* Sword4.png in Resources */,
-				A4672D1D19FB657900150AB1 /* cool-design-wallpapers-high-definition-wallpaper_space-wallpaper-backgrounds-1.jpg in Resources */,
+				A4672D1D19FB657900150AB1 /* WeaponsWallpaper.jpg in Resources */,
 				A4AE569C19ED58DE00091D73 /* dpad.png in Resources */,
 				A4AE569819ED58DE00091D73 /* Collect_Button.png in Resources */,
 				A4AE56B419ED58DE00091D73 /* Vanity4.jpg in Resources */,
@@ -482,10 +510,12 @@
 				A4AE56AA19ED58DE00091D73 /* Sword1.jpeg in Resources */,
 				CB1AFFBB19F7661200C45B09 /* background-hd.png in Resources */,
 				A4AE56B119ED58DE00091D73 /* Vanity1.png in Resources */,
-				A4672D1F19FB939700150AB1 /* high-resolution-space-wallpapers-widescreen-hd-pictures-4.jpg in Resources */,
+				A4672D1F19FB939700150AB1 /* VanityWallpaper.jpg in Resources */,
 				A4AE56A119ED58DE00091D73 /* Orion-nebula-viewed-by-WISE.jpg in Resources */,
+				A42774C319FFCC1200B59B3B /* page3.png in Resources */,
 				A4AE56AE19ED58DE00091D73 /* Taylor Swift - Shake It Off.mp3 in Resources */,
 				B74FB1D619987BD9000F722B /* Main.storyboard in Resources */,
+				A4A821941A025E0B00F76022 /* buy buy buy.jpg in Resources */,
 				A4AE56A319ED58DE00091D73 /* Planet_3.png in Resources */,
 				A4AE56A419ED58DE00091D73 /* Planet_4.png in Resources */,
 				A4AE569E19ED58DE00091D73 /* FLAME TRAIL.png in Resources */,
@@ -508,7 +538,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7E12C8F1999A6CE00C74BDF /* SpaceScoutPlayer.m in Sources */,
+				A42774B919FFC4DB00B59B3B /* PageContentViewController.m in Sources */,
 				CB91FCBA19F5EE210044AB3F /* SpaceScoutCreditCell.m in Sources */,
+				A42774BC19FFC4F500B59B3B /* PageViewController.m in Sources */,
 				CB4E817719B42F0C006F0BA0 /* SpaceScoutCreditsViewController.m in Sources */,
 				CB9AEAD719BD6A8B00E65AC9 /* SpaceScoutCredit.m in Sources */,
 				CBE8CAB0199B20B200C95739 /* SpaceScoutVanityStoreViewController.m in Sources */,
