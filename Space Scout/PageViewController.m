@@ -70,7 +70,7 @@
     pageContentViewController.adText = self.pageAdLabel[index];
     pageContentViewController.howToPlayImageFile = self.pageTutImages[index];
     pageContentViewController.howToPlayImageFile2 = self.pageTutImages2[index];
-    PageContentViewController.
+    pageContentViewController.dateLabelText = self.dateLabels[index];
     pageContentViewController.pageIndex = index;
     
     return pageContentViewController;

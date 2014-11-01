@@ -14,8 +14,8 @@
 
 @implementation PageContentViewController
 
-/*@synthesize datePicker;
-@synthesize datelabel;*/
+//@synthesize datePicker;
+//@synthesize datelabel;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
@@ -34,19 +34,24 @@
     self.adLabel.text = self.adText;
     self.howToPlayImage.image = [UIImage imageNamed:self.howToPlayImageFile];
     self.howToPlay2Image.image = [UIImage imageNamed:self.howToPlayImageFile2];
+    self.dateLabel.text = self.dateLabelText;
     
     if (self.pageIndex == 4) {
         self.playButtonLabel.enabled = YES;
     }
     else {
         self.playButtonLabel.enabled = NO;
-    }/*
+    }
     if (self.pageIndex == 2) {
         self.datePicker.hidden = NO;
+        self.datePickerButtonLabel.enabled = YES;
+        self.datePickerButtonLabel.titleLabel.text = @"Check age!";
     }
     else {
-        self.picker.hidden = YES;
-    }*/
+        self.datePicker.hidden = YES;
+        self.datePickerButtonLabel.enabled = NO;
+        self.datePickerButtonLabel.titleLabel.text = @"";
+    }
     if (self.pageIndex != 0) {
         self.youChooseLabel.text = @"";
         self.LanguageLabel.text = @"";
@@ -60,7 +65,9 @@
     self.languageArray  = [[NSArray alloc] initWithObjects:@"Mandarin",@"Spanish",@"English",@"Hindi",@"Arabic",@"Portuguese", nil];
     
     NSDate *now = [NSDate date];
-    [datePicker setDate:now animated:YES];
+    [self.datePicker setDate:now animated:YES];
+    
+    
   /*
     datelabel = [[UILabel alloc] init];
     datelabel.frame = CGRectMake(10, 200, 300, 40);
@@ -166,6 +173,7 @@
     }
 }
 
+
 /*
 
 #pragma mark – View lifecycle
@@ -200,4 +208,20 @@
     [alert show];
 }*/
 
+- (IBAction)datePickerButtonPressed:(UIButton *)sender {
+
+    NSDate *selected = [self.datePicker date];
+    NSLog(@"%@", selected);
+    NSString *strNum = @"199";
+    NSString *date = [NSString stringWithFormat:@"%@", selected];
+    
+    if (strNum.integerValue <= date.integerValue) {
+        NSLog(@"Well this works");
+    }
+    NSLog(@"num = %@, date = %@", strNum, date);
+    
+    NSString *message = [[NSString alloc] initWithFormat:@"You are %@ years old", selected];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Your age!" message:message delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+    [alert show];
+}
 @end

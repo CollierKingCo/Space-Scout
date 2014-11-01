@@ -611,6 +611,7 @@
                                 <date key="date" timeIntervalSinceReferenceDate="436508311.75797802">
                                     <!--2014-11-01 04:18:31 +0000-->
                                 </date>
+                                <locale key="locale" localeIdentifier="en_AU"/>
                             </datePicker>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="thishdfisdnifhsidhfsdihfisdhfisudhfisudhfisudfhsidufhsiudfhs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C6w-Dh-2xw">
                                 <rect key="frame" x="56" y="95" width="456" height="21"/>
@@ -618,6 +619,15 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Si-2W-N6Q">
+                                <rect key="frame" x="261" y="124" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="datePickerButtonPressed:" destination="8i2-tv-EMN" eventType="touchUpInside" id="eHs-Ug-0pd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -627,7 +637,8 @@
                         <outlet property="adBannerImage" destination="278-fC-kiF" id="fMO-AV-kJv"/>
                         <outlet property="adLabel" destination="o3q-E8-X22" id="Swh-1A-Htb"/>
                         <outlet property="dateLabel" destination="C6w-Dh-2xw" id="g2s-Nv-rBx"/>
-                        <outlet property="datePicker" destination="CCc-fw-bWE" id="1eU-VJ-sYt"/>
+                        <outlet property="datePicker" destination="CCc-fw-bWE" id="EEc-q4-0Is"/>
+                        <outlet property="datePickerButtonLabel" destination="5Si-2W-N6Q" id="0Pv-eB-Tpw"/>
                         <outlet property="howToPlay2Image" destination="2fh-a7-sfA" id="AkJ-JR-5d8"/>
                         <outlet property="howToPlayImage" destination="ozV-f8-6XA" id="zwK-q1-2e7"/>
                         <outlet property="picker" destination="7CV-4P-Nq7" id="kbI-G2-0GC"/>

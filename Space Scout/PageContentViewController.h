@@ -8,11 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PageContentViewController : UIViewController <UIPickerViewDataSource,UIPickerViewDelegate,UIAlertViewDelegate> {
-    IBOutlet UIDatePicker *datePicker;
-}
+@interface PageContentViewController : UIViewController <UIPickerViewDataSource,UIPickerViewDelegate,UIAlertViewDelegate>    
+    
 //-(IBAction)showdate:(id)sender;
 @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
+@property (weak, nonatomic) IBOutlet UIDatePicker *datePicker;
+- (IBAction)datePickerButtonPressed:(UIButton *)sender;
+@property (weak, nonatomic) IBOutlet UIButton *datePickerButtonLabel;
+
 
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundImageView;
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
