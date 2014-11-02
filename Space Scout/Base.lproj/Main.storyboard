@@ -635,7 +635,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="gnS-Nm-1zQ" kind="modal" id="dwk-hy-TBA"/>
+                                    <segue destination="gnS-Nm-1zQ" kind="modal" identifier="over18Segue" id="dwk-hy-TBA"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -663,10 +663,10 @@
             </objects>
             <point key="canvasLocation" x="-682" y="86"/>
         </scene>
-        <!--View Controller-->
+        <!--Space Scout18 And Over View Controller-->
         <scene sceneID="ucC-Ub-nKR">
             <objects>
-                <viewController id="gnS-Nm-1zQ" sceneMemberID="viewController">
+                <viewController id="gnS-Nm-1zQ" customClass="SpaceScout18AndOverViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1mm-WX-1JU"/>
                         <viewControllerLayoutGuide type="bottom" id="feK-a9-NIT"/>
@@ -681,6 +681,18 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vdz-pR-C7j">
+                                <rect key="frame" x="0.0" y="0.0" width="13" height="11"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="mY6-zv-IfC" kind="modal" identifier="inAppPurchaseSegue" id="hNX-dV-KeP"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kAf-bg-RQ8">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -690,10 +702,10 @@
             </objects>
             <point key="canvasLocation" x="-682" y="606"/>
         </scene>
-        <!--View Controller-->
+        <!--Space Scout In App Purchase View Controller-->
         <scene sceneID="SZs-wB-X52">
             <objects>
-                <viewController id="mY6-zv-IfC" sceneMemberID="viewController">
+                <viewController id="mY6-zv-IfC" customClass="SpaceScoutInAppPurchaseViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KYc-yt-ykc"/>
                         <viewControllerLayoutGuide type="bottom" id="rU5-0r-bru"/>
@@ -708,6 +720,18 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NiE-Yz-PF0">
+                                <rect key="frame" x="0.0" y="0.0" width="22" height="20"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="HMo-y5-CnM" kind="modal" identifier="playSegue" id="1vl-Pc-k6f"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GMv-ya-CeB">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -798,4 +822,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="1vl-Pc-k6f"/>
+    </inferredMetricsTieBreakers>
 </document>

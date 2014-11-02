@@ -169,7 +169,7 @@
         [self performSegueWithIdentifier:@"navigationController" sender:self];
     }
     else if (buttonIndex == 2) {
-        [self performSegueWithIdentifier:<#(NSString *)#> sender:self];
+        [self performSegueWithIdentifier:@"over18Segue" sender:self];
     }
     else {
         NSLog(@"Dafuq?");

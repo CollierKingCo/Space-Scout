@@ -45,6 +45,8 @@
 		A4AE56B219ED58DE00091D73 /* Vanity2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4AE569019ED58DE00091D73 /* Vanity2.jpg */; };
 		A4AE56B319ED58DE00091D73 /* Vanity3.png in Resources */ = {isa = PBXBuildFile; fileRef = A4AE569119ED58DE00091D73 /* Vanity3.png */; };
 		A4AE56B419ED58DE00091D73 /* Vanity4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4AE569219ED58DE00091D73 /* Vanity4.jpg */; };
+		A4C3A2DF1A05CE0900877CF0 /* SpaceScout18AndOverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C3A2DE1A05CE0900877CF0 /* SpaceScout18AndOverViewController.m */; };
+		A4C3A2E21A05CE2000877CF0 /* SpaceScoutInAppPurchaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C3A2E11A05CE2000877CF0 /* SpaceScoutInAppPurchaseViewController.m */; };
 		B74FB1C119987BD9000F722B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B74FB1C019987BD9000F722B /* Foundation.framework */; };
 		B74FB1C319987BD9000F722B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B74FB1C219987BD9000F722B /* CoreGraphics.framework */; };
 		B74FB1C519987BD9000F722B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B74FB1C419987BD9000F722B /* UIKit.framework */; };
@@ -131,6 +133,10 @@
 		A4AE569019ED58DE00091D73 /* Vanity2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Vanity2.jpg; sourceTree = "<group>"; };
 		A4AE569119ED58DE00091D73 /* Vanity3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Vanity3.png; sourceTree = "<group>"; };
 		A4AE569219ED58DE00091D73 /* Vanity4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Vanity4.jpg; sourceTree = "<group>"; };
+		A4C3A2DD1A05CE0900877CF0 /* SpaceScout18AndOverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpaceScout18AndOverViewController.h; sourceTree = "<group>"; };
+		A4C3A2DE1A05CE0900877CF0 /* SpaceScout18AndOverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpaceScout18AndOverViewController.m; sourceTree = "<group>"; };
+		A4C3A2E01A05CE2000877CF0 /* SpaceScoutInAppPurchaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpaceScoutInAppPurchaseViewController.h; sourceTree = "<group>"; };
+		A4C3A2E11A05CE2000877CF0 /* SpaceScoutInAppPurchaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpaceScoutInAppPurchaseViewController.m; sourceTree = "<group>"; };
 		B74FB1BD19987BD9000F722B /* Space Scout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Space Scout.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B74FB1C019987BD9000F722B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B74FB1C219987BD9000F722B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -246,6 +252,17 @@
 				CB91FCB919F5EE210044AB3F /* SpaceScoutCreditCell.m */,
 			);
 			name = Credits;
+			sourceTree = "<group>";
+		};
+		A4C3A2DC1A05CDD300877CF0 /* extras/jokes */ = {
+			isa = PBXGroup;
+			children = (
+				A4C3A2DD1A05CE0900877CF0 /* SpaceScout18AndOverViewController.h */,
+				A4C3A2DE1A05CE0900877CF0 /* SpaceScout18AndOverViewController.m */,
+				A4C3A2E01A05CE2000877CF0 /* SpaceScoutInAppPurchaseViewController.h */,
+				A4C3A2E11A05CE2000877CF0 /* SpaceScoutInAppPurchaseViewController.m */,
+			);
+			name = extras/jokes;
 			sourceTree = "<group>";
 		};
 		B74FB1B419987BD9000F722B = {
@@ -394,6 +411,7 @@
 		CBE8CAAA199B1F6500C95739 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				A4C3A2DC1A05CDD300877CF0 /* extras/jokes */,
 				B74FB1D719987BD9000F722B /* SpaceScoutViewController.h */,
 				B74FB1D819987BD9000F722B /* SpaceScoutViewController.m */,
 				CB82178A19B6D25000851783 /* SpaceScoutHomePageViewController.h */,
@@ -553,8 +571,10 @@
 				CB1966AA19A4568600BF33C7 /* SpaceScoutShop.m in Sources */,
 				CB96441119B55021000F4590 /* SpaceScoutCredits.m in Sources */,
 				CB96441A19B55741000F4590 /* SpaceScoutHighscores.m in Sources */,
+				A4C3A2E21A05CE2000877CF0 /* SpaceScoutInAppPurchaseViewController.m in Sources */,
 				CB82178C19B6D25000851783 /* SpaceScoutHomePageViewController.m in Sources */,
 				B74FB1D319987BD9000F722B /* SpaceScoutAppDelegate.m in Sources */,
+				A4C3A2DF1A05CE0900877CF0 /* SpaceScout18AndOverViewController.m in Sources */,
 				B74FB1D919987BD9000F722B /* SpaceScoutViewController.m in Sources */,
 				B74FB1CF19987BD9000F722B /* main.m in Sources */,
 			);
