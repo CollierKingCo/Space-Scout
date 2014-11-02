@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface SpaceScout18AndOverViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIImageView *backgroundImage;
 
 @end

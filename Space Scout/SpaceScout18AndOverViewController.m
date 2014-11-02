@@ -16,11 +16,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.backgroundImage.image = [UIImage imageNamed:@"restricted.png"];
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Whoops!?"
                                                     message:@"Are you sure you're over 18?"
                                                    delegate:self
                                           cancelButtonTitle:@"No"
-                                          otherButtonTitles:@"I don't know", @"Yes", nil];
+                                          otherButtonTitles:@"Yes", nil];
     [alert show];
 }
 
@@ -29,6 +30,18 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if (buttonIndex == 1) {
+        [self performSegueWithIdentifier:@"inAppPurchaseSegue" sender:self];
+    }
+    if (buttonIndex == 0) {
+        [self performSegueWithIdentifier:@"backToStartSegue" sender:self];
+    }
+    else {
+        NSLog(@"Dafuq?");
+    }
+}
 /*
 #pragma mark - Navigation
 

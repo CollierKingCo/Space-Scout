@@ -16,14 +16,31 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.backgroundImage.image = [UIImage imageNamed:@"iap.jpg"];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Whoops!?"
+                                                    message:@"This requires an in-app purchase of $29.98"
+                                                   delegate:self
+                                          cancelButtonTitle:@"Cancel"
+                                          otherButtonTitles:@"Pay $49.98", nil];
+    [alert show];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if (buttonIndex == 1) {
+        [self performSegueWithIdentifier:@"playSegue" sender:self];
+    }
+    if (buttonIndex == 0) {
+        [self performSegueWithIdentifier:@"backToStart2Segue" sender:self];
+    }
+    else {
+        NSLog(@"Dafuq?");
+    }
+}
 /*
 #pragma mark - Navigation
 
