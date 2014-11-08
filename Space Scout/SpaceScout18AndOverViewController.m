@@ -18,7 +18,7 @@
     [super viewDidLoad];
     self.backgroundImage.image = [UIImage imageNamed:@"restricted.png"];
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Whoops!?"
-                                                    message:@"Are you sure you're over 18?"
+                                                    message:@"Are you sure you're sure that you're over 18?"
                                                    delegate:self
                                           cancelButtonTitle:@"No"
                                           otherButtonTitles:@"Yes", nil];

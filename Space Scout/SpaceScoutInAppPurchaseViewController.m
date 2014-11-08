@@ -18,7 +18,7 @@
     [super viewDidLoad];
     self.backgroundImage.image = [UIImage imageNamed:@"iap.jpg"];
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Whoops!?"
-                                                    message:@"This requires an in-app purchase of $29.98"
+                                                    message:@"This requires an in-app purchase of $49.98"
                                                    delegate:self
                                           cancelButtonTitle:@"Cancel"
                                           otherButtonTitles:@"Pay $49.98", nil];

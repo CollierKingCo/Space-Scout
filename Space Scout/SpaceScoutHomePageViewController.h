@@ -9,6 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "SpaceScoutPlayer.h"
 
+/*@protocol HomePageDelegate <NSObject>
+
+- (NSInteger)getCurrentLanguage;
+
+@end*/
+
 @interface SpaceScoutHomePageViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *playerTokens;
 @property (weak, nonatomic) IBOutlet UILabel *playerMoney;
@@ -20,7 +26,14 @@
 - (IBAction)stopMusicButtonPressed:(UIButton *)sender;
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundImage;
 
+//@property id<HomePageDelegate> delegate;
+
 @property NSInteger counter;
 
+@property (weak, nonatomic) IBOutlet UIButton *playButtonLabel;
+@property (weak, nonatomic) IBOutlet UIButton *highscoreButtonLabel;
+@property (weak, nonatomic) IBOutlet UIButton *creditsButtonLabel;
+@property (weak, nonatomic) IBOutlet UIButton *shopButtonLabel;
+@property (weak, nonatomic) IBOutlet UIButton *easterEggButtonLabel;
 
 @end

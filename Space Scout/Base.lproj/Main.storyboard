@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="kkf-dc-x5a">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="mSq-1m-0zd">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
@@ -503,15 +503,76 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
                         <outlet property="backgroundImage" destination="g3U-EW-Roz" id="M1y-hh-cSF"/>
+                        <outlet property="creditsButtonLabel" destination="9u2-q6-eeC" id="4By-Tf-mYl"/>
+                        <outlet property="easterEggButtonLabel" destination="azI-AQ-iK2" id="pm2-4m-v2o"/>
+                        <outlet property="highscoreButtonLabel" destination="jOc-Dx-zXj" id="Cfu-Mq-3xo"/>
+                        <outlet property="playButtonLabel" destination="GqT-yh-en5" id="a5C-d3-Fug"/>
                         <outlet property="playerMoney" destination="qQB-Bl-t2M" id="Zni-XR-yZE"/>
                         <outlet property="playerTokens" destination="A1x-co-wtL" id="MsV-wf-qVH"/>
                         <outlet property="quoteOfTheDayTextBox" destination="LQB-GA-FVd" id="gID-Fm-ReX"/>
+                        <outlet property="shopButtonLabel" destination="cp0-CW-w9c" id="1CW-mT-ajG"/>
                         <outlet property="whoDidQuote" destination="DWB-zr-uka" id="EaU-Fc-FQ3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xpP-VF-7T6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="94" y="276"/>
+        </scene>
+        <!--Language Selection View Controller-->
+        <scene sceneID="AJ3-Tu-8C3">
+            <objects>
+                <viewController id="mSq-1m-0zd" customClass="LanguageSelectionViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WCC-KY-TLG"/>
+                        <viewControllerLayoutGuide type="bottom" id="6bU-TD-M6U"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LTP-GU-Kjj">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TIu-3O-uyz">
+                                <rect key="frame" x="198" y="103" width="172" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectorButtonPressed:" destination="mSq-1m-0zd" eventType="touchUpInside" id="C31-n6-9nI"/>
+                                    <segue destination="kkf-dc-x5a" kind="modal" identifier="toTheScroll" id="Akd-T0-4b6"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IZV-tU-HSU">
+                                <rect key="frame" x="52" y="61" width="465" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SRK-4z-D5A">
+                                <rect key="frame" x="0.0" y="150" width="568" height="162"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="mSq-1m-0zd" id="MPl-kC-HYz"/>
+                                    <outlet property="delegate" destination="mSq-1m-0zd" id="IuP-5g-cTL"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="llH-Y4-tf0">
+                                <rect key="frame" x="84" y="8" width="401" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="infoLabel" destination="llH-Y4-tf0" id="Fwk-BV-Adm"/>
+                        <outlet property="langaugeLabel" destination="IZV-tU-HSU" id="RDD-UP-wJM"/>
+                        <outlet property="langaugePicker" destination="SRK-4z-D5A" id="Slk-2J-CdL"/>
+                        <outlet property="selectorButtonLabel" destination="TIu-3O-uyz" id="hFL-EA-73E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FF5-po-rwO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2099" y="-216"/>
         </scene>
         <!--Page View Controller-->
         <scene sceneID="DhW-7E-BrO">
@@ -556,13 +617,6 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7CV-4P-Nq7">
-                                <rect key="frame" x="0.0" y="150" width="568" height="162"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="8i2-tv-EMN" id="V9M-9w-BKn"/>
-                                    <outlet property="delegate" destination="8i2-tv-EMN" id="eWx-ft-QJH"/>
-                                </connections>
-                            </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You choose:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F47-bm-PzO">
                                 <rect key="frame" x="191" y="109" width="95" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -575,7 +629,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zd2-bS-cO9">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="376" translatesAutoresizingMaskIntoConstraints="NO" id="Zd2-bS-cO9">
                                 <rect key="frame" x="96" y="68" width="376" height="76"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -592,7 +646,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="278-fC-kiF">
-                                <rect key="frame" x="0.0" y="0.0" width="568" height="312"/>
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="300"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Advertisment :)  " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o3q-E8-X22">
                                 <rect key="frame" x="427" y="8" width="125" height="21"/>
@@ -601,10 +655,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2fh-a7-sfA">
-                                <rect key="frame" x="328" y="92" width="240" height="128"/>
+                                <rect key="frame" x="328" y="124" width="240" height="128"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ozV-f8-6XA">
-                                <rect key="frame" x="0.0" y="92" width="240" height="128"/>
+                                <rect key="frame" x="0.0" y="124" width="240" height="128"/>
                             </imageView>
                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="15" translatesAutoresizingMaskIntoConstraints="NO" id="CCc-fw-bWE">
                                 <rect key="frame" x="0.0" y="150" width="568" height="162"/>
@@ -620,7 +674,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Si-2W-N6Q">
-                                <rect key="frame" x="261" y="124" width="46" height="30"/>
+                                <rect key="frame" x="219" y="124" width="131" height="30"/>
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -651,7 +705,6 @@
                         <outlet property="datePickerButtonLabel" destination="5Si-2W-N6Q" id="0Pv-eB-Tpw"/>
                         <outlet property="howToPlay2Image" destination="2fh-a7-sfA" id="AkJ-JR-5d8"/>
                         <outlet property="howToPlayImage" destination="ozV-f8-6XA" id="zwK-q1-2e7"/>
-                        <outlet property="picker" destination="7CV-4P-Nq7" id="kbI-G2-0GC"/>
                         <outlet property="playButtonLabel" destination="W2b-zY-3Pg" id="NiT-Ai-FvC"/>
                         <outlet property="subTitleTextLabel" destination="Zd2-bS-cO9" id="Fvv-8R-b8G"/>
                         <outlet property="titleButtonLabel" destination="qh5-NP-mxf" id="IrT-jX-a6I"/>
@@ -761,7 +814,7 @@
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eIS-J4-XZK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-622" y="-487"/>
+            <point key="canvasLocation" x="-682" y="-433"/>
         </scene>
         <!--Highscore-->
         <scene sceneID="pAr-D3-W8e">
@@ -836,6 +889,6 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="oka-82-bM0"/>
-        <segue reference="olx-ch-w84"/>
+        <segue reference="Akd-T0-4b6"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -8,6 +8,7 @@
 
 #import "PageContentViewController.h"
 
+
 @interface PageContentViewController ()
 
 @end
@@ -26,6 +27,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+  //  NSLog(@"passed on selected langauge %d", self.delegate.sel);
+    
+  //  NSLog(@"langauge type: %d", self.currentlySelectedLanguage);
+    
     self.backgroundImageView.image = [UIImage imageNamed:self.imageFile];
     self.titleLabel.text = self.titleText;
     self.titleButtonLabel.text = self.buttonText;
@@ -36,23 +41,23 @@
     self.howToPlay2Image.image = [UIImage imageNamed:self.howToPlayImageFile2];
     self.dateLabel.text = self.dateLabelText;
     
-    if (self.pageIndex == 4) {
+    if (self.pageIndex == 3) {
         self.playButtonLabel.enabled = YES;
     }
     else {
         self.playButtonLabel.enabled = NO;
     }
-    if (self.pageIndex == 2) {
+    if (self.pageIndex == 1) {
         self.datePicker.hidden = NO;
         self.datePickerButtonLabel.enabled = YES;
-        self.datePickerButtonLabel.titleLabel.text = @"Check age!";
+        [self.datePickerButtonLabel setTitle:@"Check age!" forState:UIControlStateNormal];
     }
     else {
         self.datePicker.hidden = YES;
         self.datePickerButtonLabel.enabled = NO;
-        self.datePickerButtonLabel.titleLabel.text = @"";
+        [self.datePickerButtonLabel setTitle:@"" forState:UIControlStateNormal];
     }
-    if (self.pageIndex != 0) {
+    /*if (self.pageIndex != 0) {
         self.youChooseLabel.text = @"";
         self.LanguageLabel.text = @"";
         self.picker.hidden = YES;
@@ -60,9 +65,13 @@
         self.youChooseLabel.text = @"You choose:";
         self.LanguageLabel.text = @"Nothing";
         self.picker.hidden = NO;
-    }
+    }*/
+    self.youChooseLabel.text = @"";
+    self.LanguageLabel.text = @"";
+    self.picker.hidden = NO;
+    
     // Do any additional setup after loading the view, typically from a nib.
-    self.languageArray  = [[NSArray alloc] initWithObjects:@"Mandarin",@"Spanish",@"English",@"Hindi",@"Arabic",@"Portuguese", nil];
+    //self.languageArray  = [[NSArray alloc] initWithObjects:@"Latin",@"English", @"German", @"Elvish", @"Volcan", @"Sylvan", nil];
     
     NSDate *now = [NSDate date];
     [self.datePicker setDate:now animated:YES];
@@ -100,6 +109,7 @@
     
 }
 
+/*
 
 // returns the number of 'columns' to display.
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
@@ -121,37 +131,44 @@
     {
             
         case 0:
-            self.LanguageLabel.text = @"Mandarin";
+            self.LanguageLabel.text = @"Latin";
             self.LanguageLabel.textColor = [UIColor colorWithRed:0.0f/255.0f green: 0.0f/255.0f blue:255.0f/255.0f alpha:255.0f/255.0f];
+            self.currentlySelectedLanguage = lanagugeTypeLatin;
             break;
         case 1:
-            self.LanguageLabel.text = @"Spanish";
+            self.LanguageLabel.text = @"Englosh";
             self.LanguageLabel.textColor = [UIColor colorWithRed:0.0f/255.0f green: 255.0f/255.0f blue:0.0f/255.0f alpha:255.0f/255.0f];
+            self.currentlySelectedLanguage = lanagugeTypeEnglish;
             break;
         case 2:
-            self.LanguageLabel.text = @"English";
+            self.LanguageLabel.text = @"German";
             self.LanguageLabel.textColor = [UIColor colorWithRed:205.0f/255.0f green: 140.0f/255.0f blue:31.0f/255.0f alpha:255.0f/255.0f];
+            self.currentlySelectedLanguage = lanagugeTypeGerman;
             break;
         case 3:
-            self.LanguageLabel.text = @"Hindi";
+            self.LanguageLabel.text = @"Elvish";
             self.LanguageLabel.textColor = [UIColor colorWithRed:255.0f/255.0f green: 0.0f/255.0f blue:255.0f/255.0f alpha:255.0f/255.0f];
+            self.currentlySelectedLanguage = lanagugeTypeElvish;
             break;
         case 4:
-            self.LanguageLabel.text = @"Arabic";
+            self.LanguageLabel.text = @"Volcan";
             self.LanguageLabel.textColor = [UIColor colorWithRed:255.0f/255.0f green: 0.0f/255.0f blue:0.0f/255.0f alpha:255.0f/255.0f];
+            self.currentlySelectedLanguage = lanagugeTypeVolcan;
             break;
         case 5:
-            self.LanguageLabel.text = @"Portuguese";
+            self.LanguageLabel.text = @"Sylvan";
             self.LanguageLabel.textColor = [UIColor colorWithRed:255.0f/255.0f green: 255.0f/255.0f blue:0.0f/255.0f alpha:255.0f/255.0f];
+            self.currentlySelectedLanguage = lanagugeTypeSlyvan;
             break;
     }
+    NSLog(@"langauge type: %d", self.currentlySelectedLanguage);
 }
 
 -(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row   forComponent:(NSInteger)component
 {
     return [self.languageArray objectAtIndex:row];
 }
-
+*/
 - (IBAction)inAppPurchase:(UIButton *)sender {
     
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Whoops!?"
@@ -175,6 +192,20 @@
         NSLog(@"Dafuq?");
     }
 }
+
+/*
+// This will get called too before the view appears
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"navigationController"]) {
+        
+        // Get destination view
+        SpaceScoutHomePageViewController *vc = [segue destinationViewController];
+        
+        // Pass the information to your destination view
+        [vc.delegate getCurrentLanguage];
+    }
+}*/
 
 
 /*
@@ -228,8 +259,8 @@
         [alert show];
     }
     else {
-        NSString *message = [[NSString alloc] initWithFormat:@"You are %@ years old", selected];
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Your age!"
+        NSString *message = [[NSString alloc] initWithFormat:@"You were born in %@", selected];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"When you were born!"
                                                         message:message
                                                        delegate:nil
                                               cancelButtonTitle:@"Ok"
@@ -237,4 +268,8 @@
         [alert show];
     }
 }
+/*
+- (NSInteger)getCurrentLanguage {
+    return self.currentlySelectedLanguage;
+}*/
 @end

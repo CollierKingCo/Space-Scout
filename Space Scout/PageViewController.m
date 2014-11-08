@@ -15,15 +15,15 @@
 {
     [super viewDidLoad];
     // Create the data model
-    _pageTitles = @[@"Please select a Language",@"It's time for you to learn how to play!", @"When were you born?", @"", @""];
-    _pageImages = @[@"page1.png", @"page2.png", @"page3.png", @"page4.png", @"Laser.png"];
-    _pageButtons = @[@" ", @" ", @" ", @" ",@"Play"];
-    _pageSubTitles = @[@"", @"It's simple! Dodge bullets and shoot what ever moves.",@""/*@"Since you're an expert now I think it's time for you to tweek the settings so they perectly fit your awesomeness."*/, @"", @""];
-    _pageAdImages = @[@"", @"", @"", @"buy buy buy.jpg", @""];
-    _pageAdLabel = @[@"", @"", @"", @"Advertisment :)", @""];
-    _pageTutImages = @[@"", @"page1.png", @"", @"", @""];
-    _pageTutImages2 = @[@"", @"page2.png", @"", @"", @""];
-    _dateLabels = @[@"", @"", @"Your age is",@"", @""];
+    _pageTitles = @[/*@"Please select a Language",*/@"It's time for you to learn how to play!", @"When were you born?", @"", @""];
+    _pageImages = @[/*@"page1.png",*/ @"page2.png", @"page3.png", @"page4.png", @"Laser.png"];
+    _pageButtons = @[/*@" ",*/ @" ", @" ", @" ",@"Play"];
+    _pageSubTitles = @[/*@"",*/ @"It's simple! Dodge bullets and shoot what ever moves.",@""/*@"Since you're an expert now I think it's time for you to tweek the settings so they perectly fit your awesomeness."*/, @"", @""];
+    _pageAdImages = @[/*@"",*/ @"", @"", @"buy buy buy.jpg", @""];
+    _pageAdLabel = @[/*@"",*/ @"", @"", @"Advertisment :)", @""];
+    _pageTutImages = @[/*@"",*/ @"page1.png", @"", @"", @""];
+    _pageTutImages2 = @[/*@"",*/ @"page2.png", @"", @"", @""];
+    _dateLabels = @[/*@"", */@"", @"Your age is",@"", @""];
     
     // Create page view controller
     self.pageViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PageViewController"];
