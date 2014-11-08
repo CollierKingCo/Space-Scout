@@ -29,6 +29,9 @@ typedef NS_ENUM(NSInteger, lanagugeType) {
 
 
 @property (strong, nonatomic) NSArray *languageArray;
+@property (strong, nonatomic) NSArray *infoArray;
+
+@property NSInteger infoCounter;
 
 @property lanagugeType currentlySelectedLanguage;
 

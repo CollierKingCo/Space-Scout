@@ -27,12 +27,22 @@
     
     self.selectorButtonLabel.enabled = NO;
     [self.selectorButtonLabel setTitle:@"" forState:UIControlStateNormal];
-
+    NSTimer *t = [NSTimer scheduledTimerWithTimeInterval: 3.0
+                                                  target: self
+                                                selector:@selector(onTick:)
+                                                userInfo: nil repeats:YES];
     self.infoLabel.text = @"Please select a language";
-#warning make a NSTimer that changes the langauge of the infoLabel
+    self.langaugeLabel.text = @"";
     
     self.languageArray  = [[NSArray alloc] initWithObjects:@"Latin",@"English", @"German", @"Elvish", @"Volcan", @"Sylvan", nil];
-
+    self.infoArray = [[NSArray alloc] initWithObjects:@"Lat", @"Eng", @"Ger", @"Elv", @"Vol", @"Syl",nil];
+}
+-(void)onTick:(NSTimer *)timer {
+    self.infoCounter ++;
+    if (self.infoCounter >= [self.infoArray count]) {
+        self.infoCounter = 0;
+    }
+    [self updateInfoOutlets];
 }
 
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
@@ -115,6 +125,9 @@
     [self.selectorButtonLabel setTitle:@"select lanaguage!" forState:UIControlStateNormal];
 }
 
+- (void) updateInfoOutlets {
+    self.infoLabel.text = self.infoArray[self.infoCounter];
+}
 - (IBAction)selectorButtonPressed:(UIButton *)sender {
     NSLog(@"selected language %d", self.currentlySelectedLanguage);
  //   [self performSegueWithIdentifier:@"toTheScroll" sender:self];
