@@ -14,6 +14,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    NSLog(@"delegated language %d", [self.delegate getTheCurrentLanguage]);
+
     // Create the data model
     _pageTitles = @[/*@"Please select a Language",*/@"It's time for you to learn how to play!", @"When were you born?", @"", @""];
     _pageImages = @[/*@"page1.png",*/ @"page2.png", @"page3.png", @"page4.png", @"Laser.png"];

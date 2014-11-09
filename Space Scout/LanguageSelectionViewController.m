@@ -100,6 +100,7 @@
             [self updateAllOutlets];
             break;
     }
+    self.languageCounter = self.currentlySelectedLanguage;
     NSLog(@"langauge type: %d", self.currentlySelectedLanguage);
 }
 
@@ -116,7 +117,7 @@
         PageViewController *vc = [segue destinationViewController];
         
         // Pass the information to your destination view
-        //[vc.delegate getTheCurrentLanguage];
+        [vc.delegate getTheCurrentLanguage];
     }
 }
 
@@ -129,10 +130,15 @@
     self.infoLabel.text = self.infoArray[self.infoCounter];
 }
 - (IBAction)selectorButtonPressed:(UIButton *)sender {
-    NSLog(@"selected language %d", self.currentlySelectedLanguage);
+   // NSLog(@"selected language %d", self.currentlySelectedLanguage);
  //   [self performSegueWithIdentifier:@"toTheScroll" sender:self];
+    NSLog(@"Curremtly selected language = %d", self.currentlySelectedLanguage);
+    NSLog(@"Language counter = %d", self.languageCounter);
+    self.currentlySelectedLanguage = self.languageCounter;
 
 }
+
+
 
 - (NSInteger)getTheCurrentLanguage {
     return self.currentlySelectedLanguage;

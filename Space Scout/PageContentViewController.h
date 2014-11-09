@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 //#import "LanguageSelectionViewController.h"
-/*#import "SpaceScoutHomePageViewController.h"
-typedef NS_ENUM(NSInteger, lanagugeType) {
+#import "SpaceScoutHomePageViewController.h"
+/*typedef NS_ENUM(NSInteger, lanagugeType) {
     lanagugeTypeLatin,
     lanagugeTypeEnglish,
     lanagugeTypeGerman,
@@ -17,13 +17,9 @@ typedef NS_ENUM(NSInteger, lanagugeType) {
     lanagugeTypeVolcan,
     lanagugeTypeSlyvan,
 };*/
-@protocol ScrollPageDelegate <NSObject>
 
-- (NSInteger)getTheCurrentLanguage;
 
-@end
-
-@interface PageContentViewController : UIViewController /*<UIPickerViewDataSource,UIPickerViewDelegate,*/<UIAlertViewDelegate> //HomePageDelegate>
+@interface PageContentViewController : UIViewController /*<UIPickerViewDataSource,UIPickerViewDelegate,*/<UIAlertViewDelegate, HomePageDelegate>
     
 //-(IBAction)showdate:(id)sender;
 @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
@@ -57,8 +53,8 @@ typedef NS_ENUM(NSInteger, lanagugeType) {
 @property (weak, nonatomic) IBOutlet UIButton *playButtonLabel;
 
 
-@property id<ScrollPageDelegate> delegate;
 
+@property NSInteger langugaeNum;
 /*
 @property (strong, nonatomic) NSArray *languageArray;
 

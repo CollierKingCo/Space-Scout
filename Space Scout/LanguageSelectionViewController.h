@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 //#import "SpaceScoutHomePageViewController.h"
 #import "PageViewController.h"
+#import "PageContentViewController.h"
 typedef NS_ENUM(NSInteger, lanagugeType) {
     lanagugeTypeLatin,
     lanagugeTypeEnglish,
@@ -34,5 +35,7 @@ typedef NS_ENUM(NSInteger, lanagugeType) {
 @property NSInteger infoCounter;
 
 @property lanagugeType currentlySelectedLanguage;
+
+@property NSInteger languageCounter;
 
 @end

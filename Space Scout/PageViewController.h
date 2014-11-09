@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "PageContentViewController.h"
+@protocol ScrollPageDelegate <NSObject>
+
+- (NSInteger)getTheCurrentLanguage;
+
+@end
 
 @interface PageViewController : UIViewController <UIPageViewControllerDataSource>
 
@@ -22,5 +27,8 @@
 @property (strong, nonatomic) NSArray *pageTutImages;
 @property (strong, nonatomic) NSArray *pageTutImages2;
 @property (strong, nonatomic) NSArray *dateLabels;
+
+
+@property id<ScrollPageDelegate> delegate;
 
 @end

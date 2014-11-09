@@ -27,6 +27,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    //NSLog(@"delegated language %d", [self.delegate getTheCurrentLanguage]);
+    
+    self.langugaeNum = 1;
   //  NSLog(@"passed on selected langauge %d", self.delegate.sel);
     
   //  NSLog(@"langauge type: %d", self.currentlySelectedLanguage);
@@ -193,7 +196,7 @@
     }
 }
 
-/*
+
 // This will get called too before the view appears
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
@@ -205,7 +208,7 @@
         // Pass the information to your destination view
         [vc.delegate getCurrentLanguage];
     }
-}*/
+}
 
 
 /*
@@ -268,8 +271,8 @@
         [alert show];
     }
 }
-/*
+
 - (NSInteger)getCurrentLanguage {
-    return self.currentlySelectedLanguage;
-}*/
+    return self.langugaeNum;
+}
 @end

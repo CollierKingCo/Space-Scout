@@ -39,7 +39,7 @@
     [super viewDidLoad];
     
 
-  /*  NSLog(@"selected Language %d", [self.delegate getCurrentLanguage]);
+    NSLog(@"selected Language %d", [self.delegate getCurrentLanguage]);
     self.counter = arc4random_uniform([self.quotes count]);
     self.backgroundImage.image = [UIImage imageNamed:@"homePageWallpaper.jpg"];
     [self updateAllOutlets];
@@ -60,22 +60,22 @@
                                                        delegate:self
                                               cancelButtonTitle:@"CALLIDE..."
                                               otherButtonTitles:nil];
-        [alert show];*/
+        [alert show];
     }
     
 #warning turn off exception breakpoints to play!!!
-   /*
+
     NSError *error;
     NSURL * backgroundMusicURL = [[NSBundle mainBundle] URLForResource:@"Aaron Smith - Dancin (KRONO Remix)" withExtension:@"mp3"];
     self.backgroundMusicPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:backgroundMusicURL error:&error];
     self.backgroundMusicPlayer.numberOfLoops = -1;
     [self.backgroundMusicPlayer prepareToPlay];
     [self.backgroundMusicPlayer play];
-*/
-//}
 
-//- (NSMutableArray *)quotes {
-  /*  if (!_quotes) {
+}
+
+- (NSMutableArray *)quotes {
+    if (!_quotes) {
         _quotes = [[NSMutableArray alloc] init];
         
         if ([self.delegate getCurrentLanguage] == 1) {
@@ -103,8 +103,8 @@
             [_quotes addObject:@"Nec tamen adeo; Duis facere quod facit. custodi ire."];
         }
     }
-    return _quotes;*/
-//}
+    return _quotes;
+}
 
 - (NSMutableArray *)whoDidQuotes {
     if (!_whoDidQuotes) {
@@ -124,7 +124,7 @@
     }
     return _whoDidQuotes;
 }
-/*- (void) updateAllOutlets {
+- (void) updateAllOutlets {
     if ([self.delegate getCurrentLanguage] == 1) {
 
         if (self.player.tokens <= 1) {
@@ -149,7 +149,7 @@
         [self.shopButtonLabel setTitle:@"tabernam" forState:UIControlStateNormal];
         [self.easterEggButtonLabel setTitle:@"pascha ovi," forState:UIControlStateNormal];
     }
-}*/
+}
 
 - (void) updateAllQuotes {
     self.counter += 1;
@@ -174,7 +174,7 @@
     [self.backgroundMusicPlayer prepareToPlay];
     [self.backgroundMusicPlayer play];
     
-   // [self updateAllOutlets];
+    [self updateAllOutlets];
 }
 
 - (IBAction)stopMusicButtonPressed:(UIButton *)sender {
