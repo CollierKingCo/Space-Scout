@@ -53,7 +53,7 @@
     if (self.pageIndex == 1) {
         self.datePicker.hidden = NO;
         self.datePickerButtonLabel.enabled = YES;
-        [self.datePickerButtonLabel setTitle:@"Check age!" forState:UIControlStateNormal];
+        [self.datePickerButtonLabel setTitle:self.checkAgeButtonText forState:UIControlStateNormal];
     }
     else {
         self.datePicker.hidden = YES;
@@ -174,39 +174,57 @@
 */
 - (IBAction)inAppPurchase:(UIButton *)sender {
     
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Whoops!?"
-                                                   message:@"This requires an in-app purchase of $29.98"
-                                                  delegate:self
-                                         cancelButtonTitle:@"Cancel"
-                                         otherButtonTitles:@"Pay $29.98", nil];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:self.inAppPurchase29s[0]
+                                                    message:self.inAppPurchase29s[1]
+                                                   delegate:self
+                                          cancelButtonTitle:self.inAppPurchase29s[2]
+                                          otherButtonTitles:self.inAppPurchase29s[3], nil];
     [alert show];
     
 }
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
-    if (buttonIndex == 1) {
-        [self performSegueWithIdentifier:@"navigationController" sender:self];
+    if (buttonIndex == 1 && self.pageIndex == 3) {
+        [self performSegueWithIdentifier:@"PlayGameSegue" sender:self];
     }
-    else if (buttonIndex == 2) {
+    else if (buttonIndex == 1 && self.pageIndex == 1) {
+        NSLog(@"It doesn't know");
+    }
+    else if (buttonIndex == 2 && self.pageIndex == 1) {
         [self performSegueWithIdentifier:@"over18Segue" sender:self];
     }
     else {
         NSLog(@"Dafuq?");
     }
 }
+/*
+- (NSInteger)whatIsTheCurrentLangugae {
+    return 1;
+}
+- (NSInteger)currentNavigationLanaguge {
+    return 1;
+}*/
 
-
+- (NSInteger)currentLanaguge {
+    return 1;
+}
 // This will get called too before the view appears
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([[segue identifier] isEqualToString:@"navigationController"]) {
+    if ([[segue identifier] isEqualToString:@"PlayGameSegue"]) {
         
         // Get destination view
-        SpaceScoutHomePageViewController *vc = [segue destinationViewController];
+        
+        
+        SpaceScoutHomePageViewController *viewController = [segue destinationViewController];
+        
+       /* if (![viewController isKindOfClass:[SpaceScoutHomePageViewController class]]) {
+            NSLog(@"Oh dear");
+        }*/
         
         // Pass the information to your destination view
-        [vc.delegate getCurrentLanguage];
+        viewController.homeDelegate = self;
     }
 }
 
@@ -254,25 +272,23 @@
     
     if (date.integerValue +18 <= strToday.integerValue) {
         NSLog(@"yay");
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Whoops!?"
-                                                        message:@"Are you sure you're over 18?"
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:self.areYouSure18s[0]
+                                                        message:self.areYouSure18s[1]
                                                        delegate:self
-                                              cancelButtonTitle:@"No"
-                                              otherButtonTitles:@"I don't know", @"Yes", nil];
+                                              cancelButtonTitle:self.areYouSure18s[2]
+                                              otherButtonTitles:self.areYouSure18s[3], self.areYouSure18s[4], nil];
         [alert show];
     }
     else {
-        NSString *message = [[NSString alloc] initWithFormat:@"You were born in %@", selected];
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"When you were born!"
+        NSString *message = [[NSString alloc] initWithFormat:@"%@ %@", self.yourAges[1], selected];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:self.yourAges[0]
                                                         message:message
                                                        delegate:nil
-                                              cancelButtonTitle:@"Ok"
+                                              cancelButtonTitle:self.yourAges[2]
                                               otherButtonTitles:nil];
         [alert show];
     }
 }
 
-- (NSInteger)getCurrentLanguage {
-    return self.langugaeNum;
-}
+
 @end

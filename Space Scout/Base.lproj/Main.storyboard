@@ -127,7 +127,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U04-it-wg1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1666" y="-403"/>
+            <point key="canvasLocation" x="2086" y="-403"/>
         </scene>
         <!--Shop-->
         <scene sceneID="TpM-Dx-63Q">
@@ -148,7 +148,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5g0-CI-lO1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="875" y="-168"/>
+            <point key="canvasLocation" x="1295" y="-168"/>
         </scene>
         <!--Vanity-->
         <scene sceneID="Mph-lg-boz">
@@ -272,7 +272,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Up-jl-act" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1666" y="30"/>
+            <point key="canvasLocation" x="2086" y="30"/>
         </scene>
         <!--Play Game View-->
         <scene sceneID="CtS-rA-C9T">
@@ -292,7 +292,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="btX-cZ-eVz" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="875" y="276"/>
+            <point key="canvasLocation" x="1295" y="276"/>
         </scene>
         <!--Credits-->
         <scene sceneID="sod-kz-P1y">
@@ -353,12 +353,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="309-8k-htb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="875" y="1164"/>
+            <point key="canvasLocation" x="1295" y="1164"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Space Scout Main Menu Navigation View Controller-->
         <scene sceneID="BEN-HK-fn9">
             <objects>
-                <navigationController definesPresentationContext="YES" id="HMo-y5-CnM" sceneMemberID="viewController">
+                <navigationController definesPresentationContext="YES" id="HMo-y5-CnM" customClass="SpaceScoutMainMenuNavigationViewController" sceneMemberID="viewController">
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="dAY-j6-Bea">
                         <autoresizingMask key="autoresizingMask"/>
@@ -368,12 +368,12 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </toolbar>
                     <connections>
-                        <segue destination="g1M-5P-C9i" kind="relationship" relationship="rootViewController" id="cXd-OQ-dCU"/>
+                        <segue destination="g1M-5P-C9i" kind="relationship" relationship="rootViewController" id="8FL-If-0uq"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="we2-50-Yv1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="94" y="-216"/>
+            <point key="canvasLocation" x="-686" y="292"/>
         </scene>
         <!--Home Page-->
         <scene sceneID="BsH-Xp-uAL">
@@ -391,22 +391,10 @@
                                 <rect key="frame" x="0.0" y="31" width="568" height="289"/>
                                 <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GqT-yh-en5">
-                                <rect key="frame" x="219" y="209" width="130" height="57"/>
-                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="51"/>
-                                <size key="titleShadowOffset" width="1" height="1"/>
-                                <state key="normal" title="Play">
-                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="LVB-YS-i5n" kind="modal" id="z0g-bG-uqH"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jOc-Dx-zXj">
-                                <rect key="frame" x="16" y="282" width="79" height="30"/>
+                                <rect key="frame" x="16" y="282" width="124" height="31"/>
                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
-                                <state key="normal" title="Highscore">
+                                <state key="normal" title="Highscore          ">
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -432,15 +420,15 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cp0-CW-w9c">
-                                <rect key="frame" x="250" y="282" width="69" height="30"/>
+                                <rect key="frame" x="236" y="282" width="97" height="40"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <size key="titleShadowOffset" width="1" height="1"/>
-                                <state key="normal" title="Shop">
+                                <state key="normal" title="Shop       ">
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Fhy-XS-vHK" kind="push" id="WrK-wa-90c"/>
+                                    <segue destination="Fhy-XS-vHK" kind="push" identifier="shopSegue" id="WrK-wa-90c"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ju9-04-fOY">
@@ -496,6 +484,18 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GqT-yh-en5">
+                                <rect key="frame" x="168" y="205" width="233" height="69"/>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="51"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="Play         ">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="LVB-YS-i5n" kind="modal" id="z0g-bG-uqH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -516,7 +516,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xpP-VF-7T6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="94" y="276"/>
+            <point key="canvasLocation" x="324" y="292"/>
         </scene>
         <!--Language Selection View Controller-->
         <scene sceneID="AJ3-Tu-8C3">
@@ -572,7 +572,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FF5-po-rwO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2099" y="-216"/>
+            <point key="canvasLocation" x="-2317" y="-246"/>
         </scene>
         <!--Page View Controller-->
         <scene sceneID="DhW-7E-BrO">
@@ -591,7 +591,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SXd-eh-VjY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1291" y="-216"/>
+            <point key="canvasLocation" x="-1457" y="-246"/>
         </scene>
         <!--Page Content View Controller-->
         <scene sceneID="9Zq-V7-YgR">
@@ -642,7 +642,7 @@
                                 </state>
                                 <connections>
                                     <action selector="inAppPurchase:" destination="8i2-tv-EMN" eventType="touchDown" id="TER-Aj-SIZ"/>
-                                    <segue destination="HMo-y5-CnM" kind="modal" identifier="navigationController" id="oka-82-bM0"/>
+                                    <segue destination="g1M-5P-C9i" kind="modal" identifier="PlayGameSegue" id="lVm-vK-Lh5"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="278-fC-kiF">
@@ -714,7 +714,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nlK-Vt-JZa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-682" y="86"/>
+            <point key="canvasLocation" x="-2317" y="1652"/>
         </scene>
         <!--Space Scout18 And Over View Controller-->
         <scene sceneID="ucC-Ub-nKR">
@@ -745,9 +745,6 @@
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="kkf-dc-x5a" kind="modal" identifier="backToStartSegue" id="5LB-Qr-gNP"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -759,7 +756,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OdN-Og-HvX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-682" y="606"/>
+            <point key="canvasLocation" x="-2317" y="954"/>
         </scene>
         <!--Space Scout In App Purchase View Controller-->
         <scene sceneID="SZs-wB-X52">
@@ -804,7 +801,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VMt-2n-8p6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-682" y="1074"/>
+            <point key="canvasLocation" x="-2317" y="292"/>
         </scene>
         <!--Page View Controller-->
         <scene sceneID="G91-tX-AP4">
@@ -814,7 +811,7 @@
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eIS-J4-XZK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-682" y="-433"/>
+            <point key="canvasLocation" x="-808" y="-246"/>
         </scene>
         <!--Highscore-->
         <scene sceneID="pAr-D3-W8e">
@@ -873,7 +870,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L9t-8o-Xz3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="875" y="749"/>
+            <point key="canvasLocation" x="1295" y="749"/>
         </scene>
     </scenes>
     <resources>
@@ -888,7 +885,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="oka-82-bM0"/>
-        <segue reference="Akd-T0-4b6"/>
+        <segue reference="lVm-vK-Lh5"/>
+        <segue reference="olx-ch-w84"/>
     </inferredMetricsTieBreakers>
 </document>

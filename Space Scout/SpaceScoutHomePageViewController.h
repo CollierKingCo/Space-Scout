@@ -8,14 +8,19 @@
 
 #import <UIKit/UIKit.h>
 #import "SpaceScoutPlayer.h"
+#import "SpaceScoutWeaponsStoreViewController.h"
 
-@protocol HomePageDelegate <NSObject>
+/*@protocol HomePageDelgate <NSObject>
+- (NSInteger)whatIsTheCurrentLangugae;
+@end*/
 
-- (NSInteger)getCurrentLanguage;
+@protocol TheHomePageDelegate <NSObject>
+
+- (NSInteger)currentLanaguge;
 
 @end
 
-@interface SpaceScoutHomePageViewController : UIViewController
+@interface SpaceScoutHomePageViewController : UIViewController //<PlayerInfoDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *playerTokens;
 @property (weak, nonatomic) IBOutlet UILabel *playerMoney;
 
@@ -26,7 +31,8 @@
 - (IBAction)stopMusicButtonPressed:(UIButton *)sender;
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundImage;
 
-@property id<HomePageDelegate> delegate;
+//@property id<HomePageDelgate> delegate;
+@property id<TheHomePageDelegate> homeDelegate;
 
 @property NSInteger counter;
 

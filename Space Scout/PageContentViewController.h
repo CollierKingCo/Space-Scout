@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 //#import "LanguageSelectionViewController.h"
 #import "SpaceScoutHomePageViewController.h"
+#import "SpaceScoutMainMenuNavigationViewController.h"
 /*typedef NS_ENUM(NSInteger, lanagugeType) {
     lanagugeTypeLatin,
     lanagugeTypeEnglish,
@@ -19,7 +20,7 @@
 };*/
 
 
-@interface PageContentViewController : UIViewController /*<UIPickerViewDataSource,UIPickerViewDelegate,*/<UIAlertViewDelegate, HomePageDelegate>
+@interface PageContentViewController : UIViewController /*<UIPickerViewDataSource,UIPickerViewDelegate,*/<UIAlertViewDelegate, TheHomePageDelegate> //TheHomePageNavigationDelegate>
     
 //-(IBAction)showdate:(id)sender;
 @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
@@ -41,6 +42,10 @@
 @property NSString *howToPlayImageFile;
 @property NSString *howToPlayImageFile2;
 @property NSString *dateLabelText;
+@property NSString *checkAgeButtonText;
+@property NSArray *inAppPurchase29s;
+@property NSArray *areYouSure18s;
+@property NSArray *yourAges;
 @property (weak, nonatomic) IBOutlet UILabel *titleButtonLabel;
 @property (weak, nonatomic) IBOutlet UILabel *LanguageLabel;
 @property (weak, nonatomic) IBOutlet UILabel *subTitleTextLabel;

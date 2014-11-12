@@ -7,8 +7,9 @@
 //
 
 #import "SpaceScoutShop.h"
+#import "SpaceScoutHomePageViewController.h"
 
-@interface SpaceScoutPlayer : NSObject
+@interface SpaceScoutPlayer : NSObject 
 
 @property NSInteger health;
 @property NSInteger maxHealth;

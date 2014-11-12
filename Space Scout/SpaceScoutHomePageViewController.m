@@ -37,15 +37,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
 
-    NSLog(@"selected Language %d", [self.delegate getCurrentLanguage]);
+   // NSLog(@"selected Language %d", [self.delegate whatIsTheCurrentLangugae]);
+    NSLog(@"The homeDelegate %d", [self.homeDelegate currentLanaguge]);
+    
     self.counter = arc4random_uniform([self.quotes count]);
     self.backgroundImage.image = [UIImage imageNamed:@"homePageWallpaper.jpg"];
     [self updateAllOutlets];
     [self updateAllQuotes];
     
-    if ([self.delegate getCurrentLanguage] == 1) {
+    if ([self.homeDelegate currentLanaguge] == 1) {
 
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Thank you!"
                                                         message:@"Your purchase was greatly appretiated"
@@ -54,7 +55,7 @@
                                               otherButtonTitles:nil];
         [alert show];
     }
-    else if ([self.delegate getCurrentLanguage] == 0) {
+    else if ([self.homeDelegate currentLanaguge] == 0) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"gratias ago tibi,"
                                                         message:@"Emptum esse erratam tuum valde"
                                                        delegate:self
@@ -78,7 +79,7 @@
     if (!_quotes) {
         _quotes = [[NSMutableArray alloc] init];
         
-        if ([self.delegate getCurrentLanguage] == 1) {
+        if ([self.homeDelegate currentLanaguge] == 1) {
             
             [_quotes addObject:@"All or dreams can come true - if we have the courage to pursue them."];
             [_quotes addObject:@"What the mind can concieve, it can achieve."];
@@ -90,9 +91,9 @@
             [_quotes addObject:@"If you can dream it, you can do it."];
             [_quotes addObject:@"Don't watch the clock; do what it does. Keep going."];
         }
-        else if ([self.delegate getCurrentLanguage] == 0) {
+        else if ([self.homeDelegate currentLanaguge] == 0) {
             
-            [_quotes addObject:@"Omnes possunt somnia vera aut - si prosequi veritus ."];
+            [_quotes addObject:@"Omnes possunt somnia vera aut - si prosequi veritus."];
             [_quotes addObject:@"Quid mens concieve, præstare potest."];
             [_quotes addObject:@"Non quia difficilia sunt non audemus versatus ; quod ideo dicit, quia non audemus difficilia sunt."];
             [_quotes addObject:@"Primo enim, non cognoverunt te. Et subsannabo cum vobis. Et bellabunt adversum te. Tunc vobis vincere."];
@@ -125,7 +126,7 @@
     return _whoDidQuotes;
 }
 - (void) updateAllOutlets {
-    if ([self.delegate getCurrentLanguage] == 1) {
+    if ([self.homeDelegate currentLanaguge] == 1) {
 
         if (self.player.tokens <= 1) {
             self.playerTokens.text = [NSString stringWithFormat:@"Token: %d", self.player.tokens];
@@ -135,7 +136,7 @@
         self.playerMoney.text = [NSString stringWithFormat:@"Money: %d", self.player.money ];
 
     }
-    else if ([self.delegate getCurrentLanguage] == 0) {
+    else if ([self.homeDelegate currentLanaguge] == 0) {
         if (self.player.tokens <= 1) {
             self.playerTokens.text = [NSString stringWithFormat:@"Token: %d", self.player.tokens];
         } else {
@@ -180,4 +181,24 @@
 - (IBAction)stopMusicButtonPressed:(UIButton *)sender {
     [self.backgroundMusicPlayer stop];
 }
+/*
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    if ([[segue identifier] isEqualToString:@"shopSegue"]) {
+        
+        // Get destination view
+        SpaceScoutWeaponsStoreViewController *vc = [segue destinationViewController];
+        
+        // Pass the information to your destination view
+        vc.playerDelegate = self;
+    }
+}
+
+- (NSInteger)WhatIsPlayerMoney {
+    return self.player.money;
+}
+
+- (NSInteger)WhatIsPlayerTokens {
+    return self.player.tokens;
+}*/
 @end

@@ -35,7 +35,7 @@
         [self performSegueWithIdentifier:@"playSegue" sender:self];
     }
     if (buttonIndex == 0) {
-        [self performSegueWithIdentifier:@"backToStart2Segue" sender:self];
+        [self dismissViewControllerAnimated:YES completion:Nil];
     }
     else {
         NSLog(@"Dafuq?");

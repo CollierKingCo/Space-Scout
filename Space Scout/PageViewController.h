@@ -27,6 +27,10 @@
 @property (strong, nonatomic) NSArray *pageTutImages;
 @property (strong, nonatomic) NSArray *pageTutImages2;
 @property (strong, nonatomic) NSArray *dateLabels;
+@property (strong, nonatomic) NSString *checkAgeLabel;
+@property (strong, nonatomic) NSArray *inAppPurchase29Labels;
+@property (strong, nonatomic) NSArray *areYouSureYour18Labels;
+@property (strong, nonatomic) NSArray *YourAgeLabels;
 
 
 @property id<ScrollPageDelegate> delegate;

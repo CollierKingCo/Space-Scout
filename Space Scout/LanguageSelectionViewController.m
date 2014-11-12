@@ -67,36 +67,42 @@
             self.langaugeLabel.text = @"Latin";
             self.langaugeLabel.textColor = [UIColor colorWithRed:0.0f/255.0f green: 0.0f/255.0f blue:255.0f/255.0f alpha:255.0f/255.0f];
             self.currentlySelectedLanguage = lanagugeTypeLatin;
+            [self.selectorButtonLabel setTitle:@"selectee lanaguageee!" forState:UIControlStateNormal];
             [self updateAllOutlets];
             break;
         case 1:
             self.langaugeLabel.text = @"Englosh";
             self.langaugeLabel.textColor = [UIColor colorWithRed:0.0f/255.0f green: 255.0f/255.0f blue:0.0f/255.0f alpha:255.0f/255.0f];
             self.currentlySelectedLanguage = lanagugeTypeEnglish;
+            [self.selectorButtonLabel setTitle:@"select lanaguage!" forState:UIControlStateNormal];
             [self updateAllOutlets];
             break;
         case 2:
             self.langaugeLabel.text = @"German";
             self.langaugeLabel.textColor = [UIColor colorWithRed:205.0f/255.0f green: 140.0f/255.0f blue:31.0f/255.0f alpha:255.0f/255.0f];
             self.currentlySelectedLanguage = lanagugeTypeGerman;
+            [self.selectorButtonLabel setTitle:@"Wählen lanaguage!" forState:UIControlStateNormal];
             [self updateAllOutlets];
             break;
         case 3:
             self.langaugeLabel.text = @"Elvish";
             self.langaugeLabel.textColor = [UIColor colorWithRed:255.0f/255.0f green: 0.0f/255.0f blue:255.0f/255.0f alpha:255.0f/255.0f];
             self.currentlySelectedLanguage = lanagugeTypeElvish;
+            [self.selectorButtonLabel setTitle:@"select lanaguage!" forState:UIControlStateNormal];
             [self updateAllOutlets];
             break;
         case 4:
             self.langaugeLabel.text = @"Volcan";
             self.langaugeLabel.textColor = [UIColor colorWithRed:255.0f/255.0f green: 0.0f/255.0f blue:0.0f/255.0f alpha:255.0f/255.0f];
             self.currentlySelectedLanguage = lanagugeTypeVolcan;
+            [self.selectorButtonLabel setTitle:@"select lanaguage!" forState:UIControlStateNormal];
             [self updateAllOutlets];
             break;
         case 5:
             self.langaugeLabel.text = @"Sylvan";
             self.langaugeLabel.textColor = [UIColor colorWithRed:255.0f/255.0f green: 255.0f/255.0f blue:0.0f/255.0f alpha:255.0f/255.0f];
             self.currentlySelectedLanguage = lanagugeTypeSlyvan;
+            [self.selectorButtonLabel setTitle:@"select lanaguage!" forState:UIControlStateNormal];
             [self updateAllOutlets];
             break;
     }
@@ -117,28 +123,26 @@
         PageViewController *vc = [segue destinationViewController];
         
         // Pass the information to your destination view
-        [vc.delegate getTheCurrentLanguage];
+        vc.delegate = self;
     }
 }
 
 - (void) updateAllOutlets {
     self.selectorButtonLabel.enabled = YES;
-    [self.selectorButtonLabel setTitle:@"select lanaguage!" forState:UIControlStateNormal];
+   // [self.selectorButtonLabel setTitle:@"select lanaguage!" forState:UIControlStateNormal];
 }
 
 - (void) updateInfoOutlets {
     self.infoLabel.text = self.infoArray[self.infoCounter];
 }
 - (IBAction)selectorButtonPressed:(UIButton *)sender {
-   // NSLog(@"selected language %d", self.currentlySelectedLanguage);
- //   [self performSegueWithIdentifier:@"toTheScroll" sender:self];
+   /* NSLog(@"selected language %d", self.currentlySelectedLanguage);
+    [self performSegueWithIdentifier:@"toTheScroll" sender:self];
     NSLog(@"Curremtly selected language = %d", self.currentlySelectedLanguage);
     NSLog(@"Language counter = %d", self.languageCounter);
-    self.currentlySelectedLanguage = self.languageCounter;
+    self.currentlySelectedLanguage = self.languageCounter;*/
 
 }
-
-
 
 - (NSInteger)getTheCurrentLanguage {
     return self.currentlySelectedLanguage;

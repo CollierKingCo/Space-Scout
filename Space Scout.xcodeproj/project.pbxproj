@@ -73,6 +73,7 @@
 		CB1AFFC019F76A6900C45B09 /* WallpaperHigh.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CB1AFFBF19F76A6900C45B09 /* WallpaperHigh.jpg */; };
 		CB1AFFC219F76C5200C45B09 /* Abstract-Light.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CB1AFFC119F76C5200C45B09 /* Abstract-Light.jpg */; };
 		CB4E817719B42F0C006F0BA0 /* SpaceScoutCreditsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4E817619B42F0C006F0BA0 /* SpaceScoutCreditsViewController.m */; };
+		CB4EC1561A13176C00E064CF /* SpaceScoutMainMenuNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4EC1551A13176C00E064CF /* SpaceScoutMainMenuNavigationViewController.m */; };
 		CB82178C19B6D25000851783 /* SpaceScoutHomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB82178B19B6D25000851783 /* SpaceScoutHomePageViewController.m */; };
 		CB91FCBA19F5EE210044AB3F /* SpaceScoutCreditCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB91FCB919F5EE210044AB3F /* SpaceScoutCreditCell.m */; };
 		CB96441119B55021000F4590 /* SpaceScoutCredits.m in Sources */ = {isa = PBXBuildFile; fileRef = CB96441019B55021000F4590 /* SpaceScoutCredits.m */; };
@@ -177,6 +178,8 @@
 		CB1AFFC119F76C5200C45B09 /* Abstract-Light.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Abstract-Light.jpg"; path = "Images:music/Abstract-Light.jpg"; sourceTree = SOURCE_ROOT; };
 		CB4E817519B42F0C006F0BA0 /* SpaceScoutCreditsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpaceScoutCreditsViewController.h; sourceTree = "<group>"; };
 		CB4E817619B42F0C006F0BA0 /* SpaceScoutCreditsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpaceScoutCreditsViewController.m; sourceTree = "<group>"; };
+		CB4EC1541A13176C00E064CF /* SpaceScoutMainMenuNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpaceScoutMainMenuNavigationViewController.h; sourceTree = "<group>"; };
+		CB4EC1551A13176C00E064CF /* SpaceScoutMainMenuNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpaceScoutMainMenuNavigationViewController.m; sourceTree = "<group>"; };
 		CB82178A19B6D25000851783 /* SpaceScoutHomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpaceScoutHomePageViewController.h; sourceTree = "<group>"; };
 		CB82178B19B6D25000851783 /* SpaceScoutHomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpaceScoutHomePageViewController.m; sourceTree = "<group>"; };
 		CB91FCB819F5EE210044AB3F /* SpaceScoutCreditCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpaceScoutCreditCell.h; sourceTree = "<group>"; };
@@ -310,11 +313,11 @@
 		B74FB1C819987BD9000F722B /* Space Scout */ = {
 			isa = PBXGroup;
 			children = (
+				CB1966AB19A458E500BF33C7 /* Images/music */,
 				B74FB1D419987BD9000F722B /* Main.storyboard */,
 				A4672D2319FBA55C00150AB1 /* Intro */,
 				A49A255E19B35CA8004144D1 /* Credits */,
 				A49A252D19B353FA004144D1 /* HighScore */,
-				CB1966AB19A458E500BF33C7 /* Images/music */,
 				CB9C141A19A2E07C0030922A /* Shop */,
 				CBE8CAAA199B1F6500C95739 /* ViewControllers */,
 				B74FB1D119987BD9000F722B /* SpaceScoutAppDelegate.h */,
@@ -430,6 +433,8 @@
 				B74FB1D819987BD9000F722B /* SpaceScoutViewController.m */,
 				CB82178A19B6D25000851783 /* SpaceScoutHomePageViewController.h */,
 				CB82178B19B6D25000851783 /* SpaceScoutHomePageViewController.m */,
+				CB4EC1541A13176C00E064CF /* SpaceScoutMainMenuNavigationViewController.h */,
+				CB4EC1551A13176C00E064CF /* SpaceScoutMainMenuNavigationViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -574,6 +579,7 @@
 			files = (
 				B7E12C8F1999A6CE00C74BDF /* SpaceScoutPlayer.m in Sources */,
 				A42774B919FFC4DB00B59B3B /* PageContentViewController.m in Sources */,
+				CB4EC1561A13176C00E064CF /* SpaceScoutMainMenuNavigationViewController.m in Sources */,
 				CB91FCBA19F5EE210044AB3F /* SpaceScoutCreditCell.m in Sources */,
 				A42774BC19FFC4F500B59B3B /* PageViewController.m in Sources */,
 				CB4E817719B42F0C006F0BA0 /* SpaceScoutCreditsViewController.m in Sources */,
