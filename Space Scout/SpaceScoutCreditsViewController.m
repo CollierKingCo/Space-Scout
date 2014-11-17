@@ -49,4 +49,7 @@
     
     return cell;
 }
+- (IBAction)backButton:(UIButton *)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 @end

@@ -7,8 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SpaceScoutHomePageViewController.h"
+@protocol inAppDelegate <NSObject>
 
-@interface SpaceScoutInAppPurchaseViewController : UIViewController
+- (NSInteger)CurrentLanguageInApp;
+
+@end
+
+@interface SpaceScoutInAppPurchaseViewController : UIViewController <TheOtherHomePageDelegate>
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundImage;
+
+@property id<inAppDelegate> inDelegate;
 
 @end

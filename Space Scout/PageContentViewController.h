@@ -10,6 +10,7 @@
 //#import "LanguageSelectionViewController.h"
 #import "SpaceScoutHomePageViewController.h"
 #import "SpaceScoutMainMenuNavigationViewController.h"
+#import "SpaceScout18AndOverViewController.h"
 /*typedef NS_ENUM(NSInteger, lanagugeType) {
     lanagugeTypeLatin,
     lanagugeTypeEnglish,
@@ -20,7 +21,7 @@
 };*/
 
 
-@interface PageContentViewController : UIViewController /*<UIPickerViewDataSource,UIPickerViewDelegate,*/<UIAlertViewDelegate, TheHomePageDelegate> //TheHomePageNavigationDelegate>
+@interface PageContentViewController : UIViewController /*<UIPickerViewDataSource,UIPickerViewDelegate,*/<UIAlertViewDelegate, TheHomePageDelegate, over18Delegate> //TheHomePageNavigationDelegate>
     
 //-(IBAction)showdate:(id)sender;
 @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
@@ -46,6 +47,9 @@
 @property NSArray *inAppPurchase29s;
 @property NSArray *areYouSure18s;
 @property NSArray *yourAges;
+
+@property NSInteger languageNumber;
+
 @property (weak, nonatomic) IBOutlet UILabel *titleButtonLabel;
 @property (weak, nonatomic) IBOutlet UILabel *LanguageLabel;
 @property (weak, nonatomic) IBOutlet UILabel *subTitleTextLabel;
@@ -57,9 +61,6 @@
 - (IBAction)inAppPurchase:(UIButton *)sender;
 @property (weak, nonatomic) IBOutlet UIButton *playButtonLabel;
 
-
-
-@property NSInteger langugaeNum;
 /*
 @property (strong, nonatomic) NSArray *languageArray;
 

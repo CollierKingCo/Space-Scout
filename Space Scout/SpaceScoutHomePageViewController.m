@@ -40,13 +40,23 @@
 
    // NSLog(@"selected Language %d", [self.delegate whatIsTheCurrentLangugae]);
     NSLog(@"The homeDelegate %d", [self.homeDelegate currentLanaguge]);
+    NSLog(@"The Other homeDelegate %d", [self.homeDelegateOther currentLangugeOther]);
+    
+    if ([self.homeDelegate currentLanaguge] != 0) {
+        self.isOver18 = NO;
+        self.actualLanguageNumber = [self.homeDelegate currentLanaguge];
+    }
+    else if ([self.homeDelegateOther currentLangugeOther] != 0) {
+        self.isOver18 = YES;
+        self.actualLanguageNumber = [self.homeDelegateOther currentLangugeOther];
+    }
     
     self.counter = arc4random_uniform([self.quotes count]);
     self.backgroundImage.image = [UIImage imageNamed:@"homePageWallpaper.jpg"];
     [self updateAllOutlets];
     [self updateAllQuotes];
     
-    if ([self.homeDelegate currentLanaguge] == 1) {
+    if (self.actualLanguageNumber == 2) {
 
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Thank you!"
                                                         message:@"Your purchase was greatly appretiated"
@@ -55,7 +65,7 @@
                                               otherButtonTitles:nil];
         [alert show];
     }
-    else if ([self.homeDelegate currentLanaguge] == 0) {
+    else if (self.actualLanguageNumber == 1) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"gratias ago tibi,"
                                                         message:@"Emptum esse erratam tuum valde"
                                                        delegate:self
@@ -79,7 +89,7 @@
     if (!_quotes) {
         _quotes = [[NSMutableArray alloc] init];
         
-        if ([self.homeDelegate currentLanaguge] == 1) {
+        if (self.actualLanguageNumber == 2) {
             
             [_quotes addObject:@"All or dreams can come true - if we have the courage to pursue them."];
             [_quotes addObject:@"What the mind can concieve, it can achieve."];
@@ -91,7 +101,7 @@
             [_quotes addObject:@"If you can dream it, you can do it."];
             [_quotes addObject:@"Don't watch the clock; do what it does. Keep going."];
         }
-        else if ([self.homeDelegate currentLanaguge] == 0) {
+        else if (self.actualLanguageNumber == 1) {
             
             [_quotes addObject:@"Omnes possunt somnia vera aut - si prosequi veritus."];
             [_quotes addObject:@"Quid mens concieve, præstare potest."];
@@ -126,7 +136,8 @@
     return _whoDidQuotes;
 }
 - (void) updateAllOutlets {
-    if ([self.homeDelegate currentLanaguge] == 1) {
+    
+    if (self.actualLanguageNumber == 2) {
 
         if (self.player.tokens <= 1) {
             self.playerTokens.text = [NSString stringWithFormat:@"Token: %d", self.player.tokens];
@@ -136,7 +147,7 @@
         self.playerMoney.text = [NSString stringWithFormat:@"Money: %d", self.player.money ];
 
     }
-    else if ([self.homeDelegate currentLanaguge] == 0) {
+    else if (self.actualLanguageNumber == 1) {
         if (self.player.tokens <= 1) {
             self.playerTokens.text = [NSString stringWithFormat:@"Token: %d", self.player.tokens];
         } else {
@@ -181,16 +192,18 @@
 - (IBAction)stopMusicButtonPressed:(UIButton *)sender {
     [self.backgroundMusicPlayer stop];
 }
-/*
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
     if ([[segue identifier] isEqualToString:@"shopSegue"]) {
         
         // Get destination view
-        SpaceScoutWeaponsStoreViewController *vc = [segue destinationViewController];
-        
+        UITabBarController *vc = [segue destinationViewController];
+        SpaceScoutWeaponsStoreViewController *wvc = (SpaceScoutWeaponsStoreViewController *)[[vc childViewControllers] objectAtIndex:0];
+        SpaceScoutVanityStoreViewController *vvc = (SpaceScoutVanityStoreViewController *)[[vc childViewControllers] objectAtIndex:1];
         // Pass the information to your destination view
-        vc.playerDelegate = self;
+        wvc.playerDelegate = self;
+        vvc.playerDelegate = self;
     }
 }
 
@@ -200,5 +213,5 @@
 
 - (NSInteger)WhatIsPlayerTokens {
     return self.player.tokens;
-}*/
+}
 @end

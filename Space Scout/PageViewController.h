@@ -31,6 +31,7 @@
 @property (strong, nonatomic) NSArray *inAppPurchase29Labels;
 @property (strong, nonatomic) NSArray *areYouSureYour18Labels;
 @property (strong, nonatomic) NSArray *YourAgeLabels;
+@property NSInteger pageLanguageNumber;
 
 
 @property id<ScrollPageDelegate> delegate;

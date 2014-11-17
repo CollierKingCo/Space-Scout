@@ -51,4 +51,7 @@
     // Release any cached data, images, etc that aren't in use.
 }
 
+- (IBAction)backButton:(UIButton *)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 @end

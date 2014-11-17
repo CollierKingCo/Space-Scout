@@ -7,8 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SpaceScoutInAppPurchaseViewController.h"
+@protocol over18Delegate <NSObject>
 
-@interface SpaceScout18AndOverViewController : UIViewController
+- (NSInteger)CurrentLanguageOver18;
+
+@end
+
+@interface SpaceScout18AndOverViewController : UIViewController <inAppDelegate>
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundImage;
 
+@property id<over18Delegate> overDelegate;
 @end

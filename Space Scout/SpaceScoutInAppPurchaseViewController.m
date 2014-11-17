@@ -16,13 +16,24 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSLog(@"current languge in app %d", [self.inDelegate CurrentLanguageInApp]);
     self.backgroundImage.image = [UIImage imageNamed:@"iap.jpg"];
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Whoops!?"
-                                                    message:@"This requires an in-app purchase of $49.98"
-                                                   delegate:self
-                                          cancelButtonTitle:@"Cancel"
-                                          otherButtonTitles:@"Pay $49.98", nil];
-    [alert show];
+    if ([self.inDelegate CurrentLanguageInApp] == 2) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Whoops!?"
+                                                        message:@"This requires an in-app purchase of $49.98"
+                                                       delegate:self
+                                              cancelButtonTitle:@"Cancel"
+                                              otherButtonTitles:@"Pay $49.98", nil];
+        [alert show];
+    }
+    else if ([self.inDelegate CurrentLanguageInApp] == 1) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Whoops!?"
+                                                        message:@"This requires an in-app purchase of $49.98 adn for this thing to be translated into latin"
+                                                       delegate:self
+                                              cancelButtonTitle:@"Cancel and other cool latin dreams"
+                                              otherButtonTitles:@"Pay $29.99 or as XXX I mean XXIX.XCIX", nil];
+        [alert show];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -40,6 +51,15 @@
     else {
         NSLog(@"Dafuq?");
     }
+}
+
+- (NSInteger)currentLangugeOther {
+    return [self.inDelegate CurrentLanguageInApp];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    SpaceScoutHomePageViewController *vc = [segue destinationViewController];
+    vc.homeDelegateOther = self;
 }
 /*
 #pragma mark - Navigation

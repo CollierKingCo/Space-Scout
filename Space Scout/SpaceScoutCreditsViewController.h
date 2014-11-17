@@ -10,6 +10,7 @@
 
 @interface SpaceScoutCreditsViewController : UITableViewController
 
+- (IBAction)backButton:(UIButton *)sender;
 
 
 @end

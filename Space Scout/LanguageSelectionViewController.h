@@ -11,6 +11,7 @@
 #import "PageViewController.h"
 #import "PageContentViewController.h"
 typedef NS_ENUM(NSInteger, lanagugeType) {
+    lanagugeTypeNone,
     lanagugeTypeLatin,
     lanagugeTypeEnglish,
     lanagugeTypeGerman,

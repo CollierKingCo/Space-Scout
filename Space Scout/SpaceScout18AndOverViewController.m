@@ -16,13 +16,24 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSLog(@"current languge in app %d", [self.overDelegate CurrentLanguageOver18]);
     self.backgroundImage.image = [UIImage imageNamed:@"restricted.png"];
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Whoops!?"
-                                                    message:@"Are you sure you're sure that you're over 18?"
-                                                   delegate:self
-                                          cancelButtonTitle:@"No"
-                                          otherButtonTitles:@"Yes", nil];
-    [alert show];
+    if ([self.overDelegate CurrentLanguageOver18] == 2) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Whoops!?"
+                                                        message:@"Are you sure you're sure that you're over 18?"
+                                                       delegate:self
+                                              cancelButtonTitle:@"No"
+                                              otherButtonTitles:@"Yes", nil];
+        [alert show];
+    }
+    else if ([self.overDelegate CurrentLanguageOver18] == 1) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Whoops!?"
+                                                        message:@"\"Are you sure you're sure that you're over 18?\" translated into latin..."
+                                                       delegate:self
+                                              cancelButtonTitle:@"No = waht ever it equals this is just showing a differnece to what it actually is adn stuff. Just let the dream continue..."
+                                              otherButtonTitles:@"Yes - well ish", nil];
+        [alert show];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -42,7 +53,16 @@
         NSLog(@"Dafuq?");
     }
 }
-/*
+
+- (NSInteger)CurrentLanguageInApp {
+    return [self.overDelegate CurrentLanguageOver18];
+}
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    SpaceScoutInAppPurchaseViewController *vc = [segue destinationViewController];
+    vc.inDelegate = self;
+    
+}
+    /*
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation

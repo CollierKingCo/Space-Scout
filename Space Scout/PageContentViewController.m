@@ -29,7 +29,6 @@
     
     //NSLog(@"delegated language %d", [self.delegate getTheCurrentLanguage]);
     
-    self.langugaeNum = 1;
   //  NSLog(@"passed on selected langauge %d", self.delegate.sel);
     
   //  NSLog(@"langauge type: %d", self.currentlySelectedLanguage);
@@ -207,7 +206,11 @@
 }*/
 
 - (NSInteger)currentLanaguge {
-    return 1;
+    return self.languageNumber;
+}
+
+- (NSInteger)CurrentLanguageOver18 {
+    return self.languageNumber;
 }
 // This will get called too before the view appears
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
@@ -215,7 +218,6 @@
     if ([[segue identifier] isEqualToString:@"PlayGameSegue"]) {
         
         // Get destination view
-        
         
         SpaceScoutHomePageViewController *viewController = [segue destinationViewController];
         
@@ -225,6 +227,10 @@
         
         // Pass the information to your destination view
         viewController.homeDelegate = self;
+    }
+    else if ([[segue identifier] isEqualToString:@"over18Segue"]) {
+        SpaceScout18AndOverViewController *vc = [segue destinationViewController];
+        vc.overDelegate = self;
     }
 }
 

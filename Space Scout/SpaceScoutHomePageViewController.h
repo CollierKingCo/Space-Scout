@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "SpaceScoutPlayer.h"
 #import "SpaceScoutWeaponsStoreViewController.h"
+#import "SpaceScoutVanityStoreViewController.h"
 
 /*@protocol HomePageDelgate <NSObject>
 - (NSInteger)whatIsTheCurrentLangugae;
@@ -20,7 +21,13 @@
 
 @end
 
-@interface SpaceScoutHomePageViewController : UIViewController //<PlayerInfoDelegate>
+@protocol TheOtherHomePageDelegate <NSObject>
+
+- (NSInteger)currentLangugeOther;
+
+@end
+
+@interface SpaceScoutHomePageViewController : UIViewController <PlayerInfoDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *playerTokens;
 @property (weak, nonatomic) IBOutlet UILabel *playerMoney;
 
@@ -33,6 +40,10 @@
 
 //@property id<HomePageDelgate> delegate;
 @property id<TheHomePageDelegate> homeDelegate;
+@property id<TheOtherHomePageDelegate> homeDelegateOther;
+
+@property NSInteger actualLanguageNumber;
+@property BOOL isOver18;
 
 @property NSInteger counter;
 
