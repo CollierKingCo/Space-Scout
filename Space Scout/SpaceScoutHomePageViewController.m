@@ -73,6 +73,25 @@
                                               otherButtonTitles:nil];
         [alert show];
     }
+    if (self.isOver18 == YES) {
+        if (self.actualLanguageNumber == 2) {
+            
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Congradulations"
+                                                            message:@"Your Over 18"
+                                                           delegate:self
+                                                  cancelButtonTitle:@"I know"
+                                                  otherButtonTitles:nil];
+            [alert show];
+        }
+        else if (self.actualLanguageNumber == 1) {
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Congradulations but in latin..."
+                                                            message:@"Emptum esse erratam tuum valde"
+                                                           delegate:self
+                                                  cancelButtonTitle:@"CALLIDE..."
+                                                  otherButtonTitles:nil];
+            [alert show];
+        }
+    }
     
 #warning turn off exception breakpoints to play!!!
 
@@ -177,7 +196,6 @@
 }
 
 - (IBAction)playSpecialSongButtonPressed:(UIButton *)sender {
-    self.player.money += 100;
     [self.backgroundMusicPlayer stop];
     NSError *error;
     NSURL * backgroundMusicURL = [[NSBundle mainBundle] URLForResource:@"Taylor Swift - Shake It Off" withExtension:@"mp3"];
@@ -214,4 +232,13 @@
 - (NSInteger)WhatIsPlayerTokens {
     return self.player.tokens;
 }
+
+- (void)moneySpentInShop:(NSInteger)amount{
+    self.player.money = self.player.money - amount;
+}
+
+- (void)tokensSpentInShop:(NSInteger)amount {
+    self.player.tokens = self.player.tokens - amount;
+}
+
 @end
