@@ -47,7 +47,7 @@
         [self performSegueWithIdentifier:@"inAppPurchaseSegue" sender:self];
     }
     if (buttonIndex == 0) {
-        [self performSegueWithIdentifier:@"backToStartSegue" sender:self];
+        [self dismissViewControllerAnimated:YES completion:nil];
     }
     else {
         NSLog(@"Dafuq?");

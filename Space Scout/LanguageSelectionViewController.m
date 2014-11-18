@@ -36,6 +36,7 @@
     
     self.languageArray  = [[NSArray alloc] initWithObjects:@"Latin",@"English", @"German", @"Elvish", @"Volcan", @"Sylvan", nil];
     self.infoArray = [[NSArray alloc] initWithObjects:@"Lat", @"Eng", @"Ger", @"Elv", @"Vol", @"Syl",nil];
+
 }
 -(void)onTick:(NSTimer *)timer {
     self.infoCounter ++;

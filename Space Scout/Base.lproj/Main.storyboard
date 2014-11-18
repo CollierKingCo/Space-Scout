@@ -107,8 +107,11 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e6H-IH-R7o">
                                 <rect key="frame" x="0.0" y="0.0" width="39" height="30"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="15"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
                                 <state key="normal" title="Back!">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="backButton:" destination="wn1-Nh-5eW" eventType="touchDown" id="OmU-Ew-RO3"/>
@@ -136,7 +139,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U04-it-wg1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2086" y="-403"/>
+            <point key="canvasLocation" x="1246" y="-361"/>
         </scene>
         <!--Shop-->
         <scene sceneID="TpM-Dx-63Q">
@@ -157,7 +160,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5g0-CI-lO1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1295" y="-168"/>
+            <point key="canvasLocation" x="455" y="-126"/>
         </scene>
         <!--Vanity-->
         <scene sceneID="Mph-lg-boz">
@@ -261,8 +264,11 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XmI-wt-ufK">
                                 <rect key="frame" x="0.0" y="0.0" width="39" height="30"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="15"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
                                 <state key="normal" title="Back!">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="backButton:" destination="v1T-Bv-Ke5" eventType="touchDown" id="bed-pC-RCA"/>
@@ -290,7 +296,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Up-jl-act" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2086" y="30"/>
+            <point key="canvasLocation" x="1246" y="72"/>
         </scene>
         <!--Play Game View-->
         <scene sceneID="CtS-rA-C9T">
@@ -306,8 +312,11 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wVc-s5-761">
                                 <rect key="frame" x="0.0" y="0.0" width="39" height="30"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="15"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
                                 <state key="normal" title="Back!">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="backButton:" destination="LVB-YS-i5n" eventType="touchDown" id="88d-RU-6Nm"/>
@@ -321,7 +330,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="btX-cZ-eVz" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1295" y="276"/>
+            <point key="canvasLocation" x="455" y="318"/>
         </scene>
         <!--Credits-->
         <scene sceneID="sod-kz-P1y">
@@ -395,7 +404,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="309-8k-htb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1283" y="1172"/>
+            <point key="canvasLocation" x="443" y="1214"/>
         </scene>
         <!--Space Scout Main Menu Navigation View Controller-->
         <scene sceneID="BEN-HK-fn9">
@@ -412,7 +421,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="we2-50-Yv1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-998" y="546"/>
+            <point key="canvasLocation" x="-1362" y="608"/>
         </scene>
         <!--Home Page-->
         <scene sceneID="BsH-Xp-uAL">
@@ -535,6 +544,12 @@
                                     <segue destination="LVB-YS-i5n" kind="modal" modalTransitionStyle="coverVertical" id="z0g-bG-uqH"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ads Ads Ads Ads Ads and more Ads.... " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JSg-O2-rnk">
+                                <rect key="frame" x="132" y="8" width="305" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -555,7 +570,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xpP-VF-7T6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="324" y="292"/>
+            <point key="canvasLocation" x="-460" y="318"/>
         </scene>
         <!--Language Selection View Controller-->
         <scene sceneID="AJ3-Tu-8C3">
@@ -922,7 +937,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L9t-8o-Xz3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1295" y="749"/>
+            <point key="canvasLocation" x="455" y="791"/>
         </scene>
     </scenes>
     <resources>

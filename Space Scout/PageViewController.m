@@ -18,8 +18,8 @@
     NSLog(@"delegated language %d", [self.delegate getTheCurrentLanguage]);
 
     // Create the data model
-    _pageTutImages = @[/*@"",*/ @"page1.png", @"", @"", @""];
-    _pageTutImages2 = @[/*@"",*/ @"page2.png", @"", @"", @""];
+    _pageTutImages = @[/*@"",*/ @"tut 1.png", @"", @"", @""];
+    _pageTutImages2 = @[/*@"",*/ @"tut 2.png", @"", @"", @""];
     _pageAdImages = @[/*@"",*/ @"", @"", @"buy buy buy.jpg", @""];
     _pageImages = @[/*@"page1.png",*/ @"page2.png", @"page3.png", @"page4.png", @"Laser.png"];
     _pageLanguageNumber = [self.delegate getTheCurrentLanguage];

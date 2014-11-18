@@ -10,6 +10,8 @@
 		A413B3D11A1B704300C3673A /* SpaceScoutProjectile.m in Sources */ = {isa = PBXBuildFile; fileRef = A413B3D01A1B704300C3673A /* SpaceScoutProjectile.m */; };
 		A413B3D41A1B70AF00C3673A /* SpaceScoutEnemy.m in Sources */ = {isa = PBXBuildFile; fileRef = A413B3D31A1B70AF00C3673A /* SpaceScoutEnemy.m */; };
 		A413B3D81A1B710500C3673A /* SpaceScoutEnemyTeam.m in Sources */ = {isa = PBXBuildFile; fileRef = A413B3D71A1B710500C3673A /* SpaceScoutEnemyTeam.m */; };
+		A413B3DD1A1B814800C3673A /* tut 1.png in Resources */ = {isa = PBXBuildFile; fileRef = A413B3DB1A1B814800C3673A /* tut 1.png */; };
+		A413B3DE1A1B814800C3673A /* tut 2.png in Resources */ = {isa = PBXBuildFile; fileRef = A413B3DC1A1B814800C3673A /* tut 2.png */; };
 		A42774B919FFC4DB00B59B3B /* PageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A42774B819FFC4DB00B59B3B /* PageContentViewController.m */; };
 		A42774BC19FFC4F500B59B3B /* PageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A42774BB19FFC4F500B59B3B /* PageViewController.m */; };
 		A42774C119FFCC1200B59B3B /* page1.png in Resources */ = {isa = PBXBuildFile; fileRef = A42774BD19FFCC1200B59B3B /* page1.png */; };
@@ -105,6 +107,8 @@
 		A413B3D61A1B710500C3673A /* SpaceScoutEnemyTeam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpaceScoutEnemyTeam.h; sourceTree = "<group>"; };
 		A413B3D71A1B710500C3673A /* SpaceScoutEnemyTeam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpaceScoutEnemyTeam.m; sourceTree = "<group>"; };
 		A413B3DA1A1B750500C3673A /* SpaceScoutPhysicsBodyCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpaceScoutPhysicsBodyCategory.h; sourceTree = "<group>"; };
+		A413B3DB1A1B814800C3673A /* tut 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tut 1.png"; sourceTree = "<group>"; };
+		A413B3DC1A1B814800C3673A /* tut 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tut 2.png"; sourceTree = "<group>"; };
 		A42774B719FFC4DB00B59B3B /* PageContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageContentViewController.h; sourceTree = "<group>"; };
 		A42774B819FFC4DB00B59B3B /* PageContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageContentViewController.m; sourceTree = "<group>"; };
 		A42774BA19FFC4F500B59B3B /* PageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageViewController.h; sourceTree = "<group>"; };
@@ -263,7 +267,7 @@
 			name = Delgation;
 			sourceTree = "<group>";
 		};
-		A413B3CC1A1B6F8600C3673A /* Sprit Kit */ = {
+		A413B3CC1A1B6F8600C3673A /* Sprit Kit - Josh Collier */ = {
 			isa = PBXGroup;
 			children = (
 				A413B3D91A1B74BB00C3673A /* View Controllers */,
@@ -273,7 +277,7 @@
 				A413B3CE1A1B6FEE00C3673A /* My Scene */,
 				A413B3DA1A1B750500C3673A /* SpaceScoutPhysicsBodyCategory.h */,
 			);
-			name = "Sprit Kit";
+			name = "Sprit Kit - Josh Collier";
 			sourceTree = "<group>";
 		};
 		A413B3CD1A1B6FD900C3673A /* Projectiles */ = {
@@ -401,7 +405,7 @@
 		B74FB1C819987BD9000F722B /* Space Scout */ = {
 			isa = PBXGroup;
 			children = (
-				A413B3CC1A1B6F8600C3673A /* Sprit Kit */,
+				A413B3CC1A1B6F8600C3673A /* Sprit Kit - Josh Collier */,
 				A413B3CB1A1B6F7400C3673A /* Delgation */,
 				A413B3C61A1B6CDE00C3673A /* Player */,
 				CB1966AB19A458E500BF33C7 /* Images/music */,
@@ -452,6 +456,8 @@
 		CB1966AB19A458E500BF33C7 /* Images/music */ = {
 			isa = PBXGroup;
 			children = (
+				A413B3DB1A1B814800C3673A /* tut 1.png */,
+				A413B3DC1A1B814800C3673A /* tut 2.png */,
 				A4C3A2E51A05D7C900877CF0 /* iap.jpg */,
 				A4C3A2E31A05D71500877CF0 /* restricted.png */,
 				A4A821931A025E0B00F76022 /* buy buy buy.jpg */,
@@ -601,6 +607,7 @@
 				A4AE569F19ED58DE00091D73 /* joystick.png in Resources */,
 				A4AE569919ED58DE00091D73 /* darkScreen.png in Resources */,
 				A4AE56B219ED58DE00091D73 /* Vanity2.jpg in Resources */,
+				A413B3DE1A1B814800C3673A /* tut 2.png in Resources */,
 				A4AE56AC19ED58DE00091D73 /* Sword3.jpg in Resources */,
 				A4AE56A019ED58DE00091D73 /* Laser.png in Resources */,
 				B74FB1CD19987BD9000F722B /* InfoPlist.strings in Resources */,
@@ -622,6 +629,7 @@
 				A4AE56A619ED58DE00091D73 /* shuttle_0.png in Resources */,
 				A4AE56A719ED58DE00091D73 /* Spaceship_2.png in Resources */,
 				A4AE56AD19ED58DE00091D73 /* Sword4.png in Resources */,
+				A413B3DD1A1B814800C3673A /* tut 1.png in Resources */,
 				A4672D1D19FB657900150AB1 /* WeaponsWallpaper.jpg in Resources */,
 				A4AE569C19ED58DE00091D73 /* dpad.png in Resources */,
 				A4AE569819ED58DE00091D73 /* Collect_Button.png in Resources */,
