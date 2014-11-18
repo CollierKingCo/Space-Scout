@@ -104,6 +104,7 @@
 		A413B3D31A1B70AF00C3673A /* SpaceScoutEnemy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpaceScoutEnemy.m; sourceTree = "<group>"; };
 		A413B3D61A1B710500C3673A /* SpaceScoutEnemyTeam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpaceScoutEnemyTeam.h; sourceTree = "<group>"; };
 		A413B3D71A1B710500C3673A /* SpaceScoutEnemyTeam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpaceScoutEnemyTeam.m; sourceTree = "<group>"; };
+		A413B3DA1A1B750500C3673A /* SpaceScoutPhysicsBodyCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpaceScoutPhysicsBodyCategory.h; sourceTree = "<group>"; };
 		A42774B719FFC4DB00B59B3B /* PageContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageContentViewController.h; sourceTree = "<group>"; };
 		A42774B819FFC4DB00B59B3B /* PageContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageContentViewController.m; sourceTree = "<group>"; };
 		A42774BA19FFC4F500B59B3B /* PageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageViewController.h; sourceTree = "<group>"; };
@@ -265,12 +266,12 @@
 		A413B3CC1A1B6F8600C3673A /* Sprit Kit */ = {
 			isa = PBXGroup;
 			children = (
-				B74FB1D719987BD9000F722B /* SpaceScoutViewController.h */,
-				B74FB1D819987BD9000F722B /* SpaceScoutViewController.m */,
+				A413B3D91A1B74BB00C3673A /* View Controllers */,
 				A413B3D51A1B70C000C3673A /* Enemy */,
 				A413B3CA1A1B6F3100C3673A /* JoyStick */,
 				A413B3CD1A1B6FD900C3673A /* Projectiles */,
 				A413B3CE1A1B6FEE00C3673A /* My Scene */,
+				A413B3DA1A1B750500C3673A /* SpaceScoutPhysicsBodyCategory.h */,
 			);
 			name = "Sprit Kit";
 			sourceTree = "<group>";
@@ -302,6 +303,15 @@
 				A413B3D71A1B710500C3673A /* SpaceScoutEnemyTeam.m */,
 			);
 			name = Enemy;
+			sourceTree = "<group>";
+		};
+		A413B3D91A1B74BB00C3673A /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B74FB1D719987BD9000F722B /* SpaceScoutViewController.h */,
+				B74FB1D819987BD9000F722B /* SpaceScoutViewController.m */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 		A4672D2319FBA55C00150AB1 /* Intro */ = {

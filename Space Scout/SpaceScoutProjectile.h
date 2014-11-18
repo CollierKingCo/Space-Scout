@@ -7,7 +7,7 @@
 //
 
 #import <SpriteKit/SpriteKit.h>
-@class SpaceScoutPlayer;
+#import "SpaceScoutPhysicsBodyCategory.h"
 
 @interface SpaceScoutProjectile : SKSpriteNode
 

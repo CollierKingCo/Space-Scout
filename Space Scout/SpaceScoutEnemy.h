@@ -10,6 +10,7 @@
 
 #import <SpriteKit/SpriteKit.h>
 #import "SpaceScoutProjectile.h"
+#import "SpaceScoutPhysicsBodyCategory.h"
 
 typedef NS_ENUM(NSInteger, UnitAlignment) {
     Xerionian = 0,
