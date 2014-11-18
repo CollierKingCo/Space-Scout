@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <SpriteKit/SpriteKit.h>
 
-@interface SpaceScoutViewController : UIViewController
+@interface SpaceScoutViewController : UIViewController 
 - (IBAction)backButton:(UIButton *)sender;
 
 @end

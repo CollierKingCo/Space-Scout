@@ -6,35 +6,33 @@
 //  Copyright (c) 2014 Collier King Co. All rights reserved.
 //
 
-
 #import <AudioToolbox/AudioToolbox.h>
 #import <AVFoundation/AVFoundation.h>
 #import "SpaceScoutMyScene.h"
+#import "SpaceScoutPlayViewController.h"
 #import "SpaceScoutPlayer.h"
+#import "SpaceScoutEnemy.h"
+#import "SpaceScoutEnemyTeam.h"
+#import "SpaceScoutPhysicsBodyCategory.h"
 #import "Joystick.h"
-
-#define kMinPlayerToEdgeDistance 50
 
 @interface SpaceScoutMyScene () <SKPhysicsContactDelegate>
 
-@property SpaceScoutPlayer* player2;
 @property SKSpriteNode* player;
-@property SKSpriteNode* enemy;
-@property SKSpriteNode* bomb;
-@property SKSpriteNode* enemyBomb;
+@property SKSpriteNode* playerProjectile;
+@property SKSpriteNode* enemyProjectile;
 @property SKSpriteNode* collectButtonNode;
 @property SKSpriteNode* progressBar;
 @property SKSpriteNode* planet;
-@property SKSpriteNode* planet2;
 @property SKSpriteNode* shopPlanet;
 @property SKSpriteNode* background;
 @property SKSpriteNode* darkScreen;
 @property SKSpriteNode* resumeButton;
 @property SKSpriteNode* pauseButton;
+@property SpaceScoutEnemy* enemy;
 
 @property SKLabelNode* scrapLabel;
 @property SKLabelNode* healthLabel;
-@property SKNode *world;
 @property NSInteger scrap;
 @property NSInteger health;
 @property NSInteger maxHealth;
@@ -50,6 +48,10 @@
 
 @property NSMutableArray *explosionTextures;
 @property SKEmitterNode *fireTrail;
+
+@property BOOL enemyIsDead;
+
+@property (nonatomic) NSArray* armies;
 
 @end
 
@@ -83,39 +85,42 @@ static inline CGPoint rwNormalize(CGPoint a) {
 
 @implementation SpaceScoutMyScene
 
+- (NSArray *)armies {
+    if (!_armies) {
+        SpaceScoutEnemyTeam* xerionian = [[SpaceScoutEnemyTeam alloc] init];
+        SpaceScoutEnemyTeam* mutantPlant = [[SpaceScoutEnemyTeam alloc] init];
+        xerionian.alignment = Xerionian;
+        mutantPlant.alignment = MutantPlant;
+        _armies = @[xerionian, mutantPlant];
+    }
+    return _armies;
+}
+
 -(id)initWithSize:(CGSize)size {
     if (self = [super initWithSize:size]) {
-        /* Setup your scene here */
+        NSInteger random = arc4random_uniform(5) + 1;
+        self.enemyIsDead = NO;
         self.scrap = 100;
         self.maxHealth = 10000;
         self.health = 10000;
-//#error fix yo death boy
-#warning fix yo daeth boy
         self.middlePoint = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame));
         
+        // Set World Physics
         self.physicsWorld.gravity = CGVectorMake(0,0);
         self.physicsWorld.contactDelegate = self;
         
+        // Add Background
         self.background = [SKSpriteNode spriteNodeWithImageNamed:@"Orion-nebula-viewed-by-WISE.jpg"];
         self.background.position = self.middlePoint;
         self.background.size = CGSizeMake(CGRectGetWidth(self.frame), CGRectGetHeight(self.frame));
-        
         [self addChild:self.background];
         
-        _world = [[SKNode alloc] init];
-        [self addChild:_world];
-        
+        // Add Objects
         [self addPlanets];
         // [self addShopPlanet];
-        [self addEnemy];
         [self addPlayer];
-        
-        SKSpriteNode *jsThumb = [SKSpriteNode spriteNodeWithImageNamed:@"joystick.png"];
-        SKSpriteNode *jsBackdrop = [SKSpriteNode spriteNodeWithImageNamed:@"dpad"];
-        self.joystick = [Joystick joystickWithThumb:jsThumb andBackdrop:jsBackdrop];
-        self.joystick.position = CGPointMake(jsBackdrop.size.width, jsBackdrop.size.height);
-        self.joystick.position = CGPointMake(90, 90);
-        [self addChild:self.joystick];
+        [self addEnemy];
+        [self addJoystick];
         
         self.frameWidth = arc4random_uniform(200);
         self.frameHeight = arc4random_uniform(200);
@@ -132,8 +137,10 @@ static inline CGPoint rwNormalize(CGPoint a) {
             
         }
         [self addPauseButton];
-        
         [self updateAllOutlets];
+        
+        [NSTimer scheduledTimerWithTimeInterval:10.0 target:self selector:@selector(addEnemy) userInfo:nil repeats:YES];
+        
     }
     return self;
 }
@@ -151,8 +158,7 @@ static inline CGPoint rwNormalize(CGPoint a) {
 }
 
 - (void)updateAllOutlets {
-    SKAction * actionMove = [SKAction moveTo:self.player.position duration:5];
-    [self.enemy runAction:actionMove];
+    self.enemyIsDead = NO;
     
     [self.scrapLabel removeFromParent];
     [self addScrapLabel];
@@ -163,8 +169,7 @@ static inline CGPoint rwNormalize(CGPoint a) {
 }
 
 - (void)addScrapLabel {
-    self.scrapLabel = [SKLabelNode labelNodeWithFontNamed:@"Arial"];
-    
+    self.scrapLabel = [SKLabelNode labelNodeWithFontNamed:@"Ariel"];
     self.scrapLabel.text = [NSString stringWithFormat:@"Scrap: %@", @(self.scrap)];
     self.scrapLabel.fontSize = 20;
     self.scrapLabel.position = CGPointMake(64, 286);
@@ -173,7 +178,7 @@ static inline CGPoint rwNormalize(CGPoint a) {
 }
 
 - (void)addHealthLabel {
-    self.healthLabel = [SKLabelNode labelNodeWithFontNamed:@"Arial"];
+    self.healthLabel = [SKLabelNode labelNodeWithFontNamed:@"manaspc"];
     
     self.healthLabel.fontSize = 20;
     self.healthLabel.position = CGPointMake(128, 256);
@@ -196,62 +201,107 @@ static inline CGPoint rwNormalize(CGPoint a) {
 }
 
 - (void)addDarkScreen {
-	self.darkScreen = [SKSpriteNode spriteNodeWithImageNamed:@"darkScreen.png"];
-	self.darkScreen.position = self.middlePoint;
-	self.darkScreen.size = CGSizeMake(self.frame.size.width, self.frame.size.height);
-	[self addChild:self.darkScreen];
+    self.darkScreen = [SKSpriteNode spriteNodeWithImageNamed:@"darkScreen.png"];
+    self.darkScreen.position = self.middlePoint;
+    self.darkScreen.size = CGSizeMake(self.frame.size.width, self.frame.size.height);
+    [self addChild:self.darkScreen];
 }
 
 - (void)addResumeButton {
-	self.resumeButton = [SKSpriteNode spriteNodeWithImageNamed:@"resumeButton.png"];
-	self.resumeButton.position = CGPointMake(self.frame.size.width - 128, self.frame.size.height - 32);
+    self.resumeButton = [SKSpriteNode spriteNodeWithImageNamed:@"resumeButton.png"];
+    self.resumeButton.position = CGPointMake(self.frame.size.width - 128, self.frame.size.height - 32);
     self.resumeButton.size = CGSizeMake(128, 32);
-	self.resumeButton.name = @"resumeButton";
-	[self addChild:self.resumeButton];
+    self.resumeButton.name = @"resumeButton";
+    [self addChild:self.resumeButton];
 }
 
 - (void)addPauseButton {
-	self.pauseButton = [SKSpriteNode spriteNodeWithImageNamed:@"pauseButton.png"];
-	self.pauseButton.position = CGPointMake(self.frame.size.width - 32, self.frame.size.height - 32);
-	self.pauseButton.size = CGSizeMake(32, 32);
-	self.pauseButton.name = @"pauseButton";
-	[self addChild:self.pauseButton];
+    self.pauseButton = [SKSpriteNode spriteNodeWithImageNamed:@"pauseButton.png"];
+    self.pauseButton.position = CGPointMake(self.frame.size.width - 32, self.frame.size.height - 32);
+    self.pauseButton.size = CGSizeMake(32, 32);
+    self.pauseButton.name = @"pauseButton";
+    [self addChild:self.pauseButton];
 }
 
 - (void)pauseGame {
-    [self.bomb removeFromParent];
-	[self addDarkScreen];
+    [self.playerProjectile removeFromParent];
+    [self addDarkScreen];
     [self addResumeButton];
     self.scene.paused = YES;
+    self.enemyIsDead = YES;
 }
 
 
 
 #pragma mark ---------------------- Create Enemy ----------------------
 
+- (id)initEnemy {
+    return self;
+}
+
+/*
+ - (void)addEnemy {
+ int maxXCoord = CGRectGetMaxX(self.frame);
+ int maxYCoord = CGRectGetMaxY(self.frame);
+ 
+ int x = arc4random()% maxXCoord + 40;
+ int y = arc4random()% maxYCoord + 40;
+ 
+ self.enemy = [SKSpriteNode spriteNodeWithImageNamed:@"Spaceship_3.png"];
+ self.enemy.position = CGPointMake(x, y);
+ self.enemy.size = CGSizeMake(64, 64);
+ self.enemy.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:self.enemy.size]; // 1
+ self.enemy.physicsBody.dynamic = YES;
+ self.enemy.physicsBody.categoryBitMask = enemyCategory; // 3
+ self.enemy.physicsBody.contactTestBitMask = bombCategory;
+ self.enemy.physicsBody.collisionBitMask = 0;
+ [self addChild:self.enemy];
+ [NSTimer scheduledTimerWithTimeInterval:2.0 target:self selector:@selector(shoot) userInfo:nil repeats:NO];
+ [self updateAllOutlets];
+ self.enemyIsDead = NO;
+ SKAction* action = [SKAction moveTo:self.player.position duration:5];
+ [self.enemy runAction:action];
+ }
+ */
+
 - (void)addEnemy {
+    UnitAlignment alignment;
+    alignment = MutantPlant;
+    
     int maxXCoord = CGRectGetMaxX(self.frame);
     int maxYCoord = CGRectGetMaxY(self.frame);
     
-    int x = arc4random()% maxXCoord + 40;
-    int y = arc4random()% maxYCoord + 40;
+    int x = arc4random() % maxXCoord + 40;
+    int y = arc4random() % maxYCoord + 40;
     
-    self.enemy = [SKSpriteNode spriteNodeWithImageNamed:@"Spaceship_3.png"];
+    [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(shoot) userInfo:nil repeats:NO];
+    
+    self.enemy = [self.armies[alignment] deployNextEnemy];
     self.enemy.position = CGPointMake(x, y);
-    self.enemy.size = CGSizeMake(64, 64);
-    self.enemy.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:self.enemy.size]; // 1
-    self.enemy.physicsBody.dynamic = YES;
-    self.enemy.physicsBody.categoryBitMask = enemyCategory; // 3
-    self.enemy.physicsBody.contactTestBitMask = bombCategory;
-    self.enemy.physicsBody.collisionBitMask = 0;
+    
+    // SKAction* action = [SKAction moveByX:enemy.velocity y:0 duration:1];
+    // [enemy runAction:[SKAction repeatActionForever:action]];
+    
     [self addChild:self.enemy];
-    [NSTimer scheduledTimerWithTimeInterval:2.0 target:self selector:@selector(shoot) userInfo:nil repeats:NO];
-    [self updateAllOutlets];
+    
+    SKAction* action = [SKAction moveTo:self.player.position duration:5];
+    SKAction* repeat = [SKAction repeatActionForever:action];
+    [self.enemy runAction:repeat];
+    /*
+     self.enemy.position = CGPointMake(x, y);
+     self.enemy.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:self.enemy.size]; // 1
+     self.enemy.physicsBody.dynamic = YES;
+     self.enemy.physicsBody.categoryBitMask = enemyCategory; // 3
+     self.enemy.physicsBody.contactTestBitMask = bombCategory;
+     self.enemy.physicsBody.collisionBitMask = 0;
+     */
+    
 }
 
+
 - (void)shoot {
-    [self addEnemyBomb];
-    [self updateAllOutlets];
+    [self addEnemyProjectile];
+    
 }
 
 #pragma mark ---------------------- Create Player ----------------------
@@ -272,26 +322,71 @@ static inline CGPoint rwNormalize(CGPoint a) {
 #pragma mark ---------------------- Create Planets ----------------------
 
 - (void)addPlanets {
-    self.planet2 = [SKSpriteNode spriteNodeWithImageNamed:@"Planet_3.png"];
-    self.planet = [SKSpriteNode spriteNodeWithImageNamed:@"Planet_4.png"];
-    self.planet2.size = CGSizeMake(64, 64);
-    self.planet.size = CGSizeMake(128, 128);
+    SKSpriteNode* planet2;
+    SKSpriteNode* planet3;
+    SKSpriteNode* planet4;
+    SKSpriteNode* planet5;
     
-    self.planet.position = self.middlePoint;
-    self.planet2.position = CGPointMake(240, 260);
+    int maxXCoord = CGRectGetMaxX(self.frame);
+    int maxYCoord = CGRectGetMaxY(self.frame);
+    
+    int a = arc4random() % maxXCoord;
+    int b = arc4random() % maxYCoord;
+    int c = arc4random() % maxXCoord;
+    int d = arc4random() % maxYCoord;
+    int e = arc4random() % maxXCoord;
+    int f = arc4random() % maxYCoord;
+    
+    
+    self.planet = [SKSpriteNode spriteNodeWithImageNamed:@"Planet_3.png"];
+    planet2 = [SKSpriteNode spriteNodeWithImageNamed:@"Planet_4.png"];
+    planet3 = [SKSpriteNode spriteNodeWithImageNamed:@"Planet_4.png"];
+    planet4 = [SKSpriteNode spriteNodeWithImageNamed:@"Planet_4.png"];
+    planet5 = [SKSpriteNode spriteNodeWithImageNamed:@"Planet_4.png"];
+    
+    self.planet.size = CGSizeMake(64, 64);
     self.planet.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:self.planet.size.width/2];
-    self.planet2.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:self.planet2.size];
     self.planet.physicsBody.categoryBitMask = planetCategory;
-    self.planet2.physicsBody.categoryBitMask = planetCategory;
     self.planet.physicsBody.contactTestBitMask = playerCategory;
-    self.planet2.physicsBody.contactTestBitMask = playerCategory;
     self.planet.physicsBody.collisionBitMask = 0;
-    self.planet2.physicsBody.collisionBitMask = 0;
     self.planet.physicsBody.dynamic = YES;
-    self.planet2.physicsBody.dynamic = YES;
-    
+    self.planet.position = CGPointMake(a, b);
     [self addChild:self.planet];
-    [self addChild:self.planet2];
+    
+    planet2.size = CGSizeMake(64, 64);
+    planet2.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:planet2.size.width/2];
+    planet2.physicsBody.categoryBitMask = planetCategory;
+    planet2.physicsBody.contactTestBitMask = playerCategory;
+    planet2.physicsBody.collisionBitMask = 0;
+    planet2.physicsBody.dynamic = YES;
+    planet2.position = CGPointMake(c, d);
+    
+    [self addChild:planet2];
+    
+    planet3.size = CGSizeMake(64, 64);
+    planet3.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:planet3.size.width/2];
+    planet3.physicsBody.categoryBitMask = planetCategory;
+    planet3.physicsBody.contactTestBitMask = playerCategory;
+    planet3.physicsBody.collisionBitMask = 0;
+    planet3.physicsBody.dynamic = YES;
+    planet3.position = CGPointMake(e, f);
+    
+    [self addChild:planet3];
+    
+    /*
+     planet3 = self.planet;
+     planet3.position = CGPointMake(a, b);
+     [self addChild:planet3];
+     
+     planet4 = self.planet;
+     planet4.position = CGPointMake(a, b);
+     [self addChild:planet4];
+     
+     planet5 = self.planet;
+     planet5.position = CGPointMake(a, b);
+     [self addChild:planet5];
+     */
+    
 }
 
 - (void)addShopPlanet {
@@ -307,37 +402,51 @@ static inline CGPoint rwNormalize(CGPoint a) {
     
 }
 
-- (void)addEnemyBomb {
+- (void)addJoystick {
+    SKSpriteNode *jsThumb = [SKSpriteNode spriteNodeWithImageNamed:@"joystick"];
+    SKSpriteNode *jsBackdrop = [SKSpriteNode spriteNodeWithImageNamed:@"dpad"];
+    self.joystick = [Joystick joystickWithThumb:jsThumb andBackdrop:jsBackdrop];
+    self.joystick.position = CGPointMake(jsBackdrop.size.width, jsBackdrop.size.height);
+    [self addChild:self.joystick];
+}
+
+- (void)addEnemyProjectile {
+    if (self.enemyIsDead == YES) {
+        return;
+    }
+    
     CGPoint location = self.player.position;
     
-    self.enemyBomb = [SKSpriteNode spriteNodeWithImageNamed:@"Laser.png"];
-    self.enemyBomb.position = self.enemy.position;
-    self.enemyBomb.zRotation = self.enemy.zRotation;
-    self.enemyBomb.size = CGSizeMake(8, 32);
-    self.enemyBomb.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:self.enemyBomb.size];
-    self.enemyBomb.physicsBody.dynamic = YES;
-    self.enemyBomb.physicsBody.categoryBitMask = enemyBombCategory;
-    self.enemyBomb.physicsBody.contactTestBitMask = playerCategory;
-    self.enemyBomb.physicsBody.collisionBitMask = 0;
-    self.enemyBomb.physicsBody.usesPreciseCollisionDetection = YES;
+    UnitAlignment alignment;
+    alignment = MutantPlant;
     
-    CGPoint offset = rwSub(location, self.enemyBomb.position);
+    self.enemyProjectile = [SKSpriteNode spriteNodeWithImageNamed:@"Laser.png"];
+    self.enemyProjectile.position = self.enemy.position;
+    self.enemyProjectile.size = CGSizeMake(8, 32);
+    self.enemyProjectile.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:self.enemyProjectile.size];
+    self.enemyProjectile.physicsBody.dynamic = YES;
+    self.enemyProjectile.physicsBody.categoryBitMask = enemyBombCategory;
+    self.enemyProjectile.physicsBody.contactTestBitMask = playerCategory;
+    self.enemyProjectile.physicsBody.collisionBitMask = 0;
+    self.enemyProjectile.physicsBody.usesPreciseCollisionDetection = YES;
     
-    [self addChild:self.enemyBomb];
+    CGPoint offset = rwSub(location, self.enemyProjectile.position);
+    
+    [self addChild:self.enemyProjectile];
     
     CGPoint direction = rwNormalize(offset);
     
     CGPoint shootAmount = rwMult(direction, 1000);
     
-    CGPoint realDest = rwAdd(shootAmount, self.enemyBomb.position);
+    CGPoint realDest = rwAdd(shootAmount, self.enemyProjectile.position);
     
     float velocity = 240.0/1.0;
     float realMoveDuration = self.size.width / velocity;
     SKAction * actionMove = [SKAction moveTo:realDest duration:realMoveDuration];
     SKAction * actionMoveDone = [SKAction removeFromParent];
-    [self.enemyBomb runAction:[SKAction sequence:@[actionMove, actionMoveDone]]];
+    [self.enemyProjectile runAction:[SKAction sequence:@[actionMove, actionMoveDone]]];
     
-    [NSTimer scheduledTimerWithTimeInterval:2.0 target:self selector:@selector(shoot) userInfo:nil repeats:YES];
+    [NSTimer scheduledTimerWithTimeInterval:2.0 target:self selector:@selector(shoot) userInfo:nil repeats:NO];
     
 }
 
@@ -350,31 +459,67 @@ static inline CGPoint rwNormalize(CGPoint a) {
         SKNode *node = [self nodeAtPoint:location];
         
         if (self.scene.paused == NO) {
-            self.bomb = [SKSpriteNode spriteNodeWithImageNamed:@"Laser.png"];
-            self.bomb.position = self.player.position;
-            self.bomb.size = CGSizeMake(8, 32);
-            self.bomb.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:self.bomb.size.width/2];
-            self.bomb.physicsBody.dynamic = YES;
-            self.bomb.physicsBody.categoryBitMask = bombCategory;
-            self.bomb.physicsBody.contactTestBitMask = enemyCategory;
-            self.bomb.physicsBody.collisionBitMask = 0;
-            self.bomb.physicsBody.usesPreciseCollisionDetection = YES;
+            /*
+             if([self.moveRightNode containsPoint: location]) {
+             NSInteger xSpeed = yourSpeed;
+             character.physicsBody.velocity = CGVectorMake(yourspeed, 0);
+             }
+             */
             
-            CGPoint offset = rwSub(location, self.bomb.position);
+            if (location.x > CGRectGetMidX(self.frame)) {
+                
+                
+            } else {
+                /*
+                 self.joystick.position = location;
+                 
+                 if (self.joystick.velocity.x !=0 || self.joystick.velocity.y != 0) {
+                 self.player.position = CGPointMake(self.player.position.x + .1 *self.joystick.velocity.x, self.player.position.y + .1 * self.joystick.velocity.y);
+                 }
+                 if (self.joystick.velocity.x != 0 || self.joystick.velocity.y != 0)
+                 {
+                 self.player.zRotation = self.joystick.angularVelocity;
+                 }
+                 */
+            }
             
-            [self addChild:self.bomb];
+            float b;
+            float c;
+            self.playerProjectile = [SKSpriteNode spriteNodeWithImageNamed:@"Laser.png"];
+            self.playerProjectile.position = self.player.position;
+            self.playerProjectile.size = CGSizeMake(8, 32);
+            self.playerProjectile.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:self.playerProjectile.size.width/2];
+            self.playerProjectile.physicsBody.dynamic = YES;
+            self.playerProjectile.physicsBody.categoryBitMask = bombCategory;
+            self.playerProjectile.physicsBody.contactTestBitMask = enemyCategory;
+            self.playerProjectile.physicsBody.collisionBitMask = 0;
+            self.playerProjectile.physicsBody.usesPreciseCollisionDetection = YES;
+            
+            CGPoint offset = rwSub(location, self.playerProjectile.position);
+            
+            [self addChild:self.playerProjectile];
             
             CGPoint direction = rwNormalize(offset);
             
             CGPoint shootAmount = rwMult(direction, 1000);
             
-            CGPoint realDest = rwAdd(shootAmount, self.bomb.position);
+            CGPoint realDest = rwAdd(shootAmount, self.playerProjectile.position);
             
             float velocity = 480.0/1.0;
             float realMoveDuration = self.size.width / velocity;
             SKAction * actionMove = [SKAction moveTo:realDest duration:realMoveDuration];
             SKAction * actionMoveDone = [SKAction removeFromParent];
-            [self.bomb runAction:[SKAction sequence:@[actionMove, actionMoveDone]]];
+            [self.playerProjectile runAction:[SKAction sequence:@[actionMove, actionMoveDone]]];
+            
+            CGPoint point = [touch locationInView:self.view];
+            NSLog(@"X location: %f", point.x);
+            NSLog(@"Y Location: %f",point.y);
+            
+            b = self.player.position.x - point.x;
+            c = self.player.position.y - point.y;
+            
+            float d = atan2(b, c);
+            self.playerProjectile.zRotation = d;
             
         }
         
@@ -387,7 +532,7 @@ static inline CGPoint rwNormalize(CGPoint a) {
         }
         if ([node.name isEqualToString:@"resumeButton"]) {
             self.scene.paused = NO;
-            [self.bomb removeFromParent];
+            [self.playerProjectile removeFromParent];
             [self.darkScreen removeFromParent];
             [self.resumeButton removeFromParent];
             [self updateAllOutlets];
@@ -397,9 +542,20 @@ static inline CGPoint rwNormalize(CGPoint a) {
     
 }
 
+-(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
+    
+    UITouch * touch = [touches anyObject];
+    CGPoint location = [touch locationInNode:self];
+    //[self.joystick removeFromParent];
+    
+}
+
 - (void)projectile:(SKSpriteNode*)projectile didCollideWithEnemy:(SKSpriteNode*)enemy {
-    [self.bomb removeFromParent];
+    
+    [self.playerProjectile removeFromParent];
     [self.enemy removeFromParent];
+    [self.enemy removeAllActions];
+    [self.enemy removeAllChildren];
     
     SKSpriteNode *explosion = [SKSpriteNode spriteNodeWithTexture:[_explosionTextures objectAtIndex:0]];
     explosion.zPosition = 1;
@@ -411,10 +567,11 @@ static inline CGPoint rwNormalize(CGPoint a) {
     SKAction *explosionAction = [SKAction animateWithTextures:_explosionTextures timePerFrame:0.07];
     SKAction *remove = [SKAction removeFromParent];
     [explosion runAction:[SKAction sequence:@[explosionAction,remove]]];
-    
     self.scrap += 10;
-    [self addEnemy];
+    self.enemyIsDead = YES;
+    // [self addEnemy];
     [self updateAllOutlets];
+    
 }
 
 - (void)player:(SKSpriteNode*)player didContactWithPlanet:(SKSpriteNode*)planet {
@@ -429,8 +586,11 @@ static inline CGPoint rwNormalize(CGPoint a) {
 
 - (void)projectile:(SKSpriteNode*)projectile didCollideWithPlayer:(SKSpriteNode*)player {
     player = self.player;
-    projectile = self.enemyBomb;
-    [projectile removeFromParent];
+    projectile = self.enemyProjectile;
+    [self.enemyProjectile removeFromParent];
+    [self.enemyProjectile removeAllChildren];
+    [self.enemyProjectile removeAllActions];
+    
     self.health--;
     [self updateAllOutlets];
 }
@@ -446,66 +606,13 @@ static inline CGPoint rwNormalize(CGPoint a) {
     }
 }
 
-/*
- -(void)EnemiesAndClouds{
- //not always come
- int GoOrNot = [self getRandomNumberBetween:0 to:1];
- 
- if(GoOrNot == 1){
- 
- SKSpriteNode *enemy;
- 
- int randomEnemy = [self getRandomNumberBetween:0 to:1];
- if(randomEnemy == 0)
- enemy = [SKSpriteNode spriteNodeWithImageNamed:@"PLANE 1 N.png"];
- else
- enemy = [SKSpriteNode spriteNodeWithImageNamed:@"PLANE 2 N.png"];
- 
- 
- enemy.scale = 0.6;
- 
- enemy.position = CGPointMake(screenRect.size.width/2, screenRect.size.height/2);
- enemy.zPosition = 1;
- 
- 
- CGMutablePathRef cgpath = CGPathCreateMutable();
- 
- //random values
- float xStart = [self getRandomNumberBetween:0+enemy.size.width to:screenRect.size.width-enemy.size.width];
- float xEnd = [self getRandomNumberBetween:0+enemy.size.width to:screenRect.size.width-enemy.size.width];
- 
- //ControlPoint1
- float cp1X = [self getRandomNumberBetween:0+enemy.size.width> to:screenRect.size.width-enemy.size.width];
- float cp1Y = [self getRandomNumberBetween:0+enemy.size.width to:screenRect.size.width-enemy.size.height];
- 
- //ControlPoint2
- float cp2X = [self getRandomNumberBetween:0+<span class="skimlinks-unlinked">enemy.size.width</span> to:<span class="skimlinks-unlinked">screenRect.size.width-enemy.size.width</span> ];
- float cp2Y = [self getRandomNumberBetween:0 to:cp1Y];
- 
- CGPoint s = CGPointMake(xStart, 1024.0);
- CGPoint e = CGPointMake(xEnd, -100.0);
- CGPoint cp1 = CGPointMake(cp1X, cp1Y);
- CGPoint cp2 = CGPointMake(cp2X, cp2Y);
- CGPathMoveToPoint(cgpath,NULL, s.x, s.y);
- CGPathAddCurveToPoint(cgpath, NULL, cp1.x, cp1.y, cp2.x, cp2.y, e.x, e.y);
- 
- SKAction *planeDestroy = [SKAction followPath:cgpath asOffset:NO orientToPath:YES duration:5];
- [self addChild:enemy];
- 
- SKAction *remove = [SKAction removeFromParent];
- [enemy runAction:[SKAction sequence:@[planeDestroy,remove]]];
- 
- CGPathRelease(cgpath);
- 
- }
- 
- }
- 
- -(int)getRandomNumberBetween:(int)from to:(int)to {
- 
- return (int)from + arc4random() % (to-from+1);
- }
- */
+- (void)update:(CFTimeInterval)currentTime {
+    for (SpaceScoutEnemyTeam* army in self.armies) {
+        for (SpaceScoutEnemy* enemy in army.deployedEnemies) {
+            [enemy update:currentTime];
+        }
+    }
+}
 
 - (void)didBeginContact:(SKPhysicsContact *)contact {
     SKPhysicsBody *firstBody, *secondBody;
@@ -588,6 +695,4 @@ static inline CGPoint rwNormalize(CGPoint a) {
     
 }
 
-
 @end
-

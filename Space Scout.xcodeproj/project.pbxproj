@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A413B3D11A1B704300C3673A /* SpaceScoutProjectile.m in Sources */ = {isa = PBXBuildFile; fileRef = A413B3D01A1B704300C3673A /* SpaceScoutProjectile.m */; };
+		A413B3D41A1B70AF00C3673A /* SpaceScoutEnemy.m in Sources */ = {isa = PBXBuildFile; fileRef = A413B3D31A1B70AF00C3673A /* SpaceScoutEnemy.m */; };
+		A413B3D81A1B710500C3673A /* SpaceScoutEnemyTeam.m in Sources */ = {isa = PBXBuildFile; fileRef = A413B3D71A1B710500C3673A /* SpaceScoutEnemyTeam.m */; };
 		A42774B919FFC4DB00B59B3B /* PageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A42774B819FFC4DB00B59B3B /* PageContentViewController.m */; };
 		A42774BC19FFC4F500B59B3B /* PageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A42774BB19FFC4F500B59B3B /* PageViewController.m */; };
 		A42774C119FFCC1200B59B3B /* page1.png in Resources */ = {isa = PBXBuildFile; fileRef = A42774BD19FFCC1200B59B3B /* page1.png */; };
@@ -95,6 +98,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A413B3CF1A1B704300C3673A /* SpaceScoutProjectile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpaceScoutProjectile.h; sourceTree = "<group>"; };
+		A413B3D01A1B704300C3673A /* SpaceScoutProjectile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpaceScoutProjectile.m; sourceTree = "<group>"; };
+		A413B3D21A1B70AF00C3673A /* SpaceScoutEnemy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpaceScoutEnemy.h; sourceTree = "<group>"; };
+		A413B3D31A1B70AF00C3673A /* SpaceScoutEnemy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpaceScoutEnemy.m; sourceTree = "<group>"; };
+		A413B3D61A1B710500C3673A /* SpaceScoutEnemyTeam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpaceScoutEnemyTeam.h; sourceTree = "<group>"; };
+		A413B3D71A1B710500C3673A /* SpaceScoutEnemyTeam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpaceScoutEnemyTeam.m; sourceTree = "<group>"; };
 		A42774B719FFC4DB00B59B3B /* PageContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageContentViewController.h; sourceTree = "<group>"; };
 		A42774B819FFC4DB00B59B3B /* PageContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageContentViewController.m; sourceTree = "<group>"; };
 		A42774BA19FFC4F500B59B3B /* PageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageViewController.h; sourceTree = "<group>"; };
@@ -226,6 +235,75 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A413B3C61A1B6CDE00C3673A /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				B7E12C8D1999A6CE00C74BDF /* SpaceScoutPlayer.h */,
+				B7E12C8E1999A6CE00C74BDF /* SpaceScoutPlayer.m */,
+			);
+			name = Player;
+			sourceTree = "<group>";
+		};
+		A413B3CA1A1B6F3100C3673A /* JoyStick */ = {
+			isa = PBXGroup;
+			children = (
+				A4AE566F19ED57EC00091D73 /* Joystick.h */,
+				A4AE567019ED57EC00091D73 /* Joystick.m */,
+			);
+			name = JoyStick;
+			sourceTree = "<group>";
+		};
+		A413B3CB1A1B6F7400C3673A /* Delgation */ = {
+			isa = PBXGroup;
+			children = (
+				B74FB1D119987BD9000F722B /* SpaceScoutAppDelegate.h */,
+				B74FB1D219987BD9000F722B /* SpaceScoutAppDelegate.m */,
+			);
+			name = Delgation;
+			sourceTree = "<group>";
+		};
+		A413B3CC1A1B6F8600C3673A /* Sprit Kit */ = {
+			isa = PBXGroup;
+			children = (
+				B74FB1D719987BD9000F722B /* SpaceScoutViewController.h */,
+				B74FB1D819987BD9000F722B /* SpaceScoutViewController.m */,
+				A413B3D51A1B70C000C3673A /* Enemy */,
+				A413B3CA1A1B6F3100C3673A /* JoyStick */,
+				A413B3CD1A1B6FD900C3673A /* Projectiles */,
+				A413B3CE1A1B6FEE00C3673A /* My Scene */,
+			);
+			name = "Sprit Kit";
+			sourceTree = "<group>";
+		};
+		A413B3CD1A1B6FD900C3673A /* Projectiles */ = {
+			isa = PBXGroup;
+			children = (
+				A413B3CF1A1B704300C3673A /* SpaceScoutProjectile.h */,
+				A413B3D01A1B704300C3673A /* SpaceScoutProjectile.m */,
+			);
+			name = Projectiles;
+			sourceTree = "<group>";
+		};
+		A413B3CE1A1B6FEE00C3673A /* My Scene */ = {
+			isa = PBXGroup;
+			children = (
+				B74FB1DA19987BD9000F722B /* SpaceScoutMyScene.h */,
+				B74FB1DB19987BD9000F722B /* SpaceScoutMyScene.m */,
+			);
+			name = "My Scene";
+			sourceTree = "<group>";
+		};
+		A413B3D51A1B70C000C3673A /* Enemy */ = {
+			isa = PBXGroup;
+			children = (
+				A413B3D21A1B70AF00C3673A /* SpaceScoutEnemy.h */,
+				A413B3D31A1B70AF00C3673A /* SpaceScoutEnemy.m */,
+				A413B3D61A1B710500C3673A /* SpaceScoutEnemyTeam.h */,
+				A413B3D71A1B710500C3673A /* SpaceScoutEnemyTeam.m */,
+			);
+			name = Enemy;
+			sourceTree = "<group>";
+		};
 		A4672D2319FBA55C00150AB1 /* Intro */ = {
 			isa = PBXGroup;
 			children = (
@@ -313,6 +391,9 @@
 		B74FB1C819987BD9000F722B /* Space Scout */ = {
 			isa = PBXGroup;
 			children = (
+				A413B3CC1A1B6F8600C3673A /* Sprit Kit */,
+				A413B3CB1A1B6F7400C3673A /* Delgation */,
+				A413B3C61A1B6CDE00C3673A /* Player */,
 				CB1966AB19A458E500BF33C7 /* Images/music */,
 				B74FB1D419987BD9000F722B /* Main.storyboard */,
 				A4672D2319FBA55C00150AB1 /* Intro */,
@@ -320,14 +401,6 @@
 				A49A252D19B353FA004144D1 /* HighScore */,
 				CB9C141A19A2E07C0030922A /* Shop */,
 				CBE8CAAA199B1F6500C95739 /* ViewControllers */,
-				B74FB1D119987BD9000F722B /* SpaceScoutAppDelegate.h */,
-				B74FB1D219987BD9000F722B /* SpaceScoutAppDelegate.m */,
-				B7E12C8D1999A6CE00C74BDF /* SpaceScoutPlayer.h */,
-				B7E12C8E1999A6CE00C74BDF /* SpaceScoutPlayer.m */,
-				B74FB1DA19987BD9000F722B /* SpaceScoutMyScene.h */,
-				B74FB1DB19987BD9000F722B /* SpaceScoutMyScene.m */,
-				A4AE566F19ED57EC00091D73 /* Joystick.h */,
-				A4AE567019ED57EC00091D73 /* Joystick.m */,
 				B74FB1C919987BD9000F722B /* Supporting Files */,
 			);
 			path = "Space Scout";
@@ -429,8 +502,6 @@
 			isa = PBXGroup;
 			children = (
 				A4C3A2DC1A05CDD300877CF0 /* extras/jokes */,
-				B74FB1D719987BD9000F722B /* SpaceScoutViewController.h */,
-				B74FB1D819987BD9000F722B /* SpaceScoutViewController.m */,
 				CB82178A19B6D25000851783 /* SpaceScoutHomePageViewController.h */,
 				CB82178B19B6D25000851783 /* SpaceScoutHomePageViewController.m */,
 				CB4EC1541A13176C00E064CF /* SpaceScoutMainMenuNavigationViewController.h */,
@@ -589,6 +660,7 @@
 				A4AE567119ED57EC00091D73 /* Joystick.m in Sources */,
 				B74FB1DC19987BD9000F722B /* SpaceScoutMyScene.m in Sources */,
 				CB96441719B55726000F4590 /* SpaceScoutHighscoresViewController.m in Sources */,
+				A413B3D41A1B70AF00C3673A /* SpaceScoutEnemy.m in Sources */,
 				CBE8CAAD199B209C00C95739 /* SpaceScoutWeaponsStoreViewController.m in Sources */,
 				CB1AFFBE19F7668A00C45B09 /* SpaceScoutHighScoreCell.m in Sources */,
 				CB1966AA19A4568600BF33C7 /* SpaceScoutShop.m in Sources */,
@@ -600,6 +672,8 @@
 				A4C3A2DF1A05CE0900877CF0 /* SpaceScout18AndOverViewController.m in Sources */,
 				B74FB1D919987BD9000F722B /* SpaceScoutViewController.m in Sources */,
 				A446F4571A0E4BB5006F0728 /* LanguageSelectionViewController.m in Sources */,
+				A413B3D11A1B704300C3673A /* SpaceScoutProjectile.m in Sources */,
+				A413B3D81A1B710500C3673A /* SpaceScoutEnemyTeam.m in Sources */,
 				B74FB1CF19987BD9000F722B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

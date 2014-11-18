@@ -31,6 +31,7 @@
         self.maxExp = 0;
     }
     
+    
     return self;
 }
 
